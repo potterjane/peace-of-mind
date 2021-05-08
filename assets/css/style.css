@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Reenie+Beanie&display=swap');
+
+/* --------------------------------------------------------------------------Body structure */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------Body font styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Reenie Beanie', cursive;
+}
