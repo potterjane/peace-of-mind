@@ -16,3 +16,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Reenie Beanie', cursive;
 }
+
+/* --------------------------------------------------------------------------Body color styles */
+
+body {
+    background-color: #7cc4a4;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #f2feff;
+}
+
+
+h1, p {
+    text-align: center;
+}
+
+h1, p {
+    font-size: 100px;
+}
