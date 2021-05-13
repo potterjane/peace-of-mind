@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2rem;
+    height: 4.5rem;
     /* /Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
 }
 
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rest i {
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .weather i {
@@ -140,4 +140,85 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-reset .btn:hover {
     background-color: #fc7844;
+}
+
+/* --------------------------------------------------------------------------How To Use section */
+
+.howto-description {
+    color: #f2feff;
+}
+
+.howto-description li {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.howto-images li {
+    color: #f2feff;
+    list-style-type: none;
+}
+
+.point-one {
+    border: 2px solid #f2feff;
+    /* Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
+    border-radius: 16px;
+    /* /Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
+    margin: 5px;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.demo-bg-btn, .demo-reset-btn {
+    background-color: #7cc4a4;
+    color: #f2feff;
+    border: 1px solid #f2feff;
+}
+
+.demo-bg-btn:hover {
+    background-color: #299cab;
+    color: #f2feff;
+}
+
+.demo-reset-btn:hover {
+    background-color: #fc7844;
+    color: #f2feff;
+}
+
+.fa-heart {
+    color: red;
+}
+
+/* --------------------------------------------------------------------------About section */
+
+.main-about {
+    text-align: left;
+    color: #f2feff;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.about-link {
+    text-decoration: none;
+    color: #0388fc;
+}
+
+/* --------------------------------------------------------------------------Contact section */
+
+#full-name, #email, #message {
+    background-color: #7cc4a4;
+    color: #f2feff;
+    border: 1px solid #f2feff;
+    margin: 15px;
+    width: 100%;
+}
+
+.contact-btn {
+    background-color: #7cc4a4;
+    color: #f2feff;
+    border: 1px solid #f2feff;
+}
+
+.contact-btn:hover {
+    background-color: #299cab;
+    color: #f2feff;
 }
