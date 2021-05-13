@@ -38,15 +38,46 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 30px;
 }
 
-.nav-link p {
-    font-size: 25px;
+.navbar-brand h1:hover, .nav-link h2:hover {
+    color: #299cab;
+}
+
+.nav-link h2 {
     margin-top: 15px;
     padding: 0 10px;
 }
 
+.active {
+    text-decoration: underline;
+    color: #f2feff;
+}
+
+.active:hover {
+    color: #f2feff;
+}
+
 /* --------------------------------------------------------------------------Footer section */
 
+.footer {
+    /* Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
+    position: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* /Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
+}
 
+/* --------------------------------------------------------------------------Main section */
+
+.main {
+    text-align: center;
+    position: relative;
+    min-height: 100%;
+}
+
+.main-header h3 {
+    font-size: 45px;
+}
 
 /* --------------------------------------------------------------------------Main Sounds section */
 
