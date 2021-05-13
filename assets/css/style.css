@@ -60,11 +60,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer {
     /* Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
-    position: fixed;
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 2rem;
     /* /Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
+}
+
+.disclaimer {
+    text-align: right;
+}
+
+.disclaimer a {
+    color: #f2feff;
 }
 
 /* --------------------------------------------------------------------------Main section */
@@ -120,12 +128,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------Main Buttons section */
 
-.main-background .btn {
-    background-color: #299cab;
+.main-background .btn, .main-reset .btn {
+    background-color: #7cc4a4;
     color: #f2feff;
+    border: 1px solid #f2feff;
 }
 
-.main-reset .btn {
-    background-color: #db682a;
-    color: #f2feff;
+.main-background .btn:hover {
+    background-color: #299cab;
+}
+
+.main-reset .btn:hover {
+    background-color: #fc7844;
 }
