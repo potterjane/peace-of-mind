@@ -27,11 +27,74 @@ h1, h2, h3, h4, h5, h6, p {
     color: #f2feff;
 }
 
+/* --------------------------------------------------------------------------Welcome section */
 
-h1, p {
-    text-align: center;
+
+
+/* --------------------------------------------------------------------------Header section */
+
+.navbar-brand h1 {
+    font-size: 60px;
+    margin: 0 30px;
 }
 
-h1, p {
-    font-size: 100px;
+.nav-link p {
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+/* --------------------------------------------------------------------------Footer section */
+
+
+
+/* --------------------------------------------------------------------------Main Sounds section */
+
+.main-sounds {
+    color: #f2feff;
+}
+
+.main-sounds i {
+    border: 2px solid #f2feff;
+    /* Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
+    border-radius: 16px;
+    /* /Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
+    margin: 5px;
+    font-size: 80px;
+}
+
+.nature i {
+    padding: 10px 20px;
+}
+
+.travel i {
+    padding: 10px 15px;
+}
+
+.public i {
+    padding: 10px 18px;
+}
+
+.home i {
+    padding: 10px 5px;
+}
+
+.rest i {
+    padding: 10px 10px;
+}
+
+.weather i {
+    padding: 10px 5px;
+}
+
+/* --------------------------------------------------------------------------Main Buttons section */
+
+.main-background .btn {
+    background-color: #299cab;
+    color: #f2feff;
+}
+
+.main-reset .btn {
+    background-color: #db682a;
+    color: #f2feff;
 }
