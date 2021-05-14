@@ -26,6 +26,26 @@ function changeBackground() {
     /*--When user clicks “Change background”, background changes--*/
 }
 
-function feedbackForm() {
-    /*--User can send in their questions or feedback via “Contact” page, all fields are required before they can submit the form--*/
+/* --------------------------------------------------------------------------------------------------------------------------------------------Contact page */
+
+/*--User can send in their questions or feedback via “Contact” page, all fields are required before they can submit the form--*/
+function feedbackForm(contactForm) { 
+
+/*--All the code contained in this function was taken from Code Institute's Sending Emails Using EmailJS module--*/
+
+    emailjs.send('Gmail', 'pom', {
+        'from_name': contactForm.name.value,
+        'from_email': contactForm.email.value,
+        'message': contactForm.message.value
+    })
+    .then(
+        function(response) {
+            console.log('SUCCESS', response);
+        },
+        function(error) {
+            console.log('FAILED', error);
+        });
+    return false;
+
+/*--/All the code contained in this function was taken from Code Institute's Sending Emails Using EmailJS module--*/
 }

@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------Contact section */
 
-#full-name, #email, #message {
+#name, #email, #message {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
