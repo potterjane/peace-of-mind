@@ -95,7 +95,7 @@ The overall feel of the website should be one that
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/). The first version of the mobile, tablet and desktop mockups was made during the design and planning process for this project. 
 
-- [First version](/workspace/peace-of-mind/wireframes/pom-wireframes-version-1.pdf)
+- [First version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-1.pdf)
 
 For comparison, screenshots of the website on different screen sizes were collected also by using [Balsamiq](https://balsamiq.com/). 
 - Screenshots from a desktop screen (Macbook laptop) 
