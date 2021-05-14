@@ -2,12 +2,13 @@
 
 # Peace of Mind
 
-[Peace of Mind](https://potterjane.github.io/peace-of-mind/) is a 
+[Peace of Mind](https://potterjane.github.io/peace-of-mind/) is a tool for distration for all of the everday noises. 
 <br>
-From this website, you can
+More specifically, it is a website that offers sound clips to users who want to immerse in sound effects and background videos of nature, public spaces, what you find in a typical home, and so on. The combination of soothing sound clips and beautiful background videos can increase the user's focus and productivity, decreases anxiety and stress, and improves mood. 
 <br>
-
-Check out the Peace of Mind website [here](https://potterjane.github.io/peace-of-mind/)!
+This website also offers user's instructions on how to use the sound clips and background videos, find out more about the company behind the website, and a form where users can leave feedback and ask questions to the company. 
+<br>
+The company's motto is "Immerse in sound and block out unwanted noise". Check out the Peace of Mind website [here](https://potterjane.github.io/peace-of-mind/)!
 
 </div>
 
@@ -42,11 +43,11 @@ Check out the Peace of Mind website [here](https://potterjane.github.io/peace-of
 
 ### Project Goals
 
-The primary goal of the Peace of Mind website is to 
+The primary goal of the Peace of Mind website is to . The design of the website should also reflect the company's user goals. 
 <br>
-Features include 
+Features include sounds clips of the different sound effects such as Nature, 
 <br>
-Peace of Mind has two target audiences: 
+Peace of Mind has two target audiences: New and returning users and also users who want to help develop the website by suggesting more sound clips and background videos that would benefits the new and returning users.
 
 #### User Goals
 
@@ -62,28 +63,26 @@ Peace of Mind has two target audiences:
 
 ### Design Choices
 
-The overall feel of the website should be one that 
+The overall feel of the website should be one that attracts people who are feeling that they need a distraction, 
 
 **Structure**
 
 
 **Backgrounds**
 
-
+- The blue-green shade of cyan is the main background colour for all the pages of the website. This colour was chosen to represent the tropical ocean colour
+- 
 
 **Fonts**
 
-
+- The primary font called **Reenie Beanie**
+- The secondary font called **Montserrat**
 
 **Colours**
 
 
 
 **Icons**
-
-
-
-**Images**
 
 
 
@@ -155,9 +154,6 @@ git clone https://github.com/potterjane/peace-of-mind.git
 - All text in this project was written by the developer.
 
 ### Media
-
-#### Images
-- The images were sourced from 
 
 #### Videos
 - The videos were sourced from 
