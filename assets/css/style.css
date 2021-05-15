@@ -91,6 +91,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-sounds {
     color: #f2feff;
+    margin-top: 80px;
+    width: 50%;
 }
 
 .main-sounds i {
@@ -126,12 +128,22 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px 5px;
 }
 
+.nature i:hover, .travel i:hover, .public i:hover, .home i:hover, .rest i:hover, .weather i:hover {
+    color: #299cab;
+    border-color: #299cab;
+}
+
 /* --------------------------------------------------------------------------Main Buttons section */
+
+.main-btns {
+    width: 60%;
+}
 
 .main-background .btn, .main-reset .btn {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
+    margin-top: 50px;
 }
 
 .main-background .btn:hover {
@@ -144,28 +156,50 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------How To Use section */
 
-.howto-description {
-    color: #f2feff;
+.main-howto {
+    margin-top: 40px;
+    width: 55%;
 }
 
-.howto-description li {
-    margin: 25px 0;
+.col-1, .col-2 {
+    padding: 15px 0;
+}
+
+.col-1 {
+    color: #f2feff;
     text-align: left;
+    width: 70%;
 }
 
-.howto-images li {
+.col-2 {
     color: #f2feff;
-    list-style-type: none;
+    width: 70%;
 }
 
-.point-one {
+.col-2 .fa-tree, .col-2 .fa-home {
     border: 2px solid #f2feff;
     /* Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
     border-radius: 16px;
     /* /Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
     margin: 5px;
     font-size: 40px;
+}
+
+.col-2 .fa-tree {
+    padding: 10px 15px;
+}
+
+.col-2 .fa-home {
     padding: 10px;
+}
+
+.col-2 .fa-plus, .col-2 .fa-minus, .col-2 .fa-step-backward, .col-2 .fa-step-forward {
+    font-size: 30px;
+    margin: 0 30px;
+}
+
+.col-2 .fa-headphones-alt {
+    font-size: 40px;
 }
 
 .demo-bg-btn, .demo-reset-btn {
@@ -193,8 +227,8 @@ h1, h2, h3, h4, h5, h6, p {
 .main-about {
     text-align: left;
     color: #f2feff;
-    margin-left: 25%;
-    margin-top: 25px;
+    margin-top: 35px;
+    width: 35%;
 }
 
 .about-link {
@@ -204,7 +238,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------Contact section */
 
-#name, #email, #message {
+#name, #email, #message, #uploadfile {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
