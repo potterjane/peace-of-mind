@@ -29,7 +29,44 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------Welcome section */
 
+.welcome {
+    
+    /*--Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website--*/
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #7cc4a4;
+    z-index: 200;
+    text-align: center;
+
+    /*--/Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website--*/
+}
+
+#feeling {
+    font-size: 100px;
+    line-height: 90vh;
+}
+
+.welcome.displayNone {
+    
+    /*--Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website--*/
+
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #7cc4a4;
+    z-index: -10;
+    text-align: center;
+    transition: all 1s;
+
+    /*--/Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website--*/
+}
 
 /* --------------------------------------------------------------------------Header section */
 
