@@ -200,6 +200,21 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #fc7844;
 }
 
+/* --------------------------------------------------------------------------Background videos section */
+
+/*--Code taken from W3Schools, 100% width and height to cover the entire window--*/
+
+#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+/*--/Code taken from W3Schools, 100% width and height to cover the entire window--*/
+
+
 /* --------------------------------------------------------------------------How To Use section */
 
 .main-howto {
