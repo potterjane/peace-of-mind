@@ -54,16 +54,16 @@ function resetAll() {
 /*--Following function adds video sources via Javascript, code taken from Burn Ignorance--*/
 
 //Video array
-let videoSource = new Array();
-videoSource[0] = 'assets/videos/mp4/beach-waves-move.mp4';
-videoSource[1] = 'assets/videos/mp4/beach-waves-still.mp4';
-videoSource[2] = 'assets/videos/mp4/fireplace.mp4';
-videoSource[3] = 'assets/videos/mp4/forest.mp4';
-videoSource[4] = 'assets/videos/mp4/office.mp4';
-videoSource[5] = 'assets/videos/mp4/puppy-sleeping.mp4';
-videoSource[6] = 'assets/videos/mp4/raindrops.mp4';
-videoSource[7] = 'assets/videos/mp4/reading.mp4';
-videoSource[8] = 'assets/videos/mp4/river-flowing.mp4';
+let videoSource = new Array(
+    'assets/videos/mp4/beach-waves-move.mp4', 
+    'assets/videos/mp4/beach-waves-still.mp4', 
+    'assets/videos/mp4/fireplace.mp4', 
+    'assets/videos/mp4/forest.mp4', 
+    'assets/videos/mp4/office.mp4', 
+    'assets/videos/mp4/puppy-sleeping.mp4', 
+    'assets/videos/mp4/raindrops.mp4', 
+    'assets/videos/mp4/reading.mp4', 
+    'assets/videos/mp4/river-flowing.mp4');
 
 /*--/Following function adds video sources via Javascript, code taken from Burn Ignorance--*/
 
