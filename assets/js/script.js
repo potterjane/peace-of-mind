@@ -51,36 +51,17 @@ function resetAll() {
 /* --------------------------------------------------------------------------------------------------------------------------------------------Video section */
 /*--When user clicks “Change background” button, background changes--*/
 
-/*--Following function adds video sources via Javascript, code taken from Burn Ignorance--*/
+let changeBtn = document.getElementsByClassName('change');
+let sources = document.getElementsByTagName('source');
 
-//Video array
-let videoSource = new Array(
-    'assets/videos/mp4/beach-waves-move.mp4', 
-    'assets/videos/mp4/beach-waves-still.mp4', 
-    'assets/videos/mp4/fireplace.mp4', 
-    'assets/videos/mp4/forest.mp4', 
-    'assets/videos/mp4/office.mp4', 
-    'assets/videos/mp4/puppy-sleeping.mp4', 
-    'assets/videos/mp4/raindrops.mp4', 
-    'assets/videos/mp4/reading.mp4', 
-    'assets/videos/mp4/river-flowing.mp4');
+changeBtn.addEventListener('click', changeBackground);
 
-/*--/Following function adds video sources via Javascript, code taken from Burn Ignorance--*/
-
-$('#bgvid').append(videoSource);
-
-//Get video element
-let bgVid = document.getElementById('bgvid');
-
-//Get button element
-let vidBtn = document.getElementById('main-bg-btn');
-
-//Click event listener, code taken from learn-webdev's Youtube instructional video
-vidBtn.addEventListener('click', function() {
-    //Randomize the videos
-    var randomVid = videoSource[Math.floor(Math.random() * videoSource.length)]
-});
-
+function changeBackground(event) {
+    for (i = 0; i <= sources.length; i++) {
+        sources[i];
+    };
+}
+changeBackground();
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------Contact section */
 
