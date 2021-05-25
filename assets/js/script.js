@@ -51,7 +51,7 @@ function resetAll() {
 }
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------Video section
-//When user clicks “Change background” button, background changes
+//When user clicks “Change background” button, background changes to a random video 
 
 let videos = [
     {
@@ -104,12 +104,12 @@ let videos = [
     },
 ];
 
-let sources = document.getElementsByTagName('source').getAttribute("src"); 
-let types = document.getElementsByTagName('source').getAttribute("type");
+let sources = document.getElementsByTagName('source')[0].getAttribute("src"); //Code on how to get attribute was found on MDN Webdocs
+let types = document.getElementsByTagName('source')[0].getAttribute("type"); //Code on how to get attribute was found on MDN Webdocs
 
 function changeBackground() {
     for (let i = 0; i <= videos.length; i++) {
-        videos[i];
+        console.log(videos[i]);
     };
 }
 
