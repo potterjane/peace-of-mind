@@ -104,14 +104,18 @@ let videos = [
     },
 ];
 
-let sources = document.getElementsByTagName('source')[0].getAttribute("src"); //Code on how to get attribute was found on MDN Webdocs
-let types = document.getElementsByTagName('source')[0].getAttribute("type"); //Code on how to get attribute was found on MDN Webdocs
+let sources = document.getElementsByTagName('source')[0];
+let randomBtn = document.getElementsByClassName('randomBtn');
 
 function changeBackground() {
-    for (let i = 0; i <= videos.length; i++) {
-        console.log(videos[i]);
-    };
+    let bgVideos = videos[Math.floor(Math.random() * videos.length)];
+    let randomChoice = Object.values(bgVideos);
+    sources.setAttribute("src", randomChoice[0]);
+    sources.setAttribute("type", randomChoice[1]);
 }
+
+randomBtn.addEventListener('click', changeBackground);
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------Contact section
 //User can send in their questions or feedback via “Contact” page, all fields are required before they can submit the form
