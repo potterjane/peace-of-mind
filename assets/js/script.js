@@ -114,7 +114,8 @@ function changeBackground() {
     sources.setAttribute("src", randomChoice[0]);
     sources.setAttribute("type", randomChoice[1]);
 
-    bgVideo.onplay();
+    bgVideo.load();
+    bgVideo.play();
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------Contact section
