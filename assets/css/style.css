@@ -178,6 +178,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 20px;
 }
 
+.fa-step-backward ,
+.fa-step-forward  {
+    font-size: 25px;
+}
+
 /* --------------------------------------------------------------------------Main Buttons section */
 
 .main-reset .btn {
