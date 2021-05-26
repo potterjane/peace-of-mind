@@ -72,7 +72,9 @@
   <div class="main-sounds container-fluid">
     <div class="row"> 
       <div class="nature col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-step-backward"></i><i class="fas fa-tree main-icon"></i><i class="fas fa-step-forward"></i><br><i class="fas fa-minus"></i>
+        <input type="range" id="volume-nature"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+        <br>
+        <i class="fas fa-step-backward" onclick="randomNature()"></i><i class="fas fa-tree main-icon"></i><i class="fas fa-step-forward" onclick="randomNature()"></i>
         <audio loop id="nature-sound">
           <source src="" type="" id="sourceNature">
           Your browser does not support embedded audio.
@@ -80,7 +82,9 @@
         <p>Nature</p>
       </div>
       <div class="travel col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-step-backward"></i><i class="fas fa-subway main-icon"></i><i class="fas fa-step-forward"></i><br><i class="fas fa-minus"></i>
+        <input type="range" id="volume-travel"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+        <br>
+        <i class="fas fa-step-backward" onclick="randomTravel()"></i><i class="fas fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravel()"></i>
         <audio loop id="travel-sound">
           <source src="" type="" id="sourceTravel">
           Your browser does not support embedded audio.
@@ -88,7 +92,9 @@
         <p>Travel</p>
       </div>
       <div class="public col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-step-backward"></i><i class="fas fa-utensils main-icon"></i><i class="fas fa-step-forward"></i><br><i class="fas fa-minus"></i>
+        <input type="range" id="volume-public"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+        <br>
+        <i class="fas fa-step-backward" onclick="randomPublic()"></i><i class="fas fa-utensils main-icon"></i><i class="fas fa-step-forward" onclick="randomPublic()"></i>
         <audio loop id="public-sound">
           <source src="" type="" id="sourcePublic">
           Your browser does not support embedded audio.
@@ -98,7 +104,9 @@
     </div>
     <div class="row">
       <div class="home col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-step-backward" onclick="randomHome()"></i><i class="fas fa-home main-icon"></i><i class="fas fa-step-forward" onclick="randomHome()"></i><br><i class="fas fa-minus"></i>
+        <input type="range" id="volume-home"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+        <br>
+        <i class="fas fa-step-backward" onclick="randomHome()"></i><i class="fas fa-home main-icon"></i><i class="fas fa-step-forward" onclick="randomHome()"></i>
         <audio loop id="home-sound">
           <source src="" type="" id="sourceHome">
           Your browser does not support embedded audio.
@@ -106,9 +114,11 @@
         <p>Home</p>
       </div>
       <div class="weather col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-step-backward"></i><i class="fas fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward"></i><br><i class="fas fa-minus"></i>
+        <input type="range" id="volume-weather"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+        <br>
+        <i class="fas fa-step-backward" onclick="randomWeather()"></i><i class="fas fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward" onclick="randomWeather()"></i>
         <audio loop id="weather-sound">
-          <source src="" type="" id="sourceWeather">
+          <source src="" type="" id="sourceWeather">s
           Your browser does not support embedded audio.
         </audio>
         <p>Weather</p>

@@ -68,6 +68,14 @@ function randomHome() {
     homeSound.play();
 }
 
+//Home volume control
+//Code taken from StackOverflow on how to add volume control function in JavaScript
+let volumeHome = document.querySelector("#volume-home");
+
+volumeHome.addEventListener("change", function(e) {
+homeSound.volume = e.currentTarget.value / 100;
+})
+
 //Nature sounds
 let natures = [
     {
@@ -84,6 +92,28 @@ let natures = [
     },
 ];
 
+let sourcesNature = document.getElementById('sourceNature');
+let natureSound = document.getElementById('nature-sound');
+
+function randomNature() {
+    let natureSounds = natures[Math.floor(Math.random() * natures.length)];
+    let randomNatures = Object.values(natureSounds);
+    sourcesNature.setAttribute("src", randomNatures[0]);
+    sourcesNature.setAttribute("type", randomNatures[1]);
+
+    natureSound.load();
+    natureSound.play();
+}
+
+//Nature volume control
+//Code taken from StackOverflow on how to add volume control function in JavaScript
+let volumeNature = document.querySelector("#volume-nature");
+
+volumeNature.addEventListener("change", function(e) {
+natureSound.volume = e.currentTarget.value / 100;
+})
+
+//Public sounds
 let publics = [
     {
         sources: "assets/audio/public/office.mp3",
@@ -99,6 +129,28 @@ let publics = [
     },
 ];
 
+let sourcesPublic = document.getElementById('sourcePublic');
+let publicSound = document.getElementById('public-sound');
+
+function randomPublic() {
+    let publicSounds = publics[Math.floor(Math.random() * publics.length)];
+    let randomPublics = Object.values(publicSounds);
+    sourcesPublic.setAttribute("src", randomPublics[0]);
+    sourcesPublic.setAttribute("type", randomPublics[1]);
+
+    publicSound.load();
+    publicSound.play();
+}
+
+//Public volume control
+//Code taken from StackOverflow on how to add volume control function in JavaScript
+let volumePublic = document.querySelector("#volume-public");
+
+volumePublic.addEventListener("change", function(e) {
+publicSound.volume = e.currentTarget.value / 100;
+})
+
+//Travel sounds
 let travels = [
     {
         sources: "assets/audio/travel/bicycle.mp3",
@@ -114,6 +166,28 @@ let travels = [
     },
 ];
 
+let sourcesTravel = document.getElementById('sourceTravel');
+let travelSound = document.getElementById('travel-sound');
+
+function randomTravel() {
+    let travelSounds = travels[Math.floor(Math.random() * travels.length)];
+    let randomTravels = Object.values(travelSounds);
+    sourcesTravel.setAttribute("src", randomTravels[0]);
+    sourcesTravel.setAttribute("type", randomTravels[1]);
+
+    travelSound.load();
+    travelSound.play();
+}
+
+//Travel volume control
+//Code taken from StackOverflow on how to add volume control function in JavaScript
+let volumeTravel = document.querySelector("#volume-travel");
+
+volumeTravel.addEventListener("change", function(e) {
+travelSound.volume = e.currentTarget.value / 100;
+})
+
+//Weather sounds
 let weathers = [
     {
         sources: "assets/audio/weather/rain.mp3",
@@ -124,6 +198,27 @@ let weathers = [
         types: "audio/mp3"
     },
 ];
+
+let sourcesWeather = document.getElementById('sourceWeather');
+let weatherSound = document.getElementById('weather-sound');
+
+function randomWeather() {
+    let weatherSounds = weathers[Math.floor(Math.random() * weathers.length)];
+    let randomWeathers = Object.values(weatherSounds);
+    sourcesWeather.setAttribute("src", randomWeathers[0]);
+    sourcesWeather.setAttribute("type", randomWeathers[1]);
+
+    weatherSound.load();
+    weatherSound.play();
+}
+
+//Weather volume control
+//Code taken from StackOverflow on how to add volume control function in JavaScript
+let volumeWeather = document.querySelector("#volume-weather");
+
+volumeWeather.addEventListener("change", function(e) {
+weatherSound.volume = e.currentTarget.value / 100;
+})
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------Video section
 //When user clicks “Change background” button, background changes to a random video 
