@@ -39,16 +39,91 @@ feeling();
 //User should also be able to control the volume and change sound effect any time. 
 //Sound effect should be played in a loop in infinity until window is closed, user clicks “Reset all” or when user clicks pause.
 
-function sounds() {
-    
+//Home sounds
+let homes = [
+    {
+        sources: "assets/audio/home/barbecuing.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/home/dishes.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/home/fireplace.mp3",
+        types: "audio/mp3"
+    },
+];
+
+let sourcesHome = document.getElementById('sourceHome');
+let homeSound = document.getElementById('home-sound');
+
+function randomHome() {
+    let homeSounds = homes[Math.floor(Math.random() * homes.length)];
+    let randomHomes = Object.values(homeSounds);
+    sourcesHome.setAttribute("src", randomHomes[0]);
+    sourcesHome.setAttribute("type", randomHomes[1]);
+
+    homeSound.load();
+    homeSound.play();
 }
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------Reset section
-//When user clicks “Reset all”, all the sound effects and background are reset/turn off/cancelled
+//Nature sounds
+let natures = [
+    {
+        sources: "assets/audio/nature/birds.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/nature/leaves.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/nature/waves.mp3",
+        types: "audio/mp3"
+    },
+];
 
-function resetAll() {
+let publics = [
+    {
+        sources: "assets/audio/public/office.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/public/restaurant.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/public/traffic.mp3",
+        types: "audio/mp3"
+    },
+];
 
-}
+let travels = [
+    {
+        sources: "assets/audio/travel/bicycle.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/travel/car.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/travel/train.mp3",
+        types: "audio/mp3"
+    },
+];
+
+let weathers = [
+    {
+        sources: "assets/audio/weather/rain.mp3",
+        types: "audio/mp3"
+    },
+    {
+        sources: "assets/audio/weather/thunder.mp3",
+        types: "audio/mp3"
+    },
+];
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------Video section
 //When user clicks “Change background” button, background changes to a random video 
@@ -104,18 +179,24 @@ let videos = [
     },
 ];
 
-let sources = document.getElementsByTagName('source')[0];
-let randomBtn = document.getElementById('randomBtn');
+let sourcesVid = document.getElementById('sourceVideos');
 let bgVideo = document.getElementById('bg-video');
 
 function changeBackground() {
     let bgVideos = videos[Math.floor(Math.random() * videos.length)];
     let randomChoice = Object.values(bgVideos);
-    sources.setAttribute("src", randomChoice[0]);
-    sources.setAttribute("type", randomChoice[1]);
+    sourcesVid.setAttribute("src", randomChoice[0]);
+    sourcesVid.setAttribute("type", randomChoice[1]);
 
     bgVideo.load();
     bgVideo.play();
+}
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------Reset section
+//When user clicks “Reset all”, all the sound effects and background are reset/turn off/cancelled
+
+function resetAll() {
+
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------Contact section

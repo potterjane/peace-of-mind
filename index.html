@@ -73,31 +73,51 @@
     <div class="row"> 
       <div class="nature col">
         <i class="fas fa-plus"></i><br><i class="fas fa-tree main-icon"></i><br><i class="fas fa-minus"></i>
+        <audio loop id="nature-sound">
+          <source src="" type="" id="sourceNature">
+          Your browser does not support embedded audio.
+        </audio>
         <p>Nature</p>
       </div>
       <div class="travel col">
         <i class="fas fa-plus"></i><br><i class="fas fa-subway main-icon"></i><br><i class="fas fa-minus"></i>
+        <audio loop id="travel-sound">
+          <source src="" type="" id="sourceTravel">
+          Your browser does not support embedded audio.
+        </audio>
         <p>Travel</p>
       </div>
       <div class="public col">
         <i class="fas fa-plus"></i><br><i class="fas fa-utensils main-icon"></i><br><i class="fas fa-minus"></i>
+        <audio loop id="public-sound">
+          <source src="" type="" id="sourcePublic">
+          Your browser does not support embedded audio.
+        </audio>
         <p>Public</p>
       </div>
     </div>
     <div class="row">
       <div class="home col">
-        <i class="fas fa-plus"></i><br><i class="fas fa-home main-icon"></i><br><i class="fas fa-minus"></i>
+        <i class="fas fa-plus"></i><br><i class="fas fa-home main-icon" onclick="randomHome()"></i><br><i class="fas fa-minus"></i>
+        <audio loop id="home-sound">
+          <source src="" type="" id="sourceHome">
+          Your browser does not support embedded audio.
+        </audio>
         <p>Home</p>
       </div>
       <div class="weather col">
         <i class="fas fa-plus"></i><br><i class="fas fa-cloud-sun-rain main-icon"></i><br><i class="fas fa-minus"></i>
+        <audio loop id="weather-sound">
+          <source src="" type="" id="sourceWeather">
+          Your browser does not support embedded audio.
+        </audio>
         <p>Weather</p>
     </div>
   </div>
 
   <div class="background-videos">
     <video autoplay muted loop id="bg-video">
-      <source src="" type="">
+      <source src="" type="" id="sourceVideos">
       Your browser does not support embedded videos.
     </video>
   </div>
