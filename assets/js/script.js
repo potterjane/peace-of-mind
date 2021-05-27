@@ -95,12 +95,22 @@ let natures = [
 let sourcesNature = document.getElementById('sourceNature');
 let natureSound = document.getElementById('nature-sound');
 
-function randomNature() {
+function toggleNature() {
     let natureSounds = natures[Math.floor(Math.random() * natures.length)];
     let randomNatures = Object.values(natureSounds);
     sourcesNature.setAttribute("src", randomNatures[0]);
     sourcesNature.setAttribute("type", randomNatures[1]);
 
+    //Code taken from StackOverflow on how to toggle audio play and pause with one button/icon/link
+    if (natureSound.paused) {
+        natureSound.load();
+        natureSound.play();
+    } else {
+        natureSound.pause();
+    }
+}
+
+function randomNature() {
     natureSound.load();
     natureSound.play();
 }
