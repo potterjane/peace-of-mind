@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #f2feff;
 }
 
-/* --------------------------------------------------------------------------Main section */
+/* --------------------------------------------------------------------------Main section for all HTMLs */
 
 .main {
     text-align: center;
@@ -134,7 +134,7 @@ input[type=range] {
     height: 25px;
     -webkit-appearance: none;
     margin: 10px 0;
-    width: 80%;
+    width: 70%;
     background-color: transparent;
   }
   input[type=range]:focus {
