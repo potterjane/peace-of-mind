@@ -41,28 +41,29 @@ feeling();
 
 //Home sounds
 let homes = [
-    {
-        sources: "assets/audio/home/barbecuing.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/home/dishes.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/home/fireplace.mp3",
-        types: "audio/mp3"
-    },
+    "assets/audio/home/barbecuing.mp3",
+    "assets/audio/home/dishes.mp3",
+    "assets/audio/home/fireplace.mp3"
 ];
 
 let sourcesHome = document.getElementById('sourceHome');
 let homeSound = document.getElementById('home-sound');
 
+function toggleHome() {
+    sourcesHome.setAttribute("src", homes[0]);
+    sourcesHome.setAttribute("src", homes[1]);
+    sourcesHome.setAttribute("src", homes[2]);
+    
+    if (homeSound.paused) {
+        homeSound.load();
+        homeSound.play();
+    } else {
+        homeSound.pause();
+    }
+}
+
 function randomHome() {
-    let homeSounds = homes[Math.floor(Math.random() * homes.length)];
-    let randomHomes = Object.values(homeSounds);
-    sourcesHome.setAttribute("src", randomHomes[0]);
-    sourcesHome.setAttribute("type", randomHomes[1]);
+    sourcesHome.setAttribute("src", homes[0, 1, 2]);
 
     homeSound.load();
     homeSound.play();
@@ -94,7 +95,7 @@ let natures = [
 
 let sourcesNature = document.getElementById('sourceNature');
 let natureSound = document.getElementById('nature-sound');
-
+/*
 function toggleNature() {
     let natureSounds = natures[Math.floor(Math.random() * natures.length)];
     let randomNatures = Object.values(natureSounds);
@@ -109,10 +110,15 @@ function toggleNature() {
         natureSound.pause();
     }
 }
-
+*/
 function randomNature() {
+    let natureSounds = natures[Math.floor(Math.random() * natures.length)];
+    let randomNatures = Object.values(natureSounds);
+    sourcesNature.setAttribute("src", randomNatures[0]);
+    sourcesNature.setAttribute("type", randomNatures[1]);
+
     natureSound.load();
-    natureSound.play();
+    natureSound.play();   
 }
 
 //Nature volume control
