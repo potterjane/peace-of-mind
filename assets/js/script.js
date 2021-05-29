@@ -4,7 +4,7 @@
 //Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website for 5 seconds
 const welcome = document.querySelector('.welcome');
 
-if (!sessionStorage.isVisited) { //Got this if/else and sessionStorage code from SitePoint, this helps only show the preloader once per visit
+if (!sessionStorage.isVisited) { //Got this if/else and sessionStorage code from SitePoint, this helps show the preloader only once per visit
     sessionStorage.isVisited = 'true';
     document.addEventListener('DOMContentLoaded', (e)=> {
     setTimeout(()=>{
@@ -37,7 +37,7 @@ feeling();
 //----------------------------------------------------------------------------------------------------------------------------------------------------Audio section
 //At Home page, when user clicks on an icon, a random sound effect should be played until they click either “Reset all” or the icon again for pause. 
 //User should also be able to control the volume and change sound effect any time. 
-//Sound effect should be played in a loop in infinity until window is closed, user clicks “Reset all” or when user clicks pause.
+//Sound effect should be played in a loop in infinity until window is closed, or user clicks “Reset all”, or when user clicks pause.
 
 //Home sounds
 let homes = [
@@ -48,18 +48,13 @@ let homes = [
 
 let sourcesHome = document.getElementById('sourceHome');
 let homeSound = document.getElementById('home-sound');
-let mainIcon = document.querySelector('.main-icon');
 let homeIcon = document.getElementById('home-icon'); //This code was taken from Code Institute's tutor Tim during a tutor session
-// let pauseIcon = document.querySelector('fa-pause')[0];
 
 homeIcon.addEventListener('click', toggleHome); //This code was taken from Code Institute's tutor Tim during a tutor session
 
 function toggleHome() {
-    let audioSrc = homes[Math.floor(Math.random() * homes.length)]; // get a random audio file from homes-array
+    let audioSrc = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
     sourcesHome.setAttribute("src", audioSrc);
-    // sourcesHome.setAttribute("src", homes[0]);
-    // sourcesHome.setAttribute("src", homes[1]);
-    // sourcesHome.setAttribute("src", homes[2]);
     
     if (homeSound.paused) {
         homeSound.load();
@@ -74,8 +69,8 @@ function toggleHome() {
 }
 
 function randomHome() {
-    let audioSrc = homes[Math.floor(Math.random() * homes.length)];
-    sourcesHome.setAttribute("src", audioSrc);
+    let homeAudio = homes[Math.floor(Math.random() * homes.length)];
+    sourcesHome.setAttribute("src", homeAudio);
 
     for (var i = 0; i < homes.length; i++) {
         homeSound.load();
@@ -95,46 +90,43 @@ homeSound.volume = e.currentTarget.value / 100;
 
 //Nature sounds
 let natures = [
-    {
-        sources: "assets/audio/nature/birds.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/nature/leaves.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/nature/waves.mp3",
-        types: "audio/mp3"
-    },
+    "assets/audio/nature/birds.mp3",
+    "assets/audio/nature/leaves.mp3",
+    "assets/audio/nature/waves.mp3"
 ];
 
 let sourcesNature = document.getElementById('sourceNature');
 let natureSound = document.getElementById('nature-sound');
-/*
-function toggleNature() {
-    let natureSounds = natures[Math.floor(Math.random() * natures.length)];
-    let randomNatures = Object.values(natureSounds);
-    sourcesNature.setAttribute("src", randomNatures[0]);
-    sourcesNature.setAttribute("type", randomNatures[1]);
+let natureIcon = document.getElementById('nature-icon');
 
-    //Code taken from StackOverflow on how to toggle audio play and pause with one button/icon/link
+natureIcon.addEventListener('click', toggleNature); 
+
+function toggleNature() {
+    let natureAudio = natures[Math.floor(Math.random() * natures.length)]; //Got a random audio file from natures-array
+    sourcesNature.setAttribute("src", natureAudio);
+    
     if (natureSound.paused) {
         natureSound.load();
         natureSound.play();
+        natureIcon.classList.add('fa-pause');
+        natureIcon.classList.remove('fa-tree');
     } else {
         natureSound.pause();
+        natureIcon.classList.add('fa-tree');
+        natureIcon.classList.remove('fa-pause');
     }
 }
-*/
-function randomNature() {
-    let natureSounds = natures[Math.floor(Math.random() * natures.length)];
-    let randomNatures = Object.values(natureSounds);
-    sourcesNature.setAttribute("src", randomNatures[0]);
-    sourcesNature.setAttribute("type", randomNatures[1]);
 
-    natureSound.load();
-    natureSound.play();   
+function randomNature() {
+    let natureAudio = natures[Math.floor(Math.random() * natures.length)];
+    sourcesNature.setAttribute("src", natureAudio);
+
+    for (var i = 0; i < natures.length; i++) {
+        natureSound.load();
+        natureSound.play();
+        natureIcon.classList.add('fa-pause');
+        natureIcon.classList.remove('fa-tree');
+    }
 }
 
 //Nature volume control
@@ -147,31 +139,43 @@ natureSound.volume = e.currentTarget.value / 100;
 
 //Public sounds
 let publics = [
-    {
-        sources: "assets/audio/public/office.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/public/restaurant.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/public/traffic.mp3",
-        types: "audio/mp3"
-    },
+    "assets/audio/public/office.mp3",
+    "assets/audio/public/restaurant.mp3",
+    "assets/audio/public/traffic.mp3"
 ];
 
 let sourcesPublic = document.getElementById('sourcePublic');
 let publicSound = document.getElementById('public-sound');
+let publicIcon = document.getElementById('public-icon');
+
+publicIcon.addEventListener('click', togglePublic); 
+
+function togglePublic() {
+    let publicAudio = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
+    sourcesPublic.setAttribute("src", publicAudio);
+    
+    if (publicSound.paused) {
+        publicSound.load();
+        publicSound.play();
+        publicIcon.classList.add('fa-pause');
+        publicIcon.classList.remove('fa-utensils');
+    } else {
+        publicSound.pause();
+        publicIcon.classList.add('fa-utensils');
+        publicIcon.classList.remove('fa-pause');
+    }
+}
 
 function randomPublic() {
-    let publicSounds = publics[Math.floor(Math.random() * publics.length)];
-    let randomPublics = Object.values(publicSounds);
-    sourcesPublic.setAttribute("src", randomPublics[0]);
-    sourcesPublic.setAttribute("type", randomPublics[1]);
+    let publicAudio = publics[Math.floor(Math.random() * publics.length)];
+    sourcesPublic.setAttribute("src", publicAudio);
 
-    publicSound.load();
-    publicSound.play();
+    for (var i = 0; i < publics.length; i++) {
+        publicSound.load();
+        publicSound.play();
+        publicIcon.classList.add('fa-pause');
+        publicIcon.classList.remove('fa-utensils');
+    }
 }
 
 //Public volume control
@@ -184,31 +188,43 @@ publicSound.volume = e.currentTarget.value / 100;
 
 //Travel sounds
 let travels = [
-    {
-        sources: "assets/audio/travel/bicycle.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/travel/car.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/travel/train.mp3",
-        types: "audio/mp3"
-    },
+    "assets/audio/travel/bicycle.mp3",
+    "assets/audio/travel/car.mp3",
+    "assets/audio/travel/train.mp3"
 ];
 
 let sourcesTravel = document.getElementById('sourceTravel');
 let travelSound = document.getElementById('travel-sound');
+let travelIcon = document.getElementById('travel-icon');
+
+travelIcon.addEventListener('click', toggleTravel); 
+
+function toggleTravel() {
+    let travelAudio = travels[Math.floor(Math.random() * travels.length)]; //Got a random audio file from travels-array
+    sourcesTravel.setAttribute("src", travelAudio);
+    
+    if (travelSound.paused) {
+        travelSound.load();
+        travelSound.play();
+        travelIcon.classList.add('fa-pause');
+        travelIcon.classList.remove('fa-subway');
+    } else {
+        travelSound.pause();
+        travelIcon.classList.add('fa-subway');
+        travelIcon.classList.remove('fa-pause');
+    }
+}
 
 function randomTravel() {
-    let travelSounds = travels[Math.floor(Math.random() * travels.length)];
-    let randomTravels = Object.values(travelSounds);
-    sourcesTravel.setAttribute("src", randomTravels[0]);
-    sourcesTravel.setAttribute("type", randomTravels[1]);
+    let travelAudio = travels[Math.floor(Math.random() * travels.length)]; 
+    sourcesTravel.setAttribute("src", travelAudio);
 
-    travelSound.load();
-    travelSound.play();
+    for (var i = 0; i < travels.length; i++) {
+        travelSound.load();
+        travelSound.play();
+        travelIcon.classList.add('fa-pause');
+        travelIcon.classList.remove('fa-subway');
+    }
 }
 
 //Travel volume control
@@ -221,27 +237,42 @@ travelSound.volume = e.currentTarget.value / 100;
 
 //Weather sounds
 let weathers = [
-    {
-        sources: "assets/audio/weather/rain.mp3",
-        types: "audio/mp3"
-    },
-    {
-        sources: "assets/audio/weather/thunder.mp3",
-        types: "audio/mp3"
-    },
+    "assets/audio/weather/rain.mp3",
+    "assets/audio/weather/thunder.mp3"
 ];
 
 let sourcesWeather = document.getElementById('sourceWeather');
 let weatherSound = document.getElementById('weather-sound');
+let weatherIcon = document.getElementById('weather-icon');
+
+weatherIcon.addEventListener('click', toggleWeather); 
+
+function toggleWeather() {
+    let weatherAudio = weathers[Math.floor(Math.random() * weathers.length)]; //Got a random audio file from weathers-array
+    sourcesWeather.setAttribute("src", weatherAudio);
+    
+    if (weatherSound.paused) {
+        weatherSound.load();
+        weatherSound.play();
+        weatherIcon.classList.add('fa-pause');
+        weatherIcon.classList.remove('fa-cloud-sun-rain');
+    } else {
+        weatherSound.pause();
+        weatherIcon.classList.add('fa-cloud-sun-rain');
+        weatherIcon.classList.remove('fa-pause');
+    }
+}
 
 function randomWeather() {
-    let weatherSounds = weathers[Math.floor(Math.random() * weathers.length)];
-    let randomWeathers = Object.values(weatherSounds);
-    sourcesWeather.setAttribute("src", randomWeathers[0]);
-    sourcesWeather.setAttribute("type", randomWeathers[1]);
+    let weatherAudio = weathers[Math.floor(Math.random() * weathers.length)]; 
+    sourcesWeather.setAttribute("src", weatherAudio);
 
-    weatherSound.load();
-    weatherSound.play();
+    for (var i = 0; i < weathers.length; i++) {
+        weatherSound.load();
+        weatherSound.play();
+        weatherIcon.classList.add('fa-pause');
+        weatherIcon.classList.remove('fa-cloud-sun-rain');
+    }
 }
 
 //Weather volume control

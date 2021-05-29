@@ -76,7 +76,7 @@
         <input type="range" id="volume-nature"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomNature()"></i><i class="fas fa-tree main-icon" onclick="toggleNature()"></i><i class="fas fa-step-forward" onclick="randomNature()"></i>
+        <i class="fas fa-step-backward" onclick="randomNature()"></i><i id="nature-icon" class="fas fa-tree main-icon"></i><i class="fas fa-step-forward" onclick="randomNature()"></i>
         <audio loop id="nature-sound">
           <source src="" type="audio/mp3" id="sourceNature">
           Your browser does not support embedded audio.
@@ -88,7 +88,7 @@
         <input type="range" id="volume-travel"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomTravel()"></i><i class="fas fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravel()"></i>
+        <i class="fas fa-step-backward" onclick="randomTravel()"></i><i id="travel-icon" class="fas fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravel()"></i>
         <audio loop id="travel-sound">
           <source src="" type="audio/mp3" id="sourceTravel">
           Your browser does not support embedded audio.
@@ -100,7 +100,7 @@
         <input type="range" id="volume-public"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomPublic()"></i><i class="fas fa-utensils main-icon"></i><i class="fas fa-step-forward" onclick="randomPublic()"></i>
+        <i class="fas fa-step-backward" onclick="randomPublic()"></i><i id="public-icon" class="fas fa-utensils main-icon"></i><i class="fas fa-step-forward" onclick="randomPublic()"></i>
         <audio loop id="public-sound">
           <source src="" type="audio/mp3" id="sourcePublic">
           Your browser does not support embedded audio.
@@ -126,7 +126,7 @@
         <input type="range" id="volume-weather"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomWeather()"></i><i class="fas fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward" onclick="randomWeather()"></i>
+        <i class="fas fa-step-backward" onclick="randomWeather()"></i><i id="weather-icon" class="fas fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward" onclick="randomWeather()"></i>
         <audio loop id="weather-sound">
           <source src="" type="audio/mp3" id="sourceWeather">s
           Your browser does not support embedded audio.
