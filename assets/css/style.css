@@ -229,13 +229,17 @@ input[type=range] {
     width: 50%;
 }
 
-.main-icon {
+.main-icon, .fa-pause {
     border: 2px solid #f2feff;
     /* Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
     border-radius: 16px;
     /* /Got help from W3Schools' CSS Borders on how to create soft and round edged borders */
     margin: 5px;
     font-size: 80px;
+}
+
+.fa-pause {
+    padding: 10px 20px;
 }
 
 .nature .fa-tree {

@@ -48,25 +48,41 @@ let homes = [
 
 let sourcesHome = document.getElementById('sourceHome');
 let homeSound = document.getElementById('home-sound');
+let mainIcon = document.querySelector('.main-icon');
+let homeIcon = document.getElementById('home-icon'); //This code was taken from Code Institute's tutor Tim during a tutor session
+// let pauseIcon = document.querySelector('fa-pause')[0];
+
+homeIcon.addEventListener('click', toggleHome); //This code was taken from Code Institute's tutor Tim during a tutor session
 
 function toggleHome() {
-    sourcesHome.setAttribute("src", homes[0]);
-    sourcesHome.setAttribute("src", homes[1]);
-    sourcesHome.setAttribute("src", homes[2]);
+    let audioSrc = homes[Math.floor(Math.random() * homes.length)]; // get a random audio file from homes-array
+    sourcesHome.setAttribute("src", audioSrc);
+    // sourcesHome.setAttribute("src", homes[0]);
+    // sourcesHome.setAttribute("src", homes[1]);
+    // sourcesHome.setAttribute("src", homes[2]);
     
     if (homeSound.paused) {
         homeSound.load();
         homeSound.play();
+        homeIcon.classList.add('fa-pause');
+        homeIcon.classList.remove('fa-home');
     } else {
         homeSound.pause();
+        homeIcon.classList.add('fa-home');
+        homeIcon.classList.remove('fa-pause');
     }
 }
 
 function randomHome() {
-    sourcesHome.setAttribute("src", homes[0, 1, 2]);
+    let audioSrc = homes[Math.floor(Math.random() * homes.length)];
+    sourcesHome.setAttribute("src", audioSrc);
 
-    homeSound.load();
-    homeSound.play();
+    for (var i = 0; i < homes.length; i++) {
+        homeSound.load();
+        homeSound.play();
+        homeIcon.classList.add('fa-pause');
+        homeIcon.classList.remove('fa-home');
+    }
 }
 
 //Home volume control
