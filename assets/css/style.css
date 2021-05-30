@@ -330,11 +330,11 @@ input[type=range] {
     z-index: -5;
 }
 
-video:-webkit-media-controls {
+#bg-video:-webkit-media-controls {
     display:none !important;
 }
 
-video:-webkit-media-controls-start-playback-button {
+#bg-video:-webkit-media-controls-start-playback-button {
     display: none!important;
     -webkit-appearance: none;
 }
