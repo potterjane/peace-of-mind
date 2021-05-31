@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6, p {
     /*--/Code taken from Conor Bailey's instructional Youtube video on how to place welcome text in front of the website--*/
 }
 
+@media screen and (max-width: 1199px) {
+    
+}
+
 #feeling {
     font-size: 100px;
     line-height: 90vh;
