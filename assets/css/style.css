@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (max-width: 576px) {
 
     #feeling {
-        font-size: 20px;
+        font-size: 100px;
     }
     
 }
