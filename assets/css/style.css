@@ -456,3 +456,26 @@ input[type=range] {
     background-color: #299cab;
     color: #f2feff;
 }
+
+/* --------------------------------------------------------------------------404 error section */
+
+.error-bg-img {
+    background: url(/assets/images/404-image.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.error-main {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.error-header p {
+    font-size: 100px;
+}
+
+.error-contain p {
+    font-size: 33px;
+    width: 75%;
+}
