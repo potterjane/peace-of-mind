@@ -15,7 +15,7 @@ if (!sessionStorage.isVisited) { //Got this if/else and sessionStorage code from
 }
 
 //Code taken from Maximus McCullough's Youtube instructional video on how to use JS to type in one letter at a time
-let feelingText = "How are you feeling today?";
+let feelingText = "How are you feeling?"; //Text shown in desktop screens or larger tablet screens
 let feelingArray = feelingText.split("");
 let feelingTimer;
 

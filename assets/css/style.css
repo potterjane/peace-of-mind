@@ -47,14 +47,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #feeling {
-    font-size: 100px;
+    font-size: 110px;
     line-height: 90vh;
 }
 
 @media screen and (max-width: 576px) {
 
     #feeling {
-        font-size: 40px;
+        font-size: 45px;
     }
     
 }
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 120%;
 }
 
-/* All the code relating to input type range is taken from CSS Portal, with color adjustments */
+/* All the code relating to input type range is taken from CSS Portal, with color adjustments 
 input[type=range] {
     height: 15px;
     -webkit-appearance: none;
@@ -244,7 +244,7 @@ input[type=range] {
   input[type=range]:focus::-ms-fill-upper {
     background: #299cab;
   }
-
+*/
 /* --------------------------------------------------------------------------Main Sounds section */
 
 .main-sounds {

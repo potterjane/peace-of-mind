@@ -48,5 +48,5 @@ function randomTravel() {
 let volumeTravel = document.querySelector("#volume-travel");
 
 volumeTravel.addEventListener("change", function(e) {
-travelSound.volume = e.currentTarget.value / 100;
+    travelSound.volume = e.currentTarget.value / 100;
 })
