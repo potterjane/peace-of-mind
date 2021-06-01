@@ -33,25 +33,30 @@ then is removed with a slide transition-->
   </div>
 </section>
 
-<!--Header section-->
-<section class="header container-fluid">
+<!--Header section for bigger screens-->
+<section class="header-big container">
 
   <div class="row">
     <!--Navbar code taken from Bootstrap-->
-    <div class="header-title col">
-      <nav class="navbars">
-        <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
-      </nav>
-    </div>
-
     <div class="full-navbar col">
-      <ul class="nav justify-content-end">
+      <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" href="index.html"><h2>HOME</h2></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
         </li>
+      </ul>
+    </div>
+
+      <div class="header-title col">
+        <nav class="navbars">
+          <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
+        </nav>
+      </div>
+
+    <div class="full-navbar col">
+      <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="about.html"><h2>ABOUT</h2></a>
         </li>
@@ -60,9 +65,37 @@ then is removed with a slide transition-->
         </li>
       </ul>
     </div>
-    <!--/Navbar code taken from Bootstrap-->
   </div>
 
+</section>
+
+<!--Header section for smaller screens, collapse side navbar code taken from W3Schools-->
+<section class="header-small container">
+  <div class="row">
+    <div class="col">
+      <div id="mobSidebar" class="sideNavbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="nav-link active" href="index.html">HOME</a>
+        <a class="nav-link" href="how-to-use.html">HOW TO USE</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </div>
+      
+      <div id="header">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div id="small-title" class="col">
+          <nav class="navbars">
+            <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--Main section-->
@@ -86,7 +119,7 @@ then is removed with a slide transition-->
         <input type="range" id="volume-nature"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomNature()"></i><i id="nature-icon" class="fas fa-tree main-icon"></i><i class="fas fa-step-forward" onclick="randomNature()"></i>
+        <i class="fas fa-step-backward" onclick="randomNature()"></i><i id="nature-icon" class="fas fa-fw fa-tree main-icon"></i><i class="fas fa-step-forward" onclick="randomNature()"></i>
         <audio loop id="nature-sound">
           <source src="" type="audio/mp3" id="sourceNature">
           Your browser does not support embedded audio.
@@ -98,7 +131,7 @@ then is removed with a slide transition-->
         <input type="range" id="volume-travel"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomTravel()"></i><i id="travel-icon" class="fas fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravel()"></i>
+        <i class="fas fa-step-backward" onclick="randomTravel()"></i><i id="travel-icon" class="fas fa-fw fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravel()"></i>
         <audio loop id="travel-sound">
           <source src="" type="audio/mp3" id="sourceTravel">
           Your browser does not support embedded audio.
@@ -110,7 +143,7 @@ then is removed with a slide transition-->
         <input type="range" id="volume-public"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomPublic()"></i><i id="public-icon" class="fas fa-utensils main-icon"></i><i class="fas fa-step-forward" onclick="randomPublic()"></i>
+        <i class="fas fa-step-backward" onclick="randomPublic()"></i><i id="public-icon" class="fas fa-fw fa-utensils main-icon"></i><i class="fas fa-step-forward" onclick="randomPublic()"></i>
         <audio loop id="public-sound">
           <source src="" type="audio/mp3" id="sourcePublic">
           Your browser does not support embedded audio.
@@ -124,7 +157,7 @@ then is removed with a slide transition-->
         <input type="range" id="volume-home"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomHome()"></i><i id="home-icon" class="fas fa-home main-icon"></i><i class="fas fa-step-forward" onclick="randomHome()"></i>
+        <i class="fas fa-step-backward" onclick="randomHome()"></i><i id="home-icon" class="fas fa-fw fa-home main-icon"></i><i class="fas fa-step-forward" onclick="randomHome()"></i>
         <audio loop id="home-sound">
           <source src="" type="audio/mp3" id="sourceHome">
           Your browser does not support embedded audio.
@@ -136,7 +169,7 @@ then is removed with a slide transition-->
         <input type="range" id="volume-weather"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
         <i class="fas fa-volume-up"></i>
         <br>
-        <i class="fas fa-step-backward" onclick="randomWeather()"></i><i id="weather-icon" class="fas fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward" onclick="randomWeather()"></i>
+        <i class="fas fa-step-backward" onclick="randomWeather()"></i><i id="weather-icon" class="fas fa-fw fa-cloud-sun-rain main-icon"></i><i class="fas fa-step-forward" onclick="randomWeather()"></i>
         <audio loop id="weather-sound">
           <source src="" type="audio/mp3" id="sourceWeather">s
           Your browser does not support embedded audio.
@@ -188,6 +221,7 @@ then is removed with a slide transition-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <script src="assets/js/welcome.js"></script>
+<script src="assets/js/header.js"></script>
 <script src="assets/js/home.js"></script>
 <script src="assets/js/nature.js"></script>
 <script src="assets/js/public.js"></script>

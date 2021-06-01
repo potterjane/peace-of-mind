@@ -20,36 +20,70 @@
 </head>
 <body>
 
-  <section class="header container-fluid">
+<!--Header section for bigger screens-->
+<section class="header-big container">
 
-    <div class="row">
-      <!--Navbar code taken from Bootstrap-->
+  <div class="row">
+    <!--Navbar code taken from Bootstrap-->
+    <div class="full-navbar col">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><h2>HOME</h2></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
+        </li>
+      </ul>
+    </div>
+
       <div class="header-title col">
         <nav class="navbars">
           <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
         </nav>
       </div>
-  
-      <div class="full-navbar col">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><h2>HOME</h2></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about.html"><h2>ABOUT</h2></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><h2>CONTACT</h2></a>
-          </li>
-        </ul>
-      </div>
-      <!--/Navbar code taken from Bootstrap-->
+
+    <div class="full-navbar col">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html"><h2>ABOUT</h2></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><h2>CONTACT</h2></a>
+        </li>
+      </ul>
     </div>
-  
-  </section>
+  </div>
+
+</section>
+
+<!--Header section for smaller screens, collapse side navbar code taken from W3Schools-->
+<section class="header-small container">
+  <div class="row">
+    <div class="col">
+      <div id="mobSidebar" class="sideNavbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="nav-link" href="index.html"><h2>HOME</h2></a>
+        <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
+        <a class="nav-link active" href="about.html"><h2>ABOUT</h2></a>
+        <a class="nav-link" href="contact.html"><h2>CONTACT</h2></a>
+      </div>
+      
+      <div id="header">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div id="small-title" class="col">
+          <nav class="navbars">
+            <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
   <section class="main">
   
@@ -98,5 +132,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="assets/js/header.js"></script>
 </body>
 </html>

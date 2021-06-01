@@ -80,18 +80,20 @@ h1, h2, h3, h4, h5, h6, p {
 /* --------------------------------------------------------------------------Header section */
 
 .navbar-brand h1 {
-    font-size: 60px;
-    margin: 10px 30px;
+    font-size: 85px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link h2 {
+    padding: 0 15px;
+    line-height: 200px;
 }
 
 .navbar-brand h1:hover, 
 .nav-link h2:hover {
     color: #299cab;
-}
-
-.nav-link h2 {
-    margin-top: 15px;
-    padding: 0 10px;
 }
 
 .active {
@@ -101,6 +103,87 @@ h1, h2, h3, h4, h5, h6, p {
 
 .active:hover {
     color: #f2feff;
+}
+
+.header-big {
+    display: block;
+}
+
+.header-small {
+    display: none;
+}
+
+/* Header section for smaller screens, collapse side navbar code taken from W3Schools */
+
+@media screen and (max-width: 1200px) {
+
+    .header-big {
+        display: none;
+    }
+    
+    .header-small {
+        display: block;
+    }
+    
+    .sideNavbar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #299cab;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+      
+    .sideNavbar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f2feff;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Reenie Beanie', cursive;
+    }
+      
+    .sideNavbar a:hover {
+        color: #7cc4a4;
+    }
+      
+    .sideNavbar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+      
+    .openbtn {
+        font-size: 50px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #f2feff;
+        padding: 10px 15px;
+        border: none;
+    }
+      
+    .openbtn:hover {
+        background-color: #299cab;
+    }
+      
+    #header {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+      
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sideNavbar {padding-top: 15px;}
+        .sideNavbar a {font-size: 18px;}
+    }
+
 }
 
 /* --------------------------------------------------------------------------Footer section */
@@ -136,7 +219,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .main-header h3 {
-    font-size: 45px;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* --------------------------------------------------------------------------Volume slider section */
@@ -153,7 +237,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 120%;
 }
 
-/* All the code relating to input type range is taken from CSS Portal, with color adjustments 
+/* All the code relating to input type range is taken from CSS Portal, with color adjustments */
+
 input[type=range] {
     height: 15px;
     -webkit-appearance: none;
@@ -244,13 +329,14 @@ input[type=range] {
   input[type=range]:focus::-ms-fill-upper {
     background: #299cab;
   }
-*/
+
 /* --------------------------------------------------------------------------Main Sounds section */
 
 .main-sounds {
     color: #f2feff;
-    margin-top: 30px;
+    margin-top: 60px;
     width: 50%;
+    text-align: center;
 }
 
 .main-icon, .fa-pause {
@@ -261,7 +347,7 @@ input[type=range] {
     margin: 5px;
     font-size: 80px;
 }
-
+/*
 .fa-pause {
     padding: 10px 20px;
 }
@@ -285,7 +371,7 @@ input[type=range] {
 .weather .fa-cloud-sun-rain {
     padding: 10px 5px;
 }
-
+*/
 .nature .fa-tree:hover, 
 .travel .fa-subway:hover, 
 .public .fa-utensils:hover, 
@@ -338,13 +424,12 @@ input[type=range] {
     z-index: -5;
 }
 
-#bg-video:-webkit-media-controls {
-    display:none !important;
-}
+@media screen and (max-width: 576px) {
 
-#bg-video:-webkit-media-controls-start-playback-button {
-    display: none!important;
-    -webkit-appearance: none;
+    .background-videos, .main-background {
+        display: none;
+    }
+
 }
 
 
