@@ -397,8 +397,9 @@ input[type=range] {
     width: 60%;
 }
 
-.main-background .btn, 
-.main-reset .btn {
+#randomBtn,
+#resetBtn,
+#jokesBtn {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
