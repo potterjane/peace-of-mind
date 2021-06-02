@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------------------------------------------------------------------Body color styles */
 
 body {
-    background-color: #7cc4a4;
+    background: url(/assets/images/main-image.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -192,8 +193,8 @@ h1, h2, h3, h4, h5, h6, p {
     /* Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
     position: relative;
     width: 100%;
-    height: 5rem;
-    margin-top: 50px;
+    height: 7rem;
+    margin-top: 100px;
     padding-top: 10px;
     /* /Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
 }
@@ -215,12 +216,14 @@ h1, h2, h3, h4, h5, h6, p {
 .main {
     text-align: center;
     position: relative;
-    min-height: 100%;
+    min-height: 50%;
+    margin-top: -30px;
 }
 
 .main-header h3 {
     font-size: 60px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 55px;
 }
 
 /* --------------------------------------------------------------------------Volume slider section */
@@ -399,14 +402,15 @@ input[type=range] {
 
 #randomBtn,
 #resetBtn,
-#jokesBtn {
+#quotesBtn {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
     margin-top: 20px;
 }
 
-#randomBtn:hover {
+#randomBtn:hover, 
+#quotesBtn:hover {
     background-color: #299cab;
 }
 
@@ -414,14 +418,13 @@ input[type=range] {
     background-color: #fc7844;
 }
 
-#jokesBtn:hover {
-    background-color: #f5e74c;
-}
+/* --------------------------------------------------------------------------Quotes generator section */
 
-/* --------------------------------------------------------------------------Jokes generator section */
-
-.main-jokes {
-    margin: 30px;
+.main-quotes {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    min-height: 30px;
+    max-height: 30px;
 }
 
 /* --------------------------------------------------------------------------Background videos section */
@@ -497,13 +500,15 @@ input[type=range] {
 }
 
 .demo-bg-btn, 
-.demo-reset-btn {
+.demo-reset-btn,
+.demo-quote-btn {
     background-color: #7cc4a4;
     color: #f2feff;
     border: 1px solid #f2feff;
 }
 
-.demo-bg-btn:hover {
+.demo-bg-btn:hover, 
+.demo-quote-btn:hover {
     background-color: #299cab;
     color: #f2feff;
 }
@@ -535,15 +540,15 @@ input[type=range] {
 /* --------------------------------------------------------------------------Contact section */
 
 #name, #email, #message, #uploadfile {
-    background-color: #7cc4a4;
+    background-color: transparent;
     color: #f2feff;
-    border: 1px solid #f2feff;
+    border: 2px solid #f2feff;
     margin: 15px;
     width: 100%;
 }
 
 .contact-btn {
-    background-color: #7cc4a4;
+    background-color: transparent;
     color: #f2feff;
     border: 1px solid #f2feff;
 }
@@ -553,13 +558,46 @@ input[type=range] {
     color: #f2feff;
 }
 
+/* Placeholder code taken from W3Schools */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #f2feff;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f2feff;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f2feff;
+}
+
+.form-control::placeholder {
+    color: #f2feff;
+}
+
+/* Change autocomplete styles in WebKit, code taken from CSS-tricks.com */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 3px solid #f2feff;
+  -webkit-text-fill-color: #f2feff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 /* --------------------------------------------------------------------------404 error section */
 
 .error-bg-img {
     background: url(/assets/images/404-image.jpg) center center no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
 }
 
 .error-main {
