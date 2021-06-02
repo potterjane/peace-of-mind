@@ -1,12 +1,20 @@
-https://official-joke-api.appspot.com/jokes/random
+/*
+* Laughter is the best medicine to reduce stress and anxiety. User clicks the 'Wanna hear a joke?' button to get a random joke
+* Got help from SnipCart on how to get jokes data from API
+* Jokes sourced from user 15Dkatz's 'official_joke_api' on GitHub
+*/
 
-var xhr = new XMLHttpRequest();
-
-xhr.open("GET", "https://official-joke-api.appspot.com/jokes/random"); //Used GET method to retrieve data from the server (via the URL)
-xhr.send(); //Used to send the request to retrieve data from the server
-
-xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) { //Checking that the operation has been completed (with readyState == 4) and the request succeeded and content delivered (with status == 200)
-        document.getElementById("main-jokes").innerHTML = this.responseText; //Changes its innerHTML to the response text that comes back from the xhr object
-    }
-};
+document.addEventListener("click", function (event) {
+    if (!event.target.matches("#jokesBtn")) return; //Checking if the button was clicked
+  
+    fetch ("https://official-joke-api.appspot.com/random_joke") //Using fetch API to request the endpoint for random jokes
+      .then((response) => response.json()) //fetch returns a response object which we pass to a JavaScript object
+      .then((data) => getJoke(data)); //Result of that data gets passed to the function below
+});
+  
+function getJoke(data) {
+    const setup = document.getElementById("setup"); //Create variable for the setup object
+    const punchline = document.getElementById("punchline"); //Create punchline for the punchline object
+    setup.innerHTML = data.setup; //Get the respective object's key and put it in the innerHTML
+    punchline.innerHTML = data.punchline; //Get the respective object's key and put it in the innerHTML
+}

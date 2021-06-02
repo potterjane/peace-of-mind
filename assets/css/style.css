@@ -406,12 +406,22 @@ input[type=range] {
     margin-top: 20px;
 }
 
-.main-background .btn:hover {
+#randomBtn:hover {
     background-color: #299cab;
 }
 
-.main-reset .btn:hover {
+#resetBtn:hover {
     background-color: #fc7844;
+}
+
+#jokesBtn:hover {
+    background-color: #f5e74c;
+}
+
+/* --------------------------------------------------------------------------Jokes generator section */
+
+.main-jokes {
+    margin: 30px;
 }
 
 /* --------------------------------------------------------------------------Background videos section */
