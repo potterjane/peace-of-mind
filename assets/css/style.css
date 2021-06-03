@@ -21,13 +21,19 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------------------------------------------------------------------Body color styles */
 
 body {
-    background: url(/assets/images/main-image.jpg) center center no-repeat;
-    background-size: cover;
     background-color: #7cc4a4;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     color: #f2feff;
+}
+
+/* --------------------------------------------------------------------------Cover image section */
+
+.cover-image {
+    background: url(/assets/images/main-image.webp) center center no-repeat;
+    background: url(/assets/images/main-image.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 /* --------------------------------------------------------------------------Welcome section */
@@ -603,6 +609,7 @@ select:-webkit-autofill:focus {
 /* --------------------------------------------------------------------------404 error section */
 
 .error-bg-img {
+    background: url(/assets/images/404-image.webp) center center no-repeat;
     background: url(/assets/images/404-image.jpg) center center no-repeat;
     background-size: cover;
 }
