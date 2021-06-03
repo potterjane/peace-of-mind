@@ -1,4 +1,4 @@
-//Header section for smaller screens, collapse side navbar code taken from W3Schools
+//Header section for smaller screens, collapsed sidebar code taken from W3Schools
 
 function openNav() {
     document.getElementById("mobSidebar").style.width = "250px";
