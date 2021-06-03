@@ -1,6 +1,7 @@
 //When user clicks “Change background” button, background changes to a random video 
 
-let videos = [
+//Arraylist of videos with src and type
+var videos = [
     {
         sources: "assets/videos/mp4/beach-waves-move.mp4",
         types: "video/mp4"
@@ -51,13 +52,13 @@ let videos = [
     },
 ];
 
-let sourcesVid = document.getElementById('sourceVideos');
-let bgVideo = document.getElementById('bg-video');
+var sourcesVid = document.getElementById('sourceVideos');
+var bgVideo = document.getElementById('bg-video');
 
 function changeBackground() {
-    let bgVideos = videos[Math.floor(Math.random() * videos.length)]; //Code got from
-    let randomChoice = Object.values(bgVideos); //Got code from
-    sourcesVid.setAttribute("src", randomChoice[0]); //Got set attribute from
+    var bgVideos = videos[Math.floor(Math.random() * videos.length)]; //Code got from Kirupa
+    var randomChoice = Object.values(bgVideos); //Got code from Javascript.info
+    sourcesVid.setAttribute("src", randomChoice[0]); //Got set attribute from W3Schools
     sourcesVid.setAttribute("type", randomChoice[1]);
 
     bgVideo.load();
