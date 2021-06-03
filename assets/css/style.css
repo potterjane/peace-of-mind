@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
 #feeling {
     font-size: 110px;
     line-height: 90vh;
+    font-family: 'Reenie Beanie', cursive;
 }
 
 @media screen and (max-width: 576px) {
@@ -81,11 +82,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* --------------------------------------------------------------------------Header section */
 
-.navbar-brand h1 {
+.navbar-brand p {
     font-size: 85px;
     margin-top: 20px;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Reenie Beanie', cursive;
 }
 
 .nav-link h2 {
@@ -198,6 +200,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 100px;
     padding-top: 10px;
     /* /Got help from freeCodeCamp on how to keep the footer at the bottom of the page */
+}
+
+.created-socials i {
+    color: #f2feff;
+    margin: 5px;
+    font-size: 25px;
 }
 
 .disclaimer {
@@ -394,6 +402,7 @@ input[type=range] {
 
 /* --------------------------------------------------------------------------Main Buttons section */
 
+.main-btns,
 .main-reset .btn {
     width: 60%;
 }
