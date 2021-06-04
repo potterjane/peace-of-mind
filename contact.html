@@ -29,131 +29,133 @@
 </head>
 <body>
 
-  <!--Header section for bigger screens-->
-  <div class="header-big container">
-
-    <div class="row">
-      <!--Navbar code taken from Bootstrap-->
-      <div class="full-navbar col">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html"><h2>HOME</h2></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="header-title col">
-        <nav class="navbars">
-          <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
-        </nav>
-      </div>
-
-      <div class="full-navbar col">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"><h2>ABOUT</h2></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><h2>CONTACT</h2></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <!--Header section for smaller screens, collapse side navbar code taken from W3Schools-->
-  <div class="header-small container">
-    <div class="row">
-
-      <div class="col">
-        <div id="mobSidebar" class="sideNavbar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-          <a class="nav-link active" href="index.html">HOME</a>
-          <a class="nav-link" href="how-to-use.html">HOW TO USE</a>
-          <a class="nav-link" href="about.html">ABOUT</a>
-          <a class="nav-link" href="contact.html">CONTACT</a>
-        </div>
-        
-        <div id="header">
-          <button class="openbtn" onclick="openNav()">☰</button>
-        </div>
-      </div>
+  <div class="cover-image">
+    <!--Header section for bigger screens-->
+    <div class="header-big container">
 
       <div class="row">
+        <!--Navbar code taken from Bootstrap-->
+        <div class="full-navbar col">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><h2>HOME</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="how-to-use.html"><h2>HOW TO USE</h2></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-title col">
+          <nav class="navbars">
+            <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
+          </nav>
+        </div>
+
+        <div class="full-navbar col">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><h2>ABOUT</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html"><h2>CONTACT</h2></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Header section for smaller screens, collapse side navbar code taken from W3Schools-->
+    <div class="header-small container">
+      <div class="row">
+
         <div class="col">
-          <div id="small-title" class="col">
-            <nav class="navbars">
-              <a class="navbar-brand" href="index.html"><h1>Peace of Mind</h1></a>
-            </nav>
+          <div id="mobSidebar" class="sideNavbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="how-to-use.html">HOW TO USE</a>
+            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link active" href="contact.html">CONTACT</a>
+          </div>
+          
+          <div id="header">
+            <button class="openbtn" onclick="openNav()">☰</button>
           </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-  
-  <!--Main section-->
-  <div class="main">
-  
-    <div class="main-header">
-      <h3>
-        All questions and feedback are welcome!
-      </h3>
-    </div>
-
-    <div class="main-contact container">
-      <form onsubmit="return feedbackForm(this);"> <!--Got this code from Code Institute's Sending Emails Using EmailJS module-->
         <div class="row">
           <div class="col">
-            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-          </div>  
-          <div class="col">
-            <input type="email" name="email" id="email" class="form-control" placeholder="E-mail address" required>
-          </div>    
-        </div>
-        <!--Got this code from W3Schools on how to add file-select field in a form. However, this field does not work with EmailJS because the developer has reached 
-        subscription limit in EmailJS-->
-        <div class="row">
-          <div class="col">
-            <input type="file" id="uploadfile" name="uploadfile"><br><br>
-          </div>
-        <!--/Got this code from W3Schools on how to add file-select field in a form. However, this field does not work with EmailJS because the developer has reached 
-        subscription limit in EmailJS-->
-        </div>
-        <div class="row">
-          <div class="col">
-            <textarea name="message" id="message" cols="90" rows="10" placeholder="Message" required></textarea>
+            <div id="small-title" class="col">
+              <nav class="navbars">
+                <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
+              </nav>
+            </div>
           </div>
         </div>
-        <input class="btn contact-btn" type="submit" value="Send">
-      </form>
-    </div>
-  
-  </div>
-  
-  <!--Footer section-->
-  <div class="footer container-fluid">
 
-    <div class="row">
-      <div class="created-socials col-6">
-        <h4>Est. May 2021</h4>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
-
-      <div class="justify-content-end disclaimer col-6">
-        <p>This developer made this website for educational purposes only.</p>
-        <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes you to the developer's external social link"><i class="fab fa-linkedin"></i></a></p>
       </div>
     </div>
     
-  </div>
+    <!--Main section-->
+    <div class="main">
+    
+      <div class="main-header">
+        <h3>
+          All questions and feedback are welcome!
+        </h3>
+      </div>
+
+      <div class="main-contact container">
+        <form onsubmit="return feedbackForm(this);"> <!--Got this code from Code Institute's Sending Emails Using EmailJS module-->
+          <div class="row">
+            <div class="col">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+            </div>  
+            <div class="col">
+              <input type="email" name="email" id="email" class="form-control" placeholder="E-mail address" required>
+            </div>    
+          </div>
+          <!--Got this code from W3Schools on how to add file-select field in a form. However, this field does not work with EmailJS because the developer has reached 
+          subscription limit in EmailJS-->
+          <div class="row">
+            <div class="col">
+              <input type="file" id="uploadfile" name="uploadfile"><br><br>
+            </div>
+          <!--/Got this code from W3Schools on how to add file-select field in a form. However, this field does not work with EmailJS because the developer has reached 
+          subscription limit in EmailJS-->
+          </div>
+          <div class="row">
+            <div class="col">
+              <textarea name="message" id="message" cols="90" rows="10" placeholder="Message" required></textarea>
+            </div>
+          </div>
+          <input class="btn contact-btn" type="submit" value="Send">
+        </form>
+      </div>
+    
+    </div>
+    
+    <!--Footer section-->
+    <div class="footer container-fluid">
+
+      <div class="row">
+        <div class="created-socials col-6">
+          <h4>Est. May 2021</h4>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+
+        <div class="justify-content-end disclaimer col-6">
+          <p>This developer made this website for educational purposes only.</p>
+          <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes you to the developer's external social link"><i class="fab fa-linkedin"></i></a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

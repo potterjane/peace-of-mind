@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-link h2 {
-    padding: 0 15px;
+    padding-left: 30px;
     line-height: 200px;
 }
 
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6, p {
     .openbtn:hover {
         background-color: #299cab;
     }
-      
+
     #header {
         transition: margin-left .5s;
         padding: 16px;
@@ -231,14 +231,17 @@ h1, h2, h3, h4, h5, h6, p {
 .main {
     text-align: center;
     position: relative;
-    min-height: 50%;
-    margin-top: -30px;
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 95%; /* Got code from StackOverflow on how to shorten the horizontal sides */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto; /* Got code from StackOverflow on how to shorten the horizontal sides */
+    
 }
 
 .main-header h3 {
     font-size: 60px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 55px;
 }
 
 /* --------------------------------------------------------------------------Volume slider section */
@@ -408,9 +411,13 @@ input[type=range] {
 
 /* --------------------------------------------------------------------------Main Buttons section */
 
-.main-btns,
-.main-reset .btn {
-    width: 60%;
+#randomBtn,
+#resetBtn {
+    width: 40%;
+}
+
+#quotesBtn {
+    width: 20%;
 }
 
 #randomBtn,
@@ -615,15 +622,26 @@ select:-webkit-autofill:focus {
 }
 
 .error-main {
-    text-align: left;
-    margin-left: 40px;
+    text-align: center;
 }
 
-.error-header p {
+.error-header {
+    font-size: 200px;
+}
+
+.error-text {
     font-size: 100px;
 }
 
-.error-contain p {
-    font-size: 33px;
-    width: 75%;
+.error-btn {
+    background-color: #7cc4a4;
+    color: #f2feff;
+    border: 1px solid #f2feff;
+    text-align: center;
+    height: 40px;
+}
+
+.error-home {
+    text-decoration: none;
+    font-size: 18px;
 }
