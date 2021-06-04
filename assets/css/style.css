@@ -256,7 +256,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0 auto; /* Got code from StackOverflow on how to shorten the horizontal sides */
-    
 }
 
 .main-header h3 {
@@ -376,6 +375,81 @@ input[type=range] {
     background: #299cab;
   }
 
+@media screen and (max-width: 1200px) {
+
+    #volume-nature, 
+    #volume-travel, 
+    #volume-public {
+        width: 45%;
+    }
+
+    #volume-home, 
+    #volume-weather {
+        width: 30%;
+    }
+
+} 
+
+@media screen and (max-width: 992px) {
+
+    #volume-nature, 
+    #volume-travel, 
+    #volume-public {
+        width: 55%;
+    }
+
+    #volume-home, 
+    #volume-weather {
+        width: 35%;
+    }
+    
+    .fa-volume-down, .fa-volume-up {
+        font-size: 100%;
+    }
+
+}
+
+@media screen and (max-width: 594px) {
+
+    #volume-nature, 
+    #volume-travel, 
+    #volume-public,
+    #volume-home, 
+    #volume-weather {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    #volume-nature, 
+    #volume-travel, 
+    #volume-public,
+    #volume-home, 
+    #volume-weather {
+        width: 35%;
+    }
+   
+
+}
+
+@media screen and (max-width: 330px) {
+
+    #volume-nature, 
+    #volume-travel, 
+    #volume-public,
+    #volume-home, 
+    #volume-weather {
+        width: 40%;
+    }
+    
+    .fa-volume-down, .fa-volume-up {
+        font-size: 100%;
+    }
+
+}
+
 /* --------------------------------------------------------------------------Main Sounds section */
 
 .main-sounds-big {
@@ -432,7 +506,8 @@ input[type=range] {
 
 @media screen and (max-width: 1200px) {
 
-    .main-sounds {
+    .main-sounds-big,
+    .main-sounds-small {
         width: 95%;
     }
 
@@ -443,23 +518,7 @@ input[type=range] {
 
 }
 
-@media screen and (max-width: 1140px) {
-
-    .main-sounds {
-        width: 150%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .main-sounds {
-        width: 95%;
-    }
-
-}
-
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 594px) {
 
     .main-sounds-big {
         display: none;
@@ -469,24 +528,15 @@ input[type=range] {
         display: block;
     }
 
-}
-
-@media screen and (max-width: 330px) {
-
-    .fa-tree,
-    .fa-subway,
-    .fa-utensils,
-    .fa-home,
-    .fa-cloud-sun-rain {
-        width: 70%;
-    }
-
     .fa-step-backward,
     .fa-step-forward {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }
+
+
+
 
 /* --------------------------------------------------------------------------Main Buttons section */
 
@@ -847,7 +897,6 @@ input[type=range] {
 }
 
 /* Placeholder code taken from W3Schools */
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #f2feff;
     opacity: 1; /* Firefox */
@@ -881,6 +930,40 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+@media screen and (max-width: 768px) {
+
+    #name,
+    #message, 
+    #uploadfile {
+        width: 95%;
+    }
+
+    #email {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 90%;
+    }
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 90%;
+    }
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 90%;
+    }
+    
+    .form-control::placeholder {
+        font-size: 90%;
+    }
+
+}
+
 /* --------------------------------------------------------------------------404 error section */
 
 .error-bg-img {
@@ -899,6 +982,7 @@ select:-webkit-autofill:focus {
 
 .error-text {
     font-size: 100px;
+    padding-bottom: 30px;
 }
 
 .error-btn {
