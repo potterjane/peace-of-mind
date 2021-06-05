@@ -273,11 +273,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* --------------------------------------------------------------------------Volume slider section */
 
-#volume-nature, #volume-travel, #volume-public {
+#volume-nature-big, 
+#volume-nature-small, 
+#volume-travel-big, 
+#volume-travel-small,
+#volume-public-big,
+#volume-public-small {
     width: 65%;
 }
 
-#volume-home, #volume-weather {
+#volume-home-big,
+#volume-home-small, 
+#volume-weather-big,
+#volume-weather-small {
     width: 40%;
 }
 
@@ -377,14 +385,19 @@ input[type=range] {
 
 @media screen and (max-width: 1200px) {
 
-    #volume-nature, 
-    #volume-travel, 
-    #volume-public {
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small {
         width: 45%;
     }
 
-    #volume-home, 
-    #volume-weather {
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small {
         width: 30%;
     }
 
@@ -392,14 +405,19 @@ input[type=range] {
 
 @media screen and (max-width: 992px) {
 
-    #volume-nature, 
-    #volume-travel, 
-    #volume-public {
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small {
         width: 55%;
     }
 
-    #volume-home, 
-    #volume-weather {
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small {
         width: 35%;
     }
     
@@ -411,11 +429,16 @@ input[type=range] {
 
 @media screen and (max-width: 594px) {
 
-    #volume-nature, 
-    #volume-travel, 
-    #volume-public,
-    #volume-home, 
-    #volume-weather {
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small,
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small {
         width: 30%;
     }
 
@@ -423,11 +446,16 @@ input[type=range] {
 
 @media screen and (max-width: 380px) {
 
-    #volume-nature, 
-    #volume-travel, 
-    #volume-public,
-    #volume-home, 
-    #volume-weather {
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small,
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small{
         width: 35%;
     }
    
@@ -436,12 +464,17 @@ input[type=range] {
 
 @media screen and (max-width: 330px) {
 
-    #volume-nature, 
-    #volume-travel, 
-    #volume-public,
-    #volume-home, 
-    #volume-weather {
-        width: 40%;
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small,
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small{
+        width: 20%;
     }
     
     .fa-volume-down, .fa-volume-up {

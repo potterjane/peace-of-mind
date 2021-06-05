@@ -14,37 +14,38 @@ var homes = [
     "assets/audio/home/shower.mp3"
 ];
 
-var sourcesHome = document.getElementById('sourceHome');
-var homeSound = document.getElementById('home-sound');
-var homeIcon = document.getElementById('home-icon'); //This code was taken from Code Institute's tutor Tim during a tutor session
+//For desktop and larger tablet screens
+var sourcesHomeBig = document.getElementById('sourceHomeBig');
+var homeSoundBig = document.getElementById('home-sound-big');
+var homeIconBig = document.getElementById('home-icon-big');
 
-homeIcon.addEventListener('click', toggleHome); //This code was taken from Code Institute's tutor Tim during a tutor session
+homeIconBig.addEventListener('click', toggleHomeBig); 
 
-function toggleHome() {
-    var audioSrc = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
-    sourcesHome.setAttribute("src", audioSrc);
+function toggleHomeBig() {
+    var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
+    sourcesHomeBig.setAttribute("src", homeAudio);
     
-    if (homeSound.paused) {
-        homeSound.load();
-        homeSound.play();
-        homeIcon.classList.add('fa-pause');
-        homeIcon.classList.remove('fa-home');
+    if (homeSoundBig.paused) {
+        homeSoundBig.load();
+        homeSoundBig.play();
+        homeIconBig.classList.add('fa-pause');
+        homeIconBig.classList.remove('fa-home');
     } else {
-        homeSound.pause();
-        homeIcon.classList.add('fa-home');
-        homeIcon.classList.remove('fa-pause');
+        homeSoundBig.pause();
+        homeIconBig.classList.add('fa-home');
+        homeIconBig.classList.remove('fa-pause');
     }
 }
 
-function randomHome() {
+function randomHomeBig() {
     var homeAudio = homes[Math.floor(Math.random() * homes.length)];
-    sourcesHome.setAttribute("src", homeAudio);
+    sourcesHomeBig.setAttribute("src", homeAudio);
 
     for (var i = 0; i < homes.length; i++) {
-        homeSound.load();
-        homeSound.play();
-        homeIcon.classList.add('fa-pause');
-        homeIcon.classList.remove('fa-home');
+        homeSoundBig.load();
+        homeSoundBig.play();
+        homeIconBig.classList.add('fa-pause');
+        homeIconBig.classList.remove('fa-home');
     }
 }
 
@@ -53,8 +54,54 @@ function randomHome() {
 * Code taken from StackOverflow on how to add volume control function in JavaScript
 */
 
-var volumeHome = document.querySelector("#volume-home");
+var volumeHomeBig = document.querySelector("#volume-home-big");
 
-volumeHome.addEventListener("change", function(e) {
-homeSound.volume = e.currentTarget.value / 100;
+volumeHomeBig.addEventListener("change", function(e) {
+    homeSoundBig.volume = e.currentTarget.value / 100;
+});
+
+//For smaller tablet and mobile screens
+var sourcesHomeSmall = document.getElementById('sourceHomeSmall');
+var homeSoundSmall = document.getElementById('home-sound-small');
+var homeIconSmall = document.getElementById('home-icon-small');
+
+homeIconSmall.addEventListener('click', toggleHomeSmall); 
+
+function toggleHomeSmall() {
+    var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
+    sourcesHomeSmall.setAttribute("src", homeAudio);
+    
+    if (homeSoundSmall.paused) {
+        homeSoundSmall.load();
+        homeSoundSmall.play();
+        homeIconSmall.classList.add('fa-pause');
+        homeIconSmall.classList.remove('fa-home');
+    } else {
+        homeSoundSmall.pause();
+        homeIconSmall.classList.add('fa-home');
+        homeIconSmall.classList.remove('fa-pause');
+    }
+}
+
+function randomHomeSmall() {
+    var homeAudio = homes[Math.floor(Math.random() * homes.length)];
+    sourcesHomeSmall.setAttribute("src", homeAudio);
+
+    for (var i = 0; i < homes.length; i++) {
+        homeSoundSmall.load();
+        homeSoundSmall.play();
+        homeIconSmall.classList.add('fa-pause');
+        homeIconSmall.classList.remove('fa-home');
+    }
+}
+
+/*
+* Home volume control
+* Code taken from StackOverflow on how to add volume control function in JavaScript
+*/
+
+var volumeHomeSmall = document.querySelector("#volume-home-small");
+
+volumeHomeSmall.addEventListener("change", function(e) {
+    homeSoundSmall.volume = e.currentTarget.value / 100;
 });

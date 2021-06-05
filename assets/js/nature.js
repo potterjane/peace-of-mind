@@ -14,37 +14,38 @@ var natures = [
     "assets/audio/nature/waves.mp3"
 ];
 
-var sourcesNature = document.getElementById('sourceNature');
-var natureSound = document.getElementById('nature-sound');
-var natureIcon = document.getElementById('nature-icon');
+//For desktop and larger tablet screens
+var sourcesNatureBig = document.getElementById('sourceNatureBig');
+var natureSoundBig = document.getElementById('nature-sound-big');
+var natureIconBig = document.getElementById('nature-icon-big');
 
-natureIcon.addEventListener('click', toggleNature); 
+natureIconBig.addEventListener('click', toggleNatureBig); 
 
-function toggleNature() {
+function toggleNatureBig() {
     var natureAudio = natures[Math.floor(Math.random() * natures.length)]; //Got a random audio file from natures-array
-    sourcesNature.setAttribute("src", natureAudio);
+    sourcesNatureBig.setAttribute("src", natureAudio);
     
-    if (natureSound.paused) {
-        natureSound.load();
-        natureSound.play();
-        natureIcon.classList.add('fa-pause');
-        natureIcon.classList.remove('fa-tree');
+    if (natureSoundBig.paused) {
+        natureSoundBig.load();
+        natureSoundBig.play();
+        natureIconBig.classList.add('fa-pause');
+        natureIconBig.classList.remove('fa-tree');
     } else {
-        natureSound.pause();
-        natureIcon.classList.add('fa-tree');
-        natureIcon.classList.remove('fa-pause');
+        natureSoundBig.pause();
+        natureIconBig.classList.add('fa-tree');
+        natureIconBig.classList.remove('fa-pause');
     }
 }
 
-function randomNature() {
+function randomNatureBig() {
     var natureAudio = natures[Math.floor(Math.random() * natures.length)];
-    sourcesNature.setAttribute("src", natureAudio);
+    sourcesNatureBig.setAttribute("src", natureAudio);
 
     for (var i = 0; i < natures.length; i++) {
-        natureSound.load();
-        natureSound.play();
-        natureIcon.classList.add('fa-pause');
-        natureIcon.classList.remove('fa-tree');
+        natureSoundBig.load();
+        natureSoundBig.play();
+        natureIconBig.classList.add('fa-pause');
+        natureIconBig.classList.remove('fa-tree');
     }
 }
 
@@ -53,8 +54,54 @@ function randomNature() {
 * Code taken from StackOverflow on how to add volume control function in JavaScript
 */
 
-var volumeNature = document.querySelector("#volume-nature");
+var volumeNatureBig = document.querySelector("#volume-nature-big");
 
-volumeNature.addEventListener("change", function(e) {
-natureSound.volume = e.currentTarget.value / 100;
+volumeNatureBig.addEventListener("change", function(e) {
+    natureSoundBig.volume = e.currentTarget.value / 100;
+});
+
+//For smaller tablet and mobile screens
+var sourcesNatureSmall = document.getElementById('sourceNatureSmall');
+var natureSoundSmall = document.getElementById('nature-sound-small');
+var natureIconSmall = document.getElementById('nature-icon-small');
+
+natureIconSmall.addEventListener('click', toggleNatureSmall); 
+
+function toggleNatureSmall() {
+    var natureAudio = natures[Math.floor(Math.random() * natures.length)]; //Got a random audio file from natures-array
+    sourcesNatureSmall.setAttribute("src", natureAudio);
+    
+    if (natureSoundSmall.paused) {
+        natureSoundSmall.load();
+        natureSoundSmall.play();
+        natureIconSmall.classList.add('fa-pause');
+        natureIconSmall.classList.remove('fa-tree');
+    } else {
+        natureSoundSmall.pause();
+        natureIconSmall.classList.add('fa-tree');
+        natureIconSmall.classList.remove('fa-pause');
+    }
+}
+
+function randomNatureSmall() {
+    var natureAudio = natures[Math.floor(Math.random() * natures.length)];
+    sourcesNatureSmall.setAttribute("src", natureAudio);
+
+    for (var i = 0; i < natures.length; i++) {
+        natureSoundSmall.load();
+        natureSoundSmall.play();
+        natureIconSmall.classList.add('fa-pause');
+        natureIconSmall.classList.remove('fa-tree');
+    }
+}
+
+/*
+* Nature volume control
+* Code taken from StackOverflow on how to add volume control function in JavaScript
+*/
+
+var volumeNatureSmall = document.querySelector("#volume-nature-small");
+
+volumeNatureSmall.addEventListener("change", function(e) {
+    natureSoundSmall.volume = e.currentTarget.value / 100;
 });

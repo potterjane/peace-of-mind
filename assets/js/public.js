@@ -14,37 +14,38 @@ var publics = [
     "assets/audio/public/traffic.mp3"
 ];
 
-var sourcesPublic = document.getElementById('sourcePublic');
-var publicSound = document.getElementById('public-sound');
-var publicIcon = document.getElementById('public-icon');
+//For desktop and larger tablet screens
+var sourcesPublicBig = document.getElementById('sourcePublicBig');
+var publicSoundBig = document.getElementById('public-sound-big');
+var publicIconBig = document.getElementById('public-icon-big');
 
-publicIcon.addEventListener('click', togglePublic); 
+publicIconBig.addEventListener('click', togglePublicBig); 
 
-function togglePublic() {
+function togglePublicBig() {
     var publicAudio = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
-    sourcesPublic.setAttribute("src", publicAudio);
+    sourcesPublicBig.setAttribute("src", publicAudio);
     
-    if (publicSound.paused) {
-        publicSound.load();
-        publicSound.play();
-        publicIcon.classList.add('fa-pause');
-        publicIcon.classList.remove('fa-utensils');
+    if (publicSoundBig.paused) {
+        publicSoundBig.load();
+        publicSoundBig.play();
+        publicIconBig.classList.add('fa-pause');
+        publicIconBig.classList.remove('fa-utensils');
     } else {
-        publicSound.pause();
-        publicIcon.classList.add('fa-utensils');
-        publicIcon.classList.remove('fa-pause');
+        publicSoundBig.pause();
+        publicIconBig.classList.add('fa-utensils');
+        publicIconBig.classList.remove('fa-pause');
     }
 }
 
-function randomPublic() {
+function randomPublicBig() {
     var publicAudio = publics[Math.floor(Math.random() * publics.length)];
-    sourcesPublic.setAttribute("src", publicAudio);
+    sourcesPublicBig.setAttribute("src", publicAudio);
 
     for (var i = 0; i < publics.length; i++) {
-        publicSound.load();
-        publicSound.play();
-        publicIcon.classList.add('fa-pause');
-        publicIcon.classList.remove('fa-utensils');
+        publicSoundBig.load();
+        publicSoundBig.play();
+        publicIconBig.classList.add('fa-pause');
+        publicIconBig.classList.remove('fa-utensils');
     }
 }
 
@@ -53,8 +54,54 @@ function randomPublic() {
 * Code taken from StackOverflow on how to add volume control function in JavaScript
 */
 
-var volumePublic = document.querySelector("#volume-public");
+var volumePublicBig = document.querySelector("#volume-public-big");
 
-volumePublic.addEventListener("change", function(e) {
-publicSound.volume = e.currentTarget.value / 100;
+volumePublicBig.addEventListener("change", function(e) {
+    publicSoundBig.volume = e.currentTarget.value / 100;
+});
+
+//For smaller tablet and mobile screens
+var sourcesPublicSmall = document.getElementById('sourcePublicSmall');
+var publicSoundSmall = document.getElementById('public-sound-small');
+var publicIconSmall = document.getElementById('public-icon-small');
+
+publicIconSmall.addEventListener('click', togglePublicSmall); 
+
+function togglePublicSmall() {
+    var publicAudio = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
+    sourcesPublicSmall.setAttribute("src", publicAudio);
+    
+    if (publicSoundSmall.paused) {
+        publicSoundSmall.load();
+        publicSoundSmall.play();
+        publicIconSmall.classList.add('fa-pause');
+        publicIconSmall.classList.remove('fa-utensils');
+    } else {
+        publicSoundSmall.pause();
+        publicIconSmall.classList.add('fa-utensils');
+        publicIconSmall.classList.remove('fa-pause');
+    }
+}
+
+function randomPublicSmall() {
+    var publicAudio = publics[Math.floor(Math.random() * publics.length)];
+    sourcesPublicSmall.setAttribute("src", publicAudio);
+
+    for (var i = 0; i < publics.length; i++) {
+        publicSoundSmall.load();
+        publicSoundSmall.play();
+        publicIconSmall.classList.add('fa-pause');
+        publicIconSmall.classList.remove('fa-utensils');
+    }
+}
+
+/*
+* Public volume control
+* Code taken from StackOverflow on how to add volume control function in JavaScript
+*/
+
+var volumePublicSmall = document.querySelector("#volume-public-small");
+
+volumePublicSmall.addEventListener("change", function(e) {
+    publicSoundSmall.volume = e.currentTarget.value / 100;
 });

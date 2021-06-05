@@ -14,47 +14,94 @@ var weathers = [
     "assets/audio/weather/thunder.mp3"
 ];
 
-var sourcesWeather = document.getElementById('sourceWeather');
-var weatherSound = document.getElementById('weather-sound');
-var weatherIcon = document.getElementById('weather-icon');
+//For desktop and larger tablet screens
+var sourcesWeatherBig = document.getElementById('sourceWeatherBig');
+var weatherSoundBig = document.getElementById('weather-sound-big');
+var weatherIconBig = document.getElementById('weather-icon-big');
 
-weatherIcon.addEventListener('click', toggleWeather); 
+weatherIconBig.addEventListener('click', toggleWeatherBig); 
 
-function toggleWeather() {
+function toggleWeatherBig() {
     var weatherAudio = weathers[Math.floor(Math.random() * weathers.length)]; //Got a random audio file from weathers-array
-    sourcesWeather.setAttribute("src", weatherAudio);
+    sourcesWeatherBig.setAttribute("src", weatherAudio);
     
-    if (weatherSound.paused) {
-        weatherSound.load();
-        weatherSound.play();
-        weatherIcon.classList.add('fa-pause');
-        weatherIcon.classList.remove('fa-cloud-sun-rain');
+    if (weatherSoundBig.paused) {
+        weatherSoundBig.load();
+        weatherSoundBig.play();
+        weatherIconBig.classList.add('fa-pause');
+        weatherIconBig.classList.remove('fa-cloud-sun-rain');
     } else {
-        weatherSound.pause();
-        weatherIcon.classList.add('fa-cloud-sun-rain');
-        weatherIcon.classList.remove('fa-pause');
+        weatherSoundBig.pause();
+        weatherIconBig.classList.add('fa-cloud-sun-rain');
+        weatherIconBig.classList.remove('fa-pause');
     }
 }
 
-function randomWeather() {
-    var weatherAudio = weathers[Math.floor(Math.random() * weathers.length)]; 
-    sourcesWeather.setAttribute("src", weatherAudio);
+function randomWeatherBig() {
+    var weatherAudio = weathers[Math.floor(Math.random() * weathers.length)];
+    sourcesWeatherBig.setAttribute("src", weatherAudio);
 
     for (var i = 0; i < weathers.length; i++) {
-        weatherSound.load();
-        weatherSound.play();
-        weatherIcon.classList.add('fa-pause');
-        weatherIcon.classList.remove('fa-cloud-sun-rain');
+        weatherSoundBig.load();
+        weatherSoundBig.play();
+        weatherIconBig.classList.add('fa-pause');
+        weatherIconBig.classList.remove('fa-cloud-sun-rain');
     }
 }
 
-/* 
+/*
 * Weather volume control
 * Code taken from StackOverflow on how to add volume control function in JavaScript
 */
 
-var volumeWeather = document.querySelector("#volume-weather");
+var volumeWeatherBig = document.querySelector("#volume-weather-big");
 
-volumeWeather.addEventListener("change", function(e) {
-weatherSound.volume = e.currentTarget.value / 100;
+volumeWeatherBig.addEventListener("change", function(e) {
+    weatherSoundBig.volume = e.currentTarget.value / 100;
+});
+
+//For smaller tablet and mobile screens
+var sourcesWeatherSmall = document.getElementById('sourceWeatherSmall');
+var weatherSoundSmall = document.getElementById('weather-sound-small');
+var weatherIconSmall = document.getElementById('weather-icon-small');
+
+weatherIconSmall.addEventListener('click', toggleWeatherSmall); 
+
+function toggleWeatherSmall() {
+    var weatherAudio = weathers[Math.floor(Math.random() * weathers.length)]; //Got a random audio file from weathers-array
+    sourcesWeatherSmall.setAttribute("src", weatherAudio);
+    
+    if (weatherSoundSmall.paused) {
+        weatherSoundSmall.load();
+        weatherSoundSmall.play();
+        weatherIconSmall.classList.add('fa-pause');
+        weatherIconSmall.classList.remove('fa-cloud-sun-rain');
+    } else {
+        weatherSoundSmall.pause();
+        weatherIconSmall.classList.add('fa-cloud-sun-rain');
+        weatherIconSmall.classList.remove('fa-pause');
+    }
+}
+
+function randomWeatherSmall() {
+    var weatherAudio = weathers[Math.floor(Math.random() * weathers.length)];
+    sourcesWeatherSmall.setAttribute("src", weatherAudio);
+
+    for (var i = 0; i < weathers.length; i++) {
+        weatherSoundSmall.load();
+        weatherSoundSmall.play();
+        weatherIconSmall.classList.add('fa-pause');
+        weatherIconSmall.classList.remove('fa-cloud-sun-rain');
+    }
+}
+
+/*
+* Weather volume control
+* Code taken from StackOverflow on how to add volume control function in JavaScript
+*/
+
+var volumeWeatherSmall = document.querySelector("#volume-weather-small");
+
+volumeWeatherSmall.addEventListener("change", function(e) {
+    weatherSoundSmall.volume = e.currentTarget.value / 100;
 });
