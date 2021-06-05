@@ -145,9 +145,10 @@ All of the icons were chosen because they are universally understood and because
 
 ### Wireframes
 
-These wireframes were created using [Balsamiq](https://balsamiq.com/). The first version of the mobile, tablet and desktop mockups was made during the design and planning process for this project. 
+These wireframes were created using [Balsamiq](https://balsamiq.com/). 
 
-- [First version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-1.pdf)
+- [First version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-1.pdf) of the mobile, tablet and desktop mockups was made during the design and planning process for this project. 
+- [Second version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-2.pdf) of the mobile, tablet and desktop mockups was made when the project was almost at the point of completion.
 
 ### Existing Features
 
