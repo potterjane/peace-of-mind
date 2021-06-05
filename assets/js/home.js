@@ -7,8 +7,11 @@
 //Home sounds
 var homes = [
     "assets/audio/home/barbecuing.mp3",
+    "assets/audio/home/chopping-food.mp3",
     "assets/audio/home/dishes.mp3",
-    "assets/audio/home/fireplace.mp3"
+    "assets/audio/home/fireplace.mp3",
+    "assets/audio/home/laundry-room.mp3",
+    "assets/audio/home/shower.mp3"
 ];
 
 var sourcesHome = document.getElementById('sourceHome');

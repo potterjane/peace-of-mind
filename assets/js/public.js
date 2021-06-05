@@ -6,8 +6,11 @@
 
 //Public sounds
 var publics = [
+    "assets/audio/public/city-park.mp3",
     "assets/audio/public/office.mp3",
+    "assets/audio/public/outdoor-swimming-pool.mp3",
     "assets/audio/public/restaurant.mp3",
+    "assets/audio/public/shopping-mall.mp3",
     "assets/audio/public/traffic.mp3"
 ];
 

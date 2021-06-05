@@ -6,6 +6,10 @@
 
 //Weather sounds
 var weathers = [
+    "assets/audio/weather/heavy-rain.mp3",
+    "assets/audio/weather/rain-and-thunder.mp3",
+    "assets/audio/weather/rain-on-umbrella.mp3",
+    "assets/audio/weather/rain-on-window.mp3",
     "assets/audio/weather/rain.mp3",
     "assets/audio/weather/thunder.mp3"
 ];

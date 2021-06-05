@@ -6,8 +6,11 @@
 
 //Travel sounds
 var travels = [
+    "assets/audio/travel/airplane-landing.mp3",
+    "assets/audio/travel/airport-terminal.mp3",
     "assets/audio/travel/bicycle.mp3",
     "assets/audio/travel/car.mp3",
+    "assets/audio/travel/train-arriving.mp3",
     "assets/audio/travel/train.mp3"
 ];
 

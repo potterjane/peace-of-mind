@@ -6,8 +6,11 @@
 
 //Nature sounds
 var natures = [
+    "assets/audio/nature/beach-and-seagulls.mp3",
     "assets/audio/nature/birds.mp3",
     "assets/audio/nature/leaves.mp3",
+    "assets/audio/nature/rainforest.mp3",
+    "assets/audio/nature/river-flowing.mp3",
     "assets/audio/nature/waves.mp3"
 ];
 
