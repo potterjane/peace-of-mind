@@ -3,7 +3,15 @@
 //Arraylist of videos with src and type
 var videos = [
     {
+        sources: "assets/videos/mp4/aurora-borealis.mp4",
+        types: "video/mp4"
+    },
+    {
         sources: "assets/videos/mp4/beach-waves-move.mp4",
+        types: "video/mp4"
+    },
+    {
+        sources: "assets/videos/mp4/car-drive.mp4",
         types: "video/mp4"
     },
     {
@@ -15,7 +23,19 @@ var videos = [
         types: "video/mp4"
     },
     {
+        sources: "assets/videos/mp4/night-sky.mp4",
+        types: "video/mp4"
+    },
+    {
         sources: "assets/videos/mp4/office.mp4",
+        types: "video/mp4"
+    },
+    {
+        sources: "assets/videos/mp4/pink-sky-and-beach.mp4",
+        types: "video/mp4"
+    },
+    {
+        sources: "assets/videos/mp4/rain-on-banana-leaves.mp4",
         types: "video/mp4"
     },
     {
@@ -27,7 +47,20 @@ var videos = [
         types: "video/mp4"
     },
     {
+        sources: "assets/videos/mp4/sunset-by-beach.mp4",
+        types: "video/mp4"
+    }
+    /*
+    {
+        sources: "assets/videos/webm/aurora-borealis.webm",
+        types: "video/webm"
+    },
+    {
         sources: "assets/videos/webm/beach-waves-move.webm",
+        types: "video/webm"
+    },
+    {
+        sources: "assets/videos/webm/car-drive.webm",
         types: "video/webm"
     },
     {
@@ -39,7 +72,19 @@ var videos = [
         types: "video/webm"
     },
     {
+        sources: "assets/videos/webm/night-sky.webm",
+        types: "video/webm"
+    },
+    {
         sources: "assets/videos/webm/office.webm",
+        types: "video/webm"
+    },
+    {
+        sources: "assets/videos/webm/pink-sky-and-beach.webm",
+        types: "video/webm"
+    },
+    {
+        sources: "assets/videos/webm/rain-on-banana-leaves.webm",
         types: "video/webm"
     },
     {
@@ -50,6 +95,11 @@ var videos = [
         sources: "assets/videos/webm/reading.webm",
         types: "video/webm"
     },
+    {
+        sources: "assets/videos/webm/sunset-by-beach.webm",
+        types: "video/webm"
+    }
+    */
 ];
 
 var sourcesVid = document.getElementById('sourceVideos');
