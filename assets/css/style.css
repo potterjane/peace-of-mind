@@ -1053,78 +1053,6 @@ select:-webkit-autofill:focus {
     width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 96.5%;
-    }
-
-}
-
-@media screen and (max-width: 1010px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 95%;
-    }
-
-}
-
-@media screen and (max-width: 991px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    #name,
-    #message {
-        width: 95%;
-    }
-
-    #email {
-        width: 90%;
-    }
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 95%;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 46%;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 42%;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 36%;
-    }
-
-}
-
 @media screen and (max-width: 400px) {
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1142,39 +1070,6 @@ select:-webkit-autofill:focus {
     .form-control::placeholder {
         font-size: 90%;
     }
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 32%;
-    }
-
-}
-
-@media screen and (max-width: 340px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 26%;
-    }
-
-}
-
-@media screen and (max-width: 295px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 24%;
-    }
-
-}
-
-@media screen and (max-width: 280px) {
-
-    #uploadfile {
-        margin-right: 950px;
-        width: 24%;
-    }
-
 }
 
 /* --------------------------------------------------------------------------404 error section */
