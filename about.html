@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Page description-->
   <meta 
     name="Description" 
     content="The About page of the website, Peace of Mind, which offers sound clips that increases focus and productivity, decreases anxiety and stress, and improves mood. 
@@ -14,16 +15,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-32x32.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest"> 
+  <!--Link to the latest version of Bootstrap's CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!--Link to developer's Font Awesome kit-->
   <script src="https://kit.fontawesome.com/f0a0897f31.js" crossorigin="anonymous"></script>
+  <!--Link to developer's external style sheet-->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-
+  <!--Div class for the main image background-->
   <div class="cover-image">
     <!--Header section for bigger screens-->
     <div class="header-big container">
-
       <div class="row">
         <!--Navbar code taken from Bootstrap-->
         <div class="full-navbar col">
@@ -36,13 +39,12 @@
             </li>
           </ul>
         </div>
-
+        <!--Website's title for bigger screens-->
         <div class="header-title col">
           <nav class="navbars">
             <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
           </nav>
         </div>
-
         <div class="full-navbar col">
           <ul class="nav">
             <li class="nav-item">
@@ -54,13 +56,10 @@
           </ul>
         </div>
       </div>
-
     </div>
-
     <!--Header section for smaller screens, collapse side navbar code taken from W3Schools-->
     <div class="header-small container">
       <div class="row">
-
         <div class="col">
           <div id="mobSidebar" class="sideNavbar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -69,14 +68,13 @@
             <a class="nav-link active" href="about.html">ABOUT</a>
             <a class="nav-link" href="contact.html">CONTACT</a>
           </div>
-          
           <div id="header">
             <button class="openbtn" onclick="openNav()">☰</button>
           </div>
         </div>
-
         <div class="row">
           <div class="col">
+            <!--Website's title for smaller screens-->
             <div id="small-title" class="col">
               <nav class="navbars">
                 <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
@@ -84,19 +82,17 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
     
     <!--Main section-->
     <div class="main">
-    
       <div class="main-header">
         <h3>
           What is Peace of Mind?
         </h3>
       </div>
-
+      <!--Description in an unordered list about the website-->
       <div class="main-about container-fluid">
           Peace of Mind is a tool for distraction from all of the everyday noises.<br>Here are some examples of when you can use our sound effects:
           <ul>
@@ -108,34 +104,38 @@
             <li>Or when you are meditating</li>
           </ul>
           <br>
+          <!--Link to the other pages on the website-->
           Go to our <a class="about-link" href="how-to-use.html">How to use</a> page to find out more about how to use our sound effects. <br> Also, feel free to send us your questions or feedback on our <a class="about-link" href="contact.html">Contact</a> page!
       </div>
-    
     </div>
     
     <!--Footer section-->
     <div class="footer container-fluid">
-
       <div class="row">
         <div class="created-socials col-6">
+          <!--Established month/year for the website-->
           <h4>Est. May 2021</h4>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-linkedin"></i>
+          <!--Social links-->
+          <a href="https://www.facebook.com" rel="noreferrer noopener" target="_blank" aria-label="Facebook icon that takes users to our external social link on a new tab"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com" rel="noreferrer noopener" target="_blank" aria-label="Instagram icon that takes users to our external social link on a new tab"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" rel="noreferrer noopener" target="_blank" aria-label="Twitter icon that takes users to our external social link on a new tab"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes users to our external social link on a new tab"><i class="fab fa-linkedin"></i></a>
         </div>
-      
         <div class="justify-content-end disclaimer col-6">
+          <!--Developer's disclaimer about the website-->
           <p class="disclaimer-text">This developer made this website for educational purposes only.</p>
-          <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes you to the developer's external social link"><i class="fab fa-linkedin"></i></a></p>
+          <!--Developer's name and link to their LinkedIn page-->
+          <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes users to the developer's external social link on a new tab"><i class="fab fa-linkedin"></i></a></p>
         </div>
       </div>
-        
     </div>
   </div>
 
+  <!--Link to the latest version of jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Link to the latest version of Bootstrap's JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <!--Link to developer's external script file for the collapsed sidebar-->
   <script src="assets/js/header.js"></script>
 </body>
 </html>
