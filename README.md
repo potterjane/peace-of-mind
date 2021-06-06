@@ -132,14 +132,14 @@ The overall feel of the website should be one that attracts people who are in ne
 **Colours**
 
 <img src="assets/screenshots/for-readme/color-1.png" alt="Screenshot: Color #f2feff" >
-<img src="assets/screenshots/for-readme/color-2.png" alt="Screenshot: Color #7cc4a4" >
+<img src="assets/screenshots/for-readme/color-2.png" alt="Screenshot: Color #016d73" >
 <img src="assets/screenshots/for-readme/color-3.png" alt="Screenshot: Color #299cab" >
 <img src="assets/screenshots/for-readme/color-4.png" alt="Screenshot: Color #fc7844" >
 <br>
 - The white colour (#f2feff) was chosen for the company name, icons, hyperlinks, form and button borders, heading and paragraph elements because the white colour contrast well with the website's main background beach image.
-- All the buttons are in a blue-green shade of cyan (#7cc4a4) to match with one of the website's main tropical ocean colours.
-- When the 'Change background' button is hovered, its background colour changes from the blue-green shade of cyan (#7cc4a4) to the light-blue colour (#299cab), which is also a shade that belongs in a tropical ocean and therefore complements the blue-green shade of cyan colour well.
-- When the 'Reset all' button is hovered, its background colour changes from the blue-green shade of cyan (#7cc4a4) to an orange-red colour (#fc7844). This colour is typically associated with an action such as 'reset' or 'cancel' and therefore this colour was chosen by the developer.
+- All the buttons are in a dark blue-green (#016d73) to match with one of the website's main tropical ocean colours.
+- When the 'Change background' button is hovered, its background colour changes from the dark blue-green (#016d73) to the light-blue colour (#299cab), which is also a shade that belongs in a tropical ocean and therefore complements the blue-green shade of cyan colour well.
+- When the 'Reset all' button is hovered, its background colour changes from the dark blue-green (#016d73) to an orange-red colour (#fc7844). This colour is typically associated with an action such as 'reset' or 'cancel' and therefore this colour was chosen by the developer.
 - The standard red colour was used for the heart icon in the How to Use page, which is considered not a permanent element of the website but it makes the heart icon stand out and emphasize the positive feeling of using the website for the users.
 
 **Icons**
