@@ -1,11 +1,7 @@
 /*
-User can send in their questions or feedback via “Contact” page, all fields 
-except upload field are required before they can submit the form
-*/
-
-/* 
-All the code contained in this function was taken from Code Institute's 
-Sending Emails Using EmailJS module
+* User can send in their questions or feedback via “Contact” page
+* All fields except upload field are required before they can submit the form
+* All the code contained in the following function was taken from Code Institute's Sending Emails Using EmailJS module
 */
 
 function feedbackForm(contactForm) { 
