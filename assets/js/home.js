@@ -1,10 +1,12 @@
 /*
-* At Home page, when user clicks on an icon, a random sound effect should be played until they click either “Reset all” or the icon again for pause. 
-* User should also be able to control the volume and change sound effect any time. 
-* Sound effect should be played in a loop in infinity until window is closed, or user clicks “Reset all”, or when user clicks pause.
+* At "Home" page, when user clicks on the sound Home icon or the previous/next icon, 
+a random sound effect should be played in a loop until they either click the icon again 
+to stop playing the sound or click the “Reset all” button to reload page. 
+* User can also control the volume. 
+* Users cannot click to resume to the same sound. Pause method is used to stop the audio, not pause.
 */
 
-//Home sounds
+//Homes-array
 var homes = [
     "assets/audio/home/barbecuing.mp3",
     "assets/audio/home/chopping-food.mp3",
@@ -15,82 +17,71 @@ var homes = [
 ];
 
 //For desktop and larger tablet screens
-var sourcesHomeBig = document.getElementById('sourceHomeBig');
-var homeSoundBig = document.getElementById('home-sound-big');
-var homeIconBig = document.getElementById('home-icon-big');
+var sourcesHomeBig = document.getElementById('sourceHomeBig'); //Source id taken from index.html
+var homeSoundBig = document.getElementById('home-sound-big'); //Audio id taken from index.html
+var homeIconBig = document.getElementById('home-icon-big'); //Home icon id taken from index.html
 
-homeIconBig.addEventListener('click', toggleHomeBig); 
+homeIconBig.addEventListener('click', toggleHomeBig); //Added click event to the home icon id
 
-function toggleHomeBig() {
+function toggleHomeBig() { //Sound function for the home icon
     var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
-    sourcesHomeBig.setAttribute("src", homeAudio);
+    sourcesHomeBig.setAttribute("src", homeAudio); //Adds random homes audio to the src attribute in index.html
     
-    if (homeSoundBig.paused) {
+    if (homeSoundBig.paused) { 
         homeSoundBig.load();
-        homeSoundBig.play();
-        homeIconBig.classList.add('fa-pause');
+        homeSoundBig.play(); //If sound is playing, add stop icon and remove the home icon
+        homeIconBig.classList.add('fa-stop'); 
         homeIconBig.classList.remove('fa-home');
     } else {
-        homeSoundBig.pause();
+        homeSoundBig.pause(); //If sound is on pause method, add the home icon and remove the stop icon
         homeIconBig.classList.add('fa-home');
-        homeIconBig.classList.remove('fa-pause');
+        homeIconBig.classList.remove('fa-stop');
     }
 }
 
-function randomHomeBig() {
-    var homeAudio = homes[Math.floor(Math.random() * homes.length)];
-    sourcesHomeBig.setAttribute("src", homeAudio);
+function randomHomeBig() { //Sound function for the previous and next icons
+    var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
+    sourcesHomeBig.setAttribute("src", homeAudio); //Adds random homes audio to the src attribute in index.html
 
-    for (var i = 0; i < homes.length; i++) {
+    for (var i = 0; i < homes.length; i++) { //Loops the homes-array
         homeSoundBig.load();
-        homeSoundBig.play();
-        homeIconBig.classList.add('fa-pause');
+        homeSoundBig.play(); //If sound is playing, add stop icon and remove the home icon
+        homeIconBig.classList.add('fa-stop');
         homeIconBig.classList.remove('fa-home');
     }
 }
 
-/*
-* Home volume control
-* Code taken from StackOverflow on how to add volume control function in JavaScript
-*/
-
-var volumeHomeBig = document.querySelector("#volume-home-big");
-
-volumeHomeBig.addEventListener("change", function(e) {
-    homeSoundBig.volume = e.currentTarget.value / 100;
-});
-
 //For smaller tablet and mobile screens
-var sourcesHomeSmall = document.getElementById('sourceHomeSmall');
-var homeSoundSmall = document.getElementById('home-sound-small');
-var homeIconSmall = document.getElementById('home-icon-small');
+var sourcesHomeSmall = document.getElementById('sourceHomeSmall'); //Source id taken from index.html
+var homeSoundSmall = document.getElementById('home-sound-small'); //Audio id taken from index.html
+var homeIconSmall = document.getElementById('home-icon-small'); //Home icon id taken from index.html
 
-homeIconSmall.addEventListener('click', toggleHomeSmall); 
+homeIconSmall.addEventListener('click', toggleHomeSmall); //Added click event to the home icon id
 
-function toggleHomeSmall() {
+function toggleHomeSmall() { //Sound function for the home icon
     var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
-    sourcesHomeSmall.setAttribute("src", homeAudio);
+    sourcesHomeSmall.setAttribute("src", homeAudio); //Adds random homes audio to the src attribute in index.html
     
     if (homeSoundSmall.paused) {
         homeSoundSmall.load();
-        homeSoundSmall.play();
-        homeIconSmall.classList.add('fa-pause');
+        homeSoundSmall.play(); //If sound is playing, add stop icon and remove the home icon
+        homeIconSmall.classList.add('fa-stop');
         homeIconSmall.classList.remove('fa-home');
     } else {
-        homeSoundSmall.pause();
+        homeSoundSmall.pause(); //If sound is on pause method, add the home icon and remove the stop icon
         homeIconSmall.classList.add('fa-home');
-        homeIconSmall.classList.remove('fa-pause');
+        homeIconSmall.classList.remove('fa-stop');
     }
 }
 
-function randomHomeSmall() {
-    var homeAudio = homes[Math.floor(Math.random() * homes.length)];
-    sourcesHomeSmall.setAttribute("src", homeAudio);
+function randomHomeSmall() { //Sound function for the previous and next icons
+    var homeAudio = homes[Math.floor(Math.random() * homes.length)]; //Got a random audio file from homes-array
+    sourcesHomeSmall.setAttribute("src", homeAudio); //Adds random homes audio to the src attribute in index.html
 
-    for (var i = 0; i < homes.length; i++) {
+    for (var i = 0; i < homes.length; i++) { //Loops the homes-array
         homeSoundSmall.load();
-        homeSoundSmall.play();
-        homeIconSmall.classList.add('fa-pause');
+        homeSoundSmall.play(); //If sound is playing, add stop icon and remove the home icon
+        homeIconSmall.classList.add('fa-stop');
         homeIconSmall.classList.remove('fa-home');
     }
 }
@@ -100,8 +91,16 @@ function randomHomeSmall() {
 * Code taken from StackOverflow on how to add volume control function in JavaScript
 */
 
-var volumeHomeSmall = document.querySelector("#volume-home-small");
+//For desktop and larger tablet screens
+var volumeHomeBig = document.querySelector("#volume-home-big"); //Volume home id taken from index.html
 
-volumeHomeSmall.addEventListener("change", function(e) {
-    homeSoundSmall.volume = e.currentTarget.value / 100;
+volumeHomeBig.addEventListener("change", function(e) { //Added change event to the volume home id
+    homeSoundBig.volume = e.currentTarget.value / 100; //Updates the volume when slider is moved
+});
+
+//For smaller tablet and mobile screens
+var volumeHomeSmall = document.querySelector("#volume-home-small"); //Volume home id taken from index.html
+
+volumeHomeSmall.addEventListener("change", function(e) { //Added change event to the volume home id
+    homeSoundSmall.volume = e.currentTarget.value / 100; //Updates the volume when slider is moved
 });
