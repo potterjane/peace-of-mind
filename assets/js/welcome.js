@@ -30,3 +30,5 @@ function feeling() {
     }
     feelingTimer = setTimeout('feeling()', 110); //Sets timer of how long it takes for each letter to load into the page
 }
+
+feeling(); //Added this to load the text in the Welcome page when user enters page in new session
