@@ -40,8 +40,8 @@ function toggleTravelBig() { //Sound function for the travel icon
 }
 
 function randomTravelBig() { //Sound function for the previous and next icons
-    var travelIconBig = travels[Math.floor(Math.random() * travels.length)]; //Got a random audio file from travels-array
-    sourcesTravelBig.setAttribute("src", travelIconBig); //Adds random travels audio to the src attribute in index.html
+    var travelAudio = travels[Math.floor(Math.random() * travels.length)]; //Got a random audio file from travels-array
+    sourcesTravelBig.setAttribute("src", travelAudio); //Adds random travels audio to the src attribute in index.html
 
     for (var i = 0; i < travels.length; i++) { //Loops the travels-array
         travelSoundBig.load();
