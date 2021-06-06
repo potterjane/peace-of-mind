@@ -1,4 +1,7 @@
-//Header section for smaller screens, collapsed sidebar code taken from W3Schools
+/*
+* Header section for smaller screens
+* Collapsed sidebar code taken from W3Schools
+*/
 
 function openNav() { //Function that opens the sidebar when user clicks the '☰'
     document.getElementById("mobSidebar").style.width = "250px"; //Moves the navigation links section to the right with 250px
