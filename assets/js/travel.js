@@ -34,7 +34,7 @@ function toggleTravelBig() { //Sound function for the travel icon
         travelIconBig.classList.remove('fa-subway');
     } else {
         travelSoundBig.pause(); //If sound is on pause method, add the travel icon and remove the stop icon
-        travelSoundBig.classList.add('fa-subway');
+        travelIconBig.classList.add('fa-subway');
         travelIconBig.classList.remove('fa-stop');
     }
 }
