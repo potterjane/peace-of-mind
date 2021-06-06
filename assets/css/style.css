@@ -657,6 +657,10 @@ input[type=range] {
     max-height: 30px;
 }
 
+.quote-link {
+    color: #f2feff;
+}
+
 /* --------------------------------------------------------------------------Background videos section */
 
 .background-videos { /*Code taken from W3Schools, 100% width and height to cover the entire window*/
