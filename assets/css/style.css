@@ -861,11 +861,11 @@ input[type=range] {
     color: #f2feff;
     margin-top: 35px;
     width: 35%;
+    height: 455px;
 }
 
 .about-link {
-    text-decoration: none;
-    color: #0388fc;
+    color: #f2feff;
 }
 
 @media screen and (max-width: 992px) {
@@ -1007,6 +1007,7 @@ select:-webkit-autofill:focus {
 
 .error-main {
     text-align: center;
+    height: 850px;
 }
 
 .error-header {
@@ -1029,4 +1030,16 @@ select:-webkit-autofill:focus {
 .error-home {
     text-decoration: none;
     font-size: 18px;
+}
+
+@media screen and (max-width: 390px) {
+
+    .error-header {
+        font-size: 130px;
+    }
+
+    .error-text {
+        font-size: 90px;
+    }
+
 }
