@@ -1075,7 +1075,7 @@ select:-webkit-autofill:focus {
 
     #uploadfile {
         margin-right: 950px;
-        width: 72%;
+        width: 100%;
     }
 
 }
@@ -1083,8 +1083,7 @@ select:-webkit-autofill:focus {
 @media screen and (max-width: 768px) {
 
     #name,
-    #message, 
-    #uploadfile {
+    #message {
         width: 95%;
     }
 
@@ -1094,7 +1093,7 @@ select:-webkit-autofill:focus {
 
     #uploadfile {
         margin-right: 950px;
-        width: 50%;
+        width: 95%;
     }
 
 }
