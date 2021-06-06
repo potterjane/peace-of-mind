@@ -238,9 +238,26 @@ h1, h2, h3, h4, h5, h6, p {
     color: #299cab;
 }
 
+.quote-text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 80%;
+}
+
+@media screen and (max-width: 1090px) {
+
+    .quote-text {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 70%;
+    }
+    
+}
+
 @media screen and (max-width: 600px) {
 
-    .disclaimer-text {
+    .disclaimer-text,
+    .quote-text {
         display: none;
     }
 
@@ -459,7 +476,6 @@ input[type=range] {
         width: 35%;
     }
    
-
 }
 
 @media screen and (max-width: 330px) {
@@ -652,7 +668,7 @@ input[type=range] {
 
 .main-quotes {
     margin-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     min-height: 30px;
     max-height: 30px;
 }
@@ -672,10 +688,30 @@ input[type=range] {
     z-index: -5;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .main-quotes {
+        margin-bottom: 70px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .main-quotes {
+        margin-bottom: 100px;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
 
     .background-videos, .main-background {
         display: none;
+    }
+
+    .main-quotes {
+        margin-bottom: 200px;
     }
 
 }
@@ -858,6 +894,15 @@ input[type=range] {
 
 }
 
+@media screen and (max-width: 320px) {
+
+    .main-howto-small {
+        padding-right: 65%;
+    }
+
+}
+
+
 /* --------------------------------------------------------------------------About section */
 
 .main-about {
@@ -865,7 +910,7 @@ input[type=range] {
     color: #f2feff;
     margin-top: 35px;
     width: 35%;
-    height: 455px;
+    height: 630px;
 }
 
 .about-link {
@@ -913,6 +958,10 @@ input[type=range] {
 }
 
 /* --------------------------------------------------------------------------Contact section */
+
+.main-contact {
+    height: 650px;
+}
 
 #name, #email, #message, #uploadfile {
     background-color: transparent;
@@ -1011,7 +1060,7 @@ select:-webkit-autofill:focus {
 
 .error-main {
     text-align: center;
-    height: 850px;
+    height: 1000px;
 }
 
 .error-header {
