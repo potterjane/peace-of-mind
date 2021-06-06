@@ -1,7 +1,7 @@
 /*
 * User clicks the 'Want inspiration?' button to get a random inspirational quotes
 * Got help from SoloLearn on how to get data from API
-* Quotes sourced from 'Quotes Free API'
+* Quotes sourced from user SergeyWebPro from freeCodeCamp
 */
 
 document.addEventListener("click", function (event) {
