@@ -58,10 +58,12 @@ Features include:
 - Audio clips (of different sound effects such as thunder, rain, fire, crowd walla, keyboard typing, birds chirping, car driving, and so on) with basic music buttons (such as play/stop, volume, previous/next)
 - Background videos (of beaches, forest, offices, fireplaces, night sky, and so on) that users can flip through with the help of a button
 - Inspirational quotes from famous and anonymous authors that can motivate/inspire users during self-reflection
+- Easy-to-use button to reset all of the features/reloads the website
 - Easy-to-follow instructions on how to use the website
 - Brief background information about the company and its purpose with hyperlinks to other pages on the website
 - Social links to provide an alternative way to learn more about the website and to get more 'peer reviews'
 - Contact form to give users an opportunity to send feedback or ask questions to the company behind the website
+- Sleek and simple 404 error page to make it clear for users when they have navigated to a non-existent webpage
 
 #### User Goals
 
@@ -85,15 +87,17 @@ Potential new employee's goals are:
 
 As a new or returning user, I want:
 1. To be able to use the website's sound effect clips, quotes and background videos with as few clicks as possible, so that I can get in to the right head space immediately.
-2. To be able to find and follow instructions in an easy way, so that I know how to best use the website.
-3. To be able to know the background of the company, so that I understand what they want us to achieve when using the website.
-4. To know what other users think of their website, so that I can see what kind of users use the website and why.
-5. To be able to contact the company in an easy way, so that I can send any questions or feedback I might have with as few clicks as possible.
+2. To be able to reset all features with one click.
+3. To be able to find and follow instructions in an easy way, so that I know how to best use the website.
+4. To be able to know the background of the company, so that I understand what they want us to achieve when using the website.
+5. To know what other users think of their website, so that I can see what kind of users use the website and why.
+6. To be able to contact the company in an easy way, so that I can send any questions or feedback I might have with as few clicks as possible.
+7. To have an easy way to navigate back to the Home page, so that if I ever get lost, I can get back to the where I need to be with as few clicks as possible.
 
 As a music/video artist or web developer looking for a job, I want:
-6. To be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
-7. To be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
-8. To be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
+8. To be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
+9. To be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
+10. To be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
 
 #### Developer and Business Goals
 
@@ -163,8 +167,102 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/).
 - [Second version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-2.pdf) of the mobile, tablet and desktop mockups was made when the project was almost at the point of completion.
 
 ### Existing Features
+This website has 5 pages (including 404 error page) and 10 features:
 
+Feature 1: Audio clips (of different sound effects such as thunder, rain, fire, crowd walla, keyboard typing, birds chirping, car driving, and so on) with basic music buttons (such as play/stop, volume, previous/next)
 
+This can be found on the Home page. The different sound effects are divided into five different sound themes: Nature, Travel, Public, Home, and Weather.
+
+The screenshot below shows user playing Nature and Weather simultaneously. When sound icon is played, the stop icon is shown. When user clicks the stop icon, the audio clip stops playing and the stop icon is replaced with the respective sound icon. User can adjust the volume with the slider above the sound icons. Users can click the previous/next buttons to play the next random sound effect and these buttons are located on the left/right side of the sound icon.
+<br>
+<img src="assets/screenshots/for-readme/sound-effects.png" alt="Screenshot: Sound effects with basic music buttons" height="500" >
+
+User stories covered by this feature:
+1. As a new or returning user, I want to be able to use the website's sound effect clips, quotes and background videos with as few clicks as possible, so that I can get in to the right head space immediately.
+8. As a music/video artist or web developer looking for a job, I want to be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
+
+Feature 2: Background videos (of beaches, forest, offices, fireplaces, night sky, and so on) that users can flip through with the help of a button
+
+This can also be found on the Home page. The different background videos are played at random when user clicks the 'Change background' button.
+
+The screenshot below shows user playing a random background video after they have clicked the 'Change background' button. The video will be played on a loop until user either clicks the button again to get a new random background video or when user clicks the 'Reset all' button.
+<br>
+<img src="assets/screenshots/for-readme/change-background.png" alt="Screenshot: Example of background video" width="900" >
+
+User stories covered by this feature:
+1. As a new or returning user, I want to be able to use the website's sound effect clips, quotes and background videos with as few clicks as possible, so that I can get in to the right head space immediately.
+8. As a music/video artist or web developer looking for a job, I want to be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
+
+Feature 3: Inspirational quotes from famous and anonymous authors that can motivate/inspire users during self-reflection
+
+This is also found on the Home page. The inspirational quotes are played at random whe user clicks the 'Want inspiration?' button.
+
+The screenshot below shows user playing a random quote with corresponding author after they have clicked the 'Want inspiration?' button. The quote remains in display until user either clicks the button again to get a new random quote or when user clicks the 'Reset all' button.
+<br>
+<img src="assets/screenshots/for-readme/want-inspiration.png" alt="Screenshot: Example of inspirational quote" width="900" >
+
+User stories covered by this feature:
+1. As a new or returning user, I want to be able to use the website's sound effect clips, quotes and background videos with as few clicks as possible, so that I can get in to the right head space immediately.
+8. As a music/video artist or web developer looking for a job, I want to be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
+
+Feature 4: Easy-to-use button to reset all of the features/reloads the website
+
+This is also found on the Home page. The 'Reset all' button reloads the button and therefore resets all of the features listed previously (1-3).
+
+The screenshot below shows user clicking on the 'Reset all' button and showing the website after it has been reloaded.
+<br>
+<img src="assets/screenshots/for-readme/reset-all.png" alt="Screenshot: Reset all button and website after reload" width="900" >
+
+User stories covered by this feature:
+2. As a new or returning user, I want to be able to reset all features with one click.
+
+Feature 5: Easy-to-follow instructions on how to use the website
+
+This is found on the How To Use page. The left-hand column contains an ordered list of the instructions and the right-hand column contains icons and buttons (intentionally, they do not work on this page). The purpose of these icons and buttons is to illustrate the instructions.
+<br>
+<img src="assets/screenshots/for-readme/how-to-use.png" alt="Screenshot: The How to Use page" width="900" >
+
+User stories covered by this feature:
+3. As a new or returning user, I want to be able to find and follow instructions in an easy way, so that I know how to best use the website.
+
+Feature 6: Brief background information about the company and its purpose with hyperlinks to other pages on the website
+
+This is found on the About page. Simple and straight-forward information about what the company is and what they aim to achieve with their features. There are hyperlinks to the How To Use page and Contact page at the end.
+<br>
+<img src="assets/screenshots/for-readme/about.png" alt="Screenshot: The About page" width="900" >
+
+User stories covered by this feature:
+4. As a new or returning user, I want to be able to know the background of the company, so that I understand what they want us to achieve when using the website.
+9. As a music/video artist or web developer looking for a job, I want to be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
+
+Feature 7: Social links to provide an alternative way to learn more about the website and to get more 'peer reviews'
+
+Social links are found in the Footer section on all of the pages except the 404 error page. The links open in a new tab to the respective home page since there actually is no real 'Peace of Mind' social links. On the Home page, there is a source link to the quotes API since the quotes are retrieved via this page. There is also a date of establishment and disclaimer from the developer, with developer's LinkedIn page.
+<br>
+<img src="assets/screenshots/for-readme/social-links.png" alt="Screenshot: Social links, establishment date, quotes API source and disclaimer in the footer section" width="1300" >
+
+User stories covered by this feature:
+5. As a new or returning user, I want to be able to know what other users think of their website, so that I can see what kind of users use the website and why.
+9. As a music/video artist or web developer looking for a job, I want to be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
+
+Feature 8: Contact form to give users an opportunity to send feedback or ask questions to the company behind the website
+
+This is found on the Contact page. All fields are required except the file upload field before user can submit the form. Automated data validation is implemented with the help of the required input attribute.
+<br>
+<img src="assets/screenshots/for-readme/contact-form.png" alt="Screenshot: The Contact page" width="900" >
+
+User stories covered by this feature:
+6. As a new or returning user, I want to be able to contact the company in an easy way, so that I can send any questions or feedback I might have with as few clicks as possible.
+10. As a music/video artist or web developer looking for a job, I want to be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
+
+Feature 9: Sleek and simple 404 error page to make it clear for users when they have navigated to a non-existent webpage
+
+This appears when user navigates themselves to a non-existent webpage. The 404 error page contains only two short sentences, a button to take them back to the Home page, and the navigation bar at the top of the page.
+<br>
+<img src="assets/screenshots/for-readme/404-error.png" alt="Screenshot: The 404 error page" width="900" >
+
+User stories covered by this feature:
+7. To have an easy way to navigate back to the Home page, so that if I ever get lost, I can get back to the where I need to be with as few clicks as possible.
 
 ### Future Features
 
