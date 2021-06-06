@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Page description-->
   <meta 
     name="Description" 
     content="The Home page of the website, Peace of Mind, which offers sound clips that increases focus and productivity, decreases anxiety and stress, and improves mood. 
@@ -14,12 +15,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-32x32.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest"> 
+  <!--Link to the latest version of Bootstrap's CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!--Link to developer's Font Awesome kit-->
   <script src="https://kit.fontawesome.com/f0a0897f31.js" crossorigin="anonymous"></script>
+  <!--Link to developer's external style sheet-->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-  
+  <!--Div class for the main image background-->
   <div class="cover-image">
     <!--This welcome section is only visible for 5 seconds when user enters the website, 
     then is removed with a slide transition-->
@@ -29,10 +33,8 @@
         </p>
       </div>
     </div>
-
     <!--Header section for bigger screens-->
     <div class="header-big container">
-
       <div class="row">
         <!--Navbar code taken from Bootstrap-->
         <div class="full-navbar col">
@@ -45,13 +47,12 @@
             </li>
           </ul>
         </div>
-
+        <!--Website's title for bigger screens-->
         <div class="header-title col">
           <nav class="navbars">
             <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
           </nav>
         </div>
-
         <div class="full-navbar col">
           <ul class="nav">
             <li class="nav-item">
@@ -63,13 +64,10 @@
           </ul>
         </div>
       </div>
-
     </div>
-
     <!--Header section for smaller screens, collapse sidebar code taken from W3Schools-->
     <div class="header-small container">
       <div class="row">
-
         <div class="col">
           <div id="mobSidebar" class="sideNavbar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
@@ -78,14 +76,13 @@
             <a class="nav-link" href="about.html">ABOUT</a>
             <a class="nav-link" href="contact.html">CONTACT</a>
           </div>
-          
           <div id="header">
             <button class="openbtn" onclick="openNav()">☰</button>
           </div>
         </div>
-
         <div class="row">
           <div class="col">
+            <!--Website's title for smaller screens-->
             <div id="small-title" class="col">
               <nav class="navbars">
                 <a class="navbar-brand" href="index.html"><p>Peace of Mind</p></a>
@@ -93,13 +90,11 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
     <!--Main section-->
     <div class="main">
-
       <div class="main-header">
         <h3>
           What sound(s) do you choose today?
@@ -110,10 +105,10 @@
           </i>
         </p>
       </div>
-
-      <!--Main section for desktop and larger tablet screens-->
+      <!--Sound icons divided into different themes, with volume slider, play/pause/previous/next buttons, for desktop and larger tablet screens-->
       <div class="main-sounds-big container-fluid">
         <div class="row"> 
+          <!--Nature sounds-->
           <div class="nature col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-nature-big"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -126,6 +121,7 @@
             </audio>
             <p>Nature</p>
           </div>
+          <!--Travel sounds-->
           <div class="travel col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-travel-big"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -138,6 +134,7 @@
             </audio>
             <p>Travel</p>
           </div>
+          <!--Public sounds-->
           <div class="public col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-public-big"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -152,6 +149,7 @@
           </div>
         </div>
         <div class="row">
+          <!--Home sounds-->
           <div class="home col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-home-big"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -164,6 +162,7 @@
             </audio>
             <p>Home</p>
           </div>
+          <!--Weather sounds-->
           <div class="weather col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-weather-big"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -179,9 +178,10 @@
       </div>
       </div>
 
-      <!--Main section for smaller tablet and mobile screens-->
+      <!--Sound icons divided into different themes, with volume slider, play/pause/previous/next buttons, for smaller tablet and mobile screens-->
       <div class="main-sounds-small container-fluid">
         <div class="row"> 
+          <!--Nature sounds-->
           <div class="nature col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-nature-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -196,6 +196,7 @@
           </div>
         </div>
         <div class="row">
+          <!--Travel sounds-->
           <div class="travel col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-travel-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -210,6 +211,7 @@
           </div>
         </div>
         <div class="row">
+          <!--Public sounds-->
           <div class="public col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-public-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -224,6 +226,7 @@
           </div>
         </div>
         <div class="row">
+          <!--Home sounds-->
           <div class="home col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-home-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -238,6 +241,7 @@
           </div>
         </div>
         <div class="row">
+          <!--Weather sounds-->
           <div class="weather col">
             <i class="fas fa-volume-down"></i>
             <input type="range" id="volume-weather-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
@@ -252,27 +256,29 @@
         </div>
       </div>
       </div>
-
+      <!--Background videos section-->
       <div class="background-videos">
         <video autoplay muted loop id="bg-video">
           <source src="#" id="sourceVideos">
           Your browser does not support embedded videos.
         </video>
       </div>
-
+      <!--All buttons section-->
       <div class="all-btns">
         <div class="main-btns container">
           <div class="row">
             <div class="main-background col">
+              <!--Button to change to different background videos at random-->
               <button type="button" class="btn" id="randomBtn" onclick="changeBackground()">Change background</button>
             </div>  
             <div class="main-reset col">
+              <!--Button to reset/reload entire webpage-->
               <button type="button" class="btn" id="resetBtn" onclick="resetAll()">Reset all</button>
             </div>
           </div>  
         </div>
-
         <div class="container">
+          <!--Button to display inspirational quotes at random-->
           <button type="button" class="btn" id="quotesBtn">Want inspiration?</button>
           <div class="main-quotes">
             <p id="text"></p>
@@ -285,36 +291,51 @@
 
     <!--Footer section-->
     <div class="footer container-fluid">
-
       <div class="row">
         <div class="created-socials col-6">
+          <!--Established month/year for the website-->
           <h4>Est. May 2021</h4>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-linkedin"></i>
+          <!--Social links-->
+          <a href="https://www.facebook.com" rel="noreferrer noopener" target="_blank" aria-label="Facebook icon that takes users to our external social link on a new tab"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com" rel="noreferrer noopener" target="_blank" aria-label="Instagram icon that takes users to our external social link on a new tab"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" rel="noreferrer noopener" target="_blank" aria-label="Twitter icon that takes users to our external social link on a new tab"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes users to our external social link on a new tab"><i class="fab fa-linkedin"></i></a>
+          <br>
+          <p>Inspirational quotes provided by <a class="quote-link" href="https://type.fit/api/quotes" target="_blank">SergeyWebPro</a> via <a class="quote-link" href="https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373" target="_blank">freeCodeCamp</a></p>
         </div>
-
         <div class="justify-content-end disclaimer col-6">
+          <!--Developer's disclaimer about the website-->
           <p class="disclaimer-text">This developer made this website for educational purposes only.</p>
-          <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes you to the developer's external social link"><i class="fab fa-linkedin"></i></a></p>
+          <!--Developer's name and link to their LinkedIn page-->
+          <p>Developed by: Jane Potter <a href="https://www.linkedin.com/in/jane-potter-667710128/" rel="noreferrer noopener" target="_blank" aria-label="LinkedIn icon that takes users to the developer's external social link on a new tab"><i class="fab fa-linkedin"></i></a></p>
         </div>
       </div>
-      
     </div>
-  </div>
+  </div> 
 
+  <!--Link to the latest version of jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Link to the latest version of Bootstrap's JavaScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <!--Link to developer's external script file for welcome section-->
   <script src="assets/js/welcome.js"></script>
+  <!--Link to developer's external script file for the collapsed sidebar-->
   <script src="assets/js/header.js"></script>
+  <!--Link to developer's external script file for the Home sounds-->
   <script src="assets/js/home.js"></script>
+  <!--Link to developer's external script file for the Nature sounds-->
   <script src="assets/js/nature.js"></script>
+  <!--Link to developer's external script file for the Public sounds-->
   <script src="assets/js/public.js"></script>
+  <!--Link to developer's external script file for the Travel sounds-->
   <script src="assets/js/travel.js"></script>
+  <!--Link to developer's external script file for the Weather sounds-->
   <script src="assets/js/weather.js"></script>
+  <!--Link to developer's external script file for the background videos-->
   <script src="assets/js/videos.js"></script>
+  <!--Link to developer's external script file to reset/reload webpage-->
   <script src="assets/js/reset.js"></script>
+  <!--Link to developer's external script file for the inspirational quotes-->
   <script src="assets/js/quotes_api.js"></script>
 </body>
 </html>
