@@ -140,8 +140,9 @@ The overall feel of the website should be one that attracts people who are in ne
 <img src="assets/screenshots/for-readme/color-3.png" alt="Screenshot: Color #299cab" >
 <img src="assets/screenshots/for-readme/color-4.png" alt="Screenshot: Color #fc7844" >
 <br>
+
 - The white colour (#f2feff) was chosen for the company name, icons, hyperlinks, form and button borders, heading and paragraph elements because the white colour contrast well with the website's main background beach image.
-- All the buttons are in a dark blue-green (#016d73) to match with one of the website's main tropical ocean colours.
+- All the buttons are in a dark blue-green (#016d73) to match with one of the website's main tropical ocean colours. It is also the main background colour for the Welcome section.
 - When the 'Change background' button is hovered, its background colour changes from the dark blue-green (#016d73) to the light-blue colour (#299cab), which is also a shade that belongs in a tropical ocean and therefore complements the blue-green shade of cyan colour well.
 - When the 'Reset all' button is hovered, its background colour changes from the dark blue-green (#016d73) to an orange-red colour (#fc7844). This colour is typically associated with an action such as 'reset' or 'cancel' and therefore this colour was chosen by the developer.
 - The standard red colour was used for the heart icon in the How to Use page, which is considered not a permanent element of the website but it makes the heart icon stand out and emphasize the positive feeling of using the website for the users.
@@ -165,6 +166,12 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/).
 
 - [First version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-1.pdf) of the mobile, tablet and desktop mockups was made during the design and planning process for this project. 
 - [Second version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-2.pdf) of the mobile, tablet and desktop mockups was made when the project was almost at the point of completion.
+- [Third and final version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-3.pdf) of the mobile, tablet and desktop mockups was made when the project was after the point of completion.
+
+For comparison, screenshots of the website on different screen sizes were collected also by using [Balsamiq](https://balsamiq.com/). 
+- Screenshots from a desktop screen (Macbook laptop) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/f9d6725e4f09fd3ce8d388248e187dec21b27512/wireframes/bb-website-desktop.pdf).
+- Screenshots from a tablet screen (iPad) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-tablet.pdf).
+- Screenshots from a mobile screen (iPhone X) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-mobile.pdf). 
 
 ### Existing Features
 This website has 5 pages (including 404 error page) and 10 features:
@@ -247,7 +254,7 @@ User stories covered by this feature:
 
 Feature 8: Contact form to give users an opportunity to send feedback or ask questions to the company behind the website
 
-This is found on the Contact page. All fields are required except the file upload field before user can submit the form. Automated data validation is implemented with the help of the required input attribute.
+This is found on the Contact page. All fields are required except the file upload field before user can submit the form. Automated data validation is implemented with the help of the required input attribute. When all the fields are field in correctly, an alert message pops up on the page informing user that the message is sent successfully. When an error occurs, an alert message pops up on the page informing user that the message was not sent successfully.s
 <br>
 <img src="assets/screenshots/for-readme/contact-form.png" alt="Screenshot: The Contact page" width="900" >
 
@@ -266,7 +273,7 @@ User stories covered by this feature:
 
 ### Future Features
 
-- Videos to work as background feature for mobile devices
+- Videos to work as background feature for mobile devices without creating clutter on the page
 - Have a pause button so that users can resume the audio from where they paused the audio
 - Background videos that fully cover screen sizes that are larger than 1920px in width and 1080px in height
 - Have EmailJS subscription that gives the developer the ability to receive files from users who fill in the form via Contact page
@@ -276,14 +283,21 @@ User stories covered by this feature:
 
 **This project used:**
 - Primarily HTML, CSS and JavaScript programming languages. 
-- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)'s CSS and Javascript library, version 5.0. Javascript was used for Bootstrap's carousel and for the collapsed navbar('hamburger').
+- [jQuery](https://jquery.com/)'s JavaScript library, version 3.6.
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)'s CSS and Javascript library, version 5.0.
 - [Google Fonts](https://fonts.google.com/) to style the website's fonts.
 - [Font Awesome](https://fontawesome.com/)'s free kit of icons.
-- Different [Youtube](https://www.youtube.com/) channels royalty/copyright-free sound effects.
+- Different [Youtube](https://www.youtube.com/) channels for their royalty-free/copyright-free/under Creative Commons (CC0) license sound effects.
+- [SoundBible](https://soundbible.com/2178-Crackling-Fireplace.html)'s user Daniel Simion's royalty-free fireplace audio.
 - [Pexels](https://www.pexels.com/) for free videos and images.
 - [Web FX](https://www.webfx.com/web-design/color-picker/)'s color picker.
 - [GitHub](https://github.com/) to store and share all project codes.
 - [GitPod](https://www.gitpod.io/) for their IDE (integrated development environment) while building the website.
+- [W3C Markup Validation Service](https://validator.w3.org/) to validate all HTML code.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS code.
+- [JSHint](https://jshint.com/) tool to help detect errors and potential problems in all JavaScript code.
+- [Lighthouse Chrome Devtools](https://developers.google.com/web/tools/lighthouse#devtools) to evaluate the accessibilty on all of the website's pages.
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to evaluate the accessibilty on all of the website's pages
 
 ## Testing 
 
