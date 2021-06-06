@@ -1,5 +1,5 @@
 /*
-* User clicks the 'Want inspiration?' button to get a random inspirational quotes
+* User clicks the 'Want inspiration?' button to get random inspirational quotes
 * Got help from SoloLearn on how to get data from API
 * Quotes sourced from user SergeyWebPro from freeCodeCamp
 */
@@ -12,9 +12,9 @@ document.addEventListener("click", function (event) {
             return response.json(); //fetch returns a response object which we pass to a JavaScript object
         })
         .then(function(data) { //Result of that data gets passed to the innerHTML below
-        var randomIndex = Math.floor(Math.random()*data.length);
-        document.getElementById("text").innerHTML = '<i class="fas fa-quote-left"></i> <br>'+data[randomIndex].text;
-        document.getElementById("author").innerHTML = '-' + data[randomIndex].author;
+        var randomIndex = Math.floor(Math.random() * data.length); //Got random quotes from the API source array
+        document.getElementById("text").innerHTML = '<i class="fas fa-quote-left"></i> <br>'+data[randomIndex].text; //Adds HTML and quote
+        document.getElementById("author").innerHTML = '-' + data[randomIndex].author; //Adds HTML and author of the quote
     });
     
 });
