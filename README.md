@@ -171,7 +171,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/).
 For comparison, screenshots of the website on different screen sizes were collected also by using [Balsamiq](https://balsamiq.com/). 
 - Screenshots from a desktop screen (Macbook laptop) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/f9d6725e4f09fd3ce8d388248e187dec21b27512/wireframes/bb-website-desktop.pdf).
 - Screenshots from a tablet screen (iPad) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-tablet.pdf).
-- Screenshots from a mobile screen (iPhone X) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-mobile.pdf). 
+- Screenshots from a mobile screen (iPhone 6/7/8 Plus) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-mobile.pdf). 
 
 ### Existing Features
 This website has 5 pages (including 404 error page) and 10 features:
@@ -254,7 +254,7 @@ User stories covered by this feature:
 
 Feature 8: Contact form to give users an opportunity to send feedback or ask questions to the company behind the website
 
-This is found on the Contact page. All fields are required except the file upload field before user can submit the form. Automated data validation is implemented with the help of the required input attribute. When all the fields are field in correctly, an alert message pops up on the page informing user that the message is sent successfully. When an error occurs, an alert message pops up on the page informing user that the message was not sent successfully.s
+This is found on the Contact page. All fields are required except the file upload field before user can submit the form. Automated data validation is implemented with the help of the required input attribute. When all the fields are field in correctly, an alert message pops up on the page informing user that the message is sent successfully. When an error occurs, an alert message pops up on the page informing user that the message was not sent successfully.
 <br>
 <img src="assets/screenshots/for-readme/contact-form.png" alt="Screenshot: The Contact page" width="900" >
 
