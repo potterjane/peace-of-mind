@@ -26,7 +26,7 @@ publicIconBig.addEventListener('click', togglePublicBig); //Added click event to
 function togglePublicBig() { //Sound function for the public icon
     var publicAudio = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
     sourcesPublicBig.setAttribute("src", publicAudio); //Adds random publics audio to the src attribute in index.html
-    
+
     if (publicSoundBig.paused) { 
         publicSoundBig.load();
         publicSoundBig.play(); //If sound is playing, add stop icon and remove the public icon
@@ -37,11 +37,12 @@ function togglePublicBig() { //Sound function for the public icon
         publicIconBig.classList.add('fa-utensils');
         publicIconBig.classList.remove('fa-stop');
     }
+
 }
 
 function randomPublicBig() { //Sound function for the previous and next icons
-    var publicIconBig = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
-    sourcesPublicBig.setAttribute("src", publicIconBig); //Adds random publics audio to the src attribute in index.html
+    var publicAudio = publics[Math.floor(Math.random() * publics.length)]; //Got a random audio file from publics-array
+    sourcesPublicBig.setAttribute("src", publicAudio); //Adds random publics audio to the src attribute in index.html
 
     for (var i = 0; i < publics.length; i++) { //Loops the publics-array
         publicSoundBig.load();
