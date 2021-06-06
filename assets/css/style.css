@@ -296,14 +296,14 @@ h1, h2, h3, h4, h5, h6, p {
 #volume-travel-small,
 #volume-public-big,
 #volume-public-small {
-    width: 65%;
+    width: 100%;
 }
 
 #volume-home-big,
 #volume-home-small, 
 #volume-weather-big,
 #volume-weather-small {
-    width: 40%;
+    width: 100%;
 }
 
 .fa-volume-down, .fa-volume-up {
@@ -400,7 +400,7 @@ input[type=range] {
     background: #299cab;
   }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 
     #volume-nature-big,
     #volume-nature-small,
@@ -408,55 +408,66 @@ input[type=range] {
     #volume-travel-small,
     #volume-public-big,
     #volume-public-small {
-        width: 45%;
+        width: 95%;
     }
 
     #volume-home-big,
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small {
-        width: 30%;
+        width: 90%;
     }
 
-} 
-
-@media screen and (max-width: 992px) {
-
-    #volume-nature-big,
-    #volume-nature-small,
-    #volume-travel-big, 
-    #volume-travel-small,
-    #volume-public-big,
-    #volume-public-small {
-        width: 55%;
-    }
-
-    #volume-home-big,
-    #volume-home-small, 
-    #volume-weather-big,
-    #volume-weather-small {
-        width: 35%;
-    }
-    
     .fa-volume-down, .fa-volume-up {
-        font-size: 100%;
+        font-size: 90%;
     }
 
 }
 
-@media screen and (max-width: 594px) {
+@media screen and (max-width: 627px) {
 
     #volume-nature-big,
     #volume-nature-small,
     #volume-travel-big, 
     #volume-travel-small,
     #volume-public-big,
-    #volume-public-small,
+    #volume-public-small {
+        width: 95%;
+    }
+
     #volume-home-big,
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small {
-        width: 30%;
+        width: 90%;
+    }
+
+    .fa-volume-down, .fa-volume-up {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 598) {
+
+    #volume-nature-big,
+    #volume-nature-small,
+    #volume-travel-big, 
+    #volume-travel-small,
+    #volume-public-big,
+    #volume-public-small {
+        width: 95%;
+    }
+
+    #volume-home-big,
+    #volume-home-small, 
+    #volume-weather-big,
+    #volume-weather-small {
+        width: 90%;
+    }
+
+    .fa-volume-down, .fa-volume-up {
+        font-size: 90%;
     }
 
 }
@@ -473,9 +484,13 @@ input[type=range] {
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small{
-        width: 35%;
+        width: 95%;
     }
-   
+    
+    .fa-volume-down, .fa-volume-up {
+        font-size: 100%;
+    }
+
 }
 
 @media screen and (max-width: 330px) {
@@ -490,7 +505,7 @@ input[type=range] {
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small{
-        width: 20%;
+        width: 100%;
     }
     
     .fa-volume-down, .fa-volume-up {
