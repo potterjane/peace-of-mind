@@ -34,7 +34,7 @@ function togglePublicBig() { //Sound function for the public icon
         publicIconBig.classList.remove('fa-utensils');
     } else {
         publicSoundBig.pause(); //If sound is on pause method, add the public icon and remove the stop icon
-        publicSoundBig.classList.add('fa-utensils');
+        publicIconBig.classList.add('fa-utensils');
         publicIconBig.classList.remove('fa-stop');
     }
 }
