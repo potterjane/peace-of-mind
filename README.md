@@ -169,9 +169,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/).
 - [Third and final version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-3.pdf) of the mobile, tablet and desktop mockups was made when the project was after the point of completion.
 
 For comparison, screenshots of the website on different screen sizes were collected also by using [Balsamiq](https://balsamiq.com/). 
-- Screenshots from a desktop screen (Macbook laptop) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/f9d6725e4f09fd3ce8d388248e187dec21b27512/wireframes/bb-website-desktop.pdf).
-- Screenshots from a tablet screen (iPad) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-tablet.pdf).
-- Screenshots from a mobile screen (iPhone 6/7/8 Plus) can be found [here](https://github.com/potterjane/bobs-and-bangs/blob/ae58108bda48509f1f9123347b45449c4a192631/wireframes/bb-website-mobile.pdf). 
+- Screenshots from a desktop screen (Macbook laptop) can be found [here](https://github.com/potterjane/peace-of-mind/blob/master/assets/screenshots/desktop/pom-desktop.pdf).
+- Screenshots from a tablet screen (iPad) can be found [here](https://github.com/potterjane/peace-of-mind/blob/master/assets/screenshots/tablet/pom-tablet.pdf).
+- Screenshots from a mobile screen (iPhone 6/7/8 Plus) can be found [here](https://github.com/potterjane/peace-of-mind/blob/master/assets/screenshots/mobile/pom-mobile.pdf).
 
 ### Existing Features
 This website has 5 pages (including 404 error page) and 10 features:
