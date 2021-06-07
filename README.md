@@ -96,7 +96,7 @@ As a new or returning user, I want:
 
 As a music/video artist or web developer looking for a job, I want:
 8. To be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
-9. To be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
+9. To be able to know the background of the company, so that I can come to a decision on whether or not to apply for a job with the company.
 10. To be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
 
 #### Developer and Business Goals

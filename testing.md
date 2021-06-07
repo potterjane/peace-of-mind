@@ -90,60 +90,79 @@ As you can see here, the form elements do actually have associated labels but th
 ## User Stories Testing
 In this section, this developer manually tested all the user stories described on the [README](README.md) page, under the UX section.
 
-As a new or retained customer, I want:
-1. To be able to know the background of the company, their price list of services, what other customers think of their services via reviews or social links, 
-so that I can come to a decision whether or not to try out their services. 
-    - Background of the company is found on the About page in 3 paragraphs with light purple colour on the company title
-    to make the paragraphs more vibrant.
-    - Company's price list of services is found on the Services page as tables to make it clear and concise.
-    - Customer reviews are found on the Home page as a Bootstrap carousel with 4 different customer reviews.
-    Scissor icons, coloured in the same light purple colour, are used as 'review stars' to make it unique and
-    match the theme of the website.
-    - Social links opens in a new tab on all of the pages under the footer section, making it easily accessible.
+1. As a new or returning user, I want to be able to use the website's sound effect clips, quotes and background videos with as few clicks as possible, so that I can get in to the right head space immediately.
+8. As a music/video artist or web developer looking for a job, I want to be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
 
-All of the above points make the website stand out and attract users to book an appointment.
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| On the Home page, find the sound effects | Click on one of the sound effects icon or its corresponding previous/next button | A random sound effect is playing and the type of sound effect matches the theme of the sound effects icon. The sound effects icon is also replaced with a stop icon | Works as expected |
+| On the Home page, find the stop button | Click on one of the sound effects icon or its corresponding previous/next button and then click the same sound effects icon to stop playing the sound effect | When user clicks the stop icon, the sound effect stops playing immediately | Works as expected |
+| On the Home page, find the volume slider | Click on one of the sound effects icon or its corresponding previous/next button and then move the volume slider left and right | When user moves the volume slider to the left, it decreases the volume and when user moves it to the right, it increases the volume | Works as expected |
+| On the Home page, find the background images | Click on the 'Change background' button | A random video is playing in the background of the page, muted and on a loop until user clicks on the button again to change to a different background video | Works as expected |
+| On the Home page, find the quotes | Click on the 'Want inspiration?' button | A random quote and its author is displayed under the button. It remains on display until user clicks on the button again to change to a different quote | Works as expected |
 
-2. To be able to easily book an appointment with as few clicks as possible, so that I can book an appointment with a minimum amount of time, anytime I like.
-    - Modal button with booking form is found directly on the Home page, near the center.
-    - A separate Booking page is found in the navigation bar (in order of importance).
+<br>
 
-When user lands on the first page, they only need to make one click to either access the booking form via the modal button or via the navigation bar.
+2. As a new or returning user, I want to be able to reset all features with one click.
 
-3. To know if there are any special offers/discounts directly on the first page, so that I know straight away if I should book an appointment now or later.
-    - A highlighted text that says, 'Get 15% off your first appointment!' is found on the Home page, directly under the modal button to the booking form.
-    - The light-coloured highlighted text (in contrast with the rest of the page) makes it stand out and draws the user's eyes directly to it.
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| On the Home page, start playing one or several of the sound effects via their icon and then find the 'Reset all' button | Click on the 'Reset all' button | When a sound effect clip is playing, click on the button to cancel the action/reload the page  | Works as expected |
+| On the Home page, start playing a background video by clicking on the 'Change background' button and then find the 'Reset all' button | Click on the 'Reset all' button | When a background video is playing, click on the button to cancel the action/reload the page | Works as expected |
+| On the Home page, start displaying a random quote by clicking on the 'Want inspiration?' button and then find the 'Reset all' button | Click on the 'Reset all' button | When a quote and its author is on display, click on the button to cancel the action/reload the page | Works as expected |
 
-4. To be able to contact the company in various ways, depending on my personal preference, so that I can contact the company if I have any questions or want to book/rebook/cancel an appointment.
-    - In the footer section on all of the pages, users can find the company's visiting address and click on 'target="_blank"' links to phone number, e-mail address and social applications.
-    - On the Contact page, users can find information on how to rebook/cancel an appointment, can fill in a contact form and click on 'target="_blank"' links to call or e-mail the company.
+<br>
 
-5. To see several images/videos, so that I can gain a better insight on what it is like inside the hair salon/barbershop.
-    - An background image of brush, scissors and razors on a wooden table is added to the hero section on the Home page. This informs the users of the hair salon's/barbershop's
-    rustic aesthetic and what industry this website is related to.
-    - 6 different images are added to a Bootstrap carousel to create a sense of movement but also to avoid clutter on the About page.
-    - An additional 2 different images are shown on the Services page on smaller screens. On bigger screens, there are instead 2 different videos that users can control.
-    When user presses play, the video is played on mute and on a loop until the user presses pause.
+3. As a new or returning user, I want to be able to find and follow instructions in an easy way, so that I know how to best use the website.
 
-All of the above-mentioned images and videos are sourced from one and the same user called [cottonbro](https://www.pexels.com/@cottonbro)'s [Pexels](https://www.pexels.com/) free library.
-This is done intentionally to make it feel more like a real company. This has been successful since several of the developer's friends and family that tested out the website on their devices
-thought it was a real hair salon/barbershop.
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| Find the How To Use page | Click on 'How To Use' on the top of the page in the navigation section | To send user to the How To Use page where and ordered list of instructions and its corresponding icons/button to illustrate the instructions are seen | Works as expected |
 
-As a hair stylist/barber looking for a job, I want:
-1. To be able to know the background of the company, what customers think of their services via reviews or social links, so that I can come to a decision on whether or not
-to send in my resume/CV.
-    - Background of the company is found on the About page in 3 paragraphs with light purple colour on the company title
-    to make the paragraphs more vibrant.
-    - Customer reviews are found on the Home page as a Bootstrap carousel with 4 different customer reviews.
-    Scissor icons, coloured in the same light purple colour, are used as 'review stars' to make it unique and
-    match the theme of the website.
-    - On the Contact page, the top-left section is titled 'Want to work with us?' with a direct link to the company's email-address for job seekers. 
-    - Social links opens in a new tab on all of the pages under the footer section, making it easily accessible.
+<br>
 
-All of the above points make the website stand out and attract users that are potential employees to contact the company and send it their CV/resume.
+4. As a new or returning user, I want to be able to know the background of the company, so that I understand what they want us to achieve when using the website.
+9. As a music/video artist or web developer looking for a job, I want to be able to know the background of the company, so that I can come to a decision on whether or not to apply for a job with the company.
 
-2. To be able to contact the company in various ways, depending on my personal preference, so that I can contact the company if I have any more questions.
-    - In the footer section on all of the pages, users can find the company's visiting address and click on 'target="_blank"' links to phone number, e-mail address and social applications.
-    - On the Contact page, users can find a direct link to the company's email-address for job seekers, can fill in a contact form and click on 'target="_blank"' links to call or e-mail the company.
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| Find the About page | Click on 'About' on the top of the page in the navigation section | To send user to the About page where background information about the website and what they aim to achieve is seen | Works as expected |
+
+<br>
+
+5. As a new or returning user, I want to know what other users think of their website, so that I can see what kind of users use the website and why.
+
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| Find the social links in the footer section of the Home page | Scroll down and click on one of the social icons on the left-hand side of the page  | When clicked the home page of the equivalent social link is opened on a new tab | Works as expected |
+| Find the social links in the footer section of the How To Use page | Scroll down and click on one of the social icons on the left-hand side of the page  | When clicked the home page of the equivalent social link is opened on a new tab | Works as expected |
+| Find the social links in the footer section of the About page | Scroll down and click on one of the social icons on the left-hand side of the page  | When clicked the home page of the equivalent social link is opened on a new tab | Works as expected |
+| Find the social links in the footer section of the Contact page | Scroll down and click on one of the social icons on the left-hand side of the page  | When clicked the home page of the equivalent social link is opened on a new tab | Works as expected |
+
+<br>
+
+6. As a new or returning user, I want to be able to contact the company in an easy way, so that I can send any questions or feedback I might have with as few clicks as possible.
+10. As a music/video artist or web developer looking for a job, I want to be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
+
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| Find the Contact page | Click on 'Contact' on the top of the page in the navigation section | To send user to the Contact page where an unfilled form is seen | Works as expected |
+| Fill in the Contact page with correct input data  | Fill in all the required fields, attach a file and then click 'Submit' button | After submission, form is completely cleared and user gets an alert message that says 'Message successfully sent!'| Works as expected |
+| Fill in the Contact page with correct input data | Fill in all the required fields, do not attach a file and then click 'Submit' button | After submission, form is completely cleared and user gets an alert message that says 'Message successfully sent!'| Works as expected |
+| Fill in the Contact page with incorrect input data | Fill in all the required fields except for 'Name' field and then click 'Submit' button | To receive a pop-up error message under the 'Name' field that states 'Please fill in this field'| Works as expected |
+| Fill in the Contact page with incorrect input data | Fill in all the required fields except for 'E-mail' field and then click 'Submit' button | To receive a pop-up error message under the 'E-mail' field that states 'Please fill in this field' alternatively 'Please include an "@" in the email address' | Works as expected |
+| Fill in the Contact page with incorrect input data | Fill in all the required fields except for 'Message' field and then click 'Submit' button | To receive a pop-up error message under the 'Message' field that states 'Please fill in this field'| Works as expected |
+
+<br>
+
+7. To have an easy way to navigate back to the Home page, so that if I ever get lost, I can get back to the where I need to be with as few clicks as possible.
+
+| Feature | Action | Expected result | Actual result |
+| ------------- | ------------- | -------------   | ------------- |
+| On the 404 error page, find the button to the Home page | Click on the 'Go back to the Home page' button | To send user back to the Home page | Works as expected |
+| Open the 404 error page, find the navigation bar | Go to the top of the page and click on any links in the navigation bar  | To send user to the selected existing page on the website | Works as expected |
+
+<br>
 
 ## Manual Testing
 
