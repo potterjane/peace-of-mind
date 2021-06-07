@@ -304,6 +304,5 @@ Firefox: Website and user stories work as expected.
 
 - Used Chrome DevTools repeatedly throughout the project to test the website on all the different
 devices and orientations available in the built-in tool.
-- Tested out the website on different computer/laptop screen sizes and also on developer's iPhone 6.
 - Asked friends and family to test out the website on their devices to see if there were any 
 further issues found.
