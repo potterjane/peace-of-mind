@@ -296,14 +296,14 @@ h1, h2, h3, h4, h5, h6, p {
 #volume-travel-small,
 #volume-public-big,
 #volume-public-small {
-    width: 100%;
+    width: 50%;
 }
 
 #volume-home-big,
 #volume-home-small, 
 #volume-weather-big,
 #volume-weather-small {
-    width: 100%;
+    width: 30%;
 }
 
 .fa-volume-down, .fa-volume-up {
@@ -408,14 +408,14 @@ input[type=range] {
     #volume-travel-small,
     #volume-public-big,
     #volume-public-small {
-        width: 95%;
+        width: 50%;
     }
 
     #volume-home-big,
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small {
-        width: 90%;
+        width: 30%;
     }
 
     .fa-volume-down, .fa-volume-up {
@@ -432,14 +432,14 @@ input[type=range] {
     #volume-travel-small,
     #volume-public-big,
     #volume-public-small {
-        width: 95%;
+        width: 60%;
     }
 
     #volume-home-big,
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small {
-        width: 90%;
+        width: 40%;
     }
 
     .fa-volume-down, .fa-volume-up {
@@ -455,15 +455,12 @@ input[type=range] {
     #volume-travel-big, 
     #volume-travel-small,
     #volume-public-big,
-    #volume-public-small {
-        width: 95%;
-    }
-
+    #volume-public-small,
     #volume-home-big,
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small {
-        width: 90%;
+        width: 25%;
     }
 
     .fa-volume-down, .fa-volume-up {
@@ -484,7 +481,7 @@ input[type=range] {
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small{
-        width: 95%;
+        width: 30%;
     }
     
     .fa-volume-down, .fa-volume-up {
@@ -505,7 +502,7 @@ input[type=range] {
     #volume-home-small, 
     #volume-weather-big,
     #volume-weather-small{
-        width: 100%;
+        width: 40%;
     }
     
     .fa-volume-down, .fa-volume-up {
@@ -558,6 +555,10 @@ input[type=range] {
 .fa-step-backward ,
 .fa-step-forward  {
     font-size: 30px;
+}
+
+label {
+    display: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -997,17 +998,6 @@ input[type=range] {
     border: 2px solid #f2feff;
     margin-bottom: 15px;
     width: 100%;
-}
-
-.name-label,
-.email-label,
-.upload-label,
-.message-label {
-    color: #f2feff;
-}
-
-#message {
-    margin-top: 0;
 }
 
 .contact-btn {
