@@ -448,7 +448,7 @@ input[type=range] {
 
 }
 
-@media screen and (max-width: 598) {
+@media screen and (max-width: 598px) {
 
     #volume-nature-big,
     #volume-nature-small,

@@ -22,50 +22,22 @@ View the website [here](https://potterjane.github.io/peace-of-mind/)
 ## Automated Testing
 
 ### Validation services
-- [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages (home, how-to-use, about, contact, and 404 error page).
-Copied all the code from the html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
+- [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages.
+Copied all the code from an html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
 **For this website, no errors or warnings to show on any of the HTML pages.**
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS. Copied all the code from the css page, pasted it in the field under 'By direct input' and then clicked on the 'Check' button.
-**For this website, no errors were found, however there were some warnings:** 
-
-This [StackOverflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error)
-post explained that the warning on line 1, 'Imported style sheets are not checked in direct input and file upload modes',
-meant that it did not validate the imported style sheet. In other words, not actually a warning, just information.
-The other warnings were related to 'webkit', 'moz' and 'o' property. However, this developer did not remove these properties because it helps support browser compatibility efforts. 
-```
-Warnings (19)
-URI : TextArea
-1		Imported style sheets are not checked in direct input and file upload modes
-186		-webkit-background-size is an unknown vendor extension
-187		-moz-background-size is an unknown vendor extension
-188		-o-background-size is an unknown vendor extension
-1025	::-webkit-outer-spin-button is an unknown vendor extended pseudo-element
-1026	::-webkit-inner-spin-button is an unknown vendor extended pseudo-element
-1027	-webkit-appearance is an unknown vendor extension
-1033	-moz-appearance is an unknown vendor extension
-1038	:-webkit-autofill is an unknown vendor extended pseudo-class
-1039	:-webkit-autofill is an unknown vendor extended pseudo-class
-1040	:-webkit-autofill is an unknown vendor extended pseudo-class
-1041	:-webkit-autofill is an unknown vendor extended pseudo-class
-1042	:-webkit-autofill is an unknown vendor extended pseudo-class
-1043	:-webkit-autofill is an unknown vendor extended pseudo-class
-1044	:-webkit-autofill is an unknown vendor extended pseudo-class
-1045	:-webkit-autofill is an unknown vendor extended pseudo-class
-1046	:-webkit-autofill is an unknown vendor extended pseudo-class
-1048	-webkit-text-fill-color is an unknown vendor extension
-1049	-webkit-box-shadow is an unknown vendor extension
-```
+**For this website, no errors or warnings to show on the CSS page.**
+- [JSHint](https://jshint.com/) was used to validate all the JS pages.
+Copied all the code from a JS page, pasted it in the left-side of the tool.
+**For this website, no errors or warnings to show on any of the JS pages.**
 
 ### Accessibility services
 - [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was used to
 evaluate the accessibilty on all of the website's page in incognito mode, as recommended (see screenshot below).
-In order to run a Lighthouse report, open Google Chrome, go to the URL for [Bobs & Bangs](https://potterjane.github.io/bobs-and-bangs/) and then open Chrome DevTools. 
-Change from the Elements tab to the Lighthouse tab (You might need to click on 'right arrows' icon to access this tab). Choose at least one category and a device
-and then click on 'Generate report'.
+In order to run a Lighthouse report, open Google Chrome, go to the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then open Chrome DevTools. 
+Change from the Elements tab to the Lighthouse tab (You might need to click on 'right arrows' icon to access this tab). Choose at least one category and a device and then click on 'Generate report'.
 **The report generated an Accessibility rate of 100 out of 100 for this website.**
-- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to evaluate the accessibilty
-on all of the website's pages in incognito mode. You simply need to write the URL for [Bobs & Bangs](https://potterjane.github.io/bobs-and-bangs/) and then press 'Enter'
-to get the results.
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to evaluate the accessibilty on all of the website's pages in incognito mode. You simply need to write the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then press 'Enter' to get the results.
 **The results were no errors were detected for this website.**
 
 <div align="center"><h4>Lighthouse error outside incognito mode</h4>
@@ -73,8 +45,7 @@ to get the results.
 </div>
 
 ### Other Evaluation services via Lighthouse
-- [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was also used
-to evaluate performance, best practices and SEO on all of the website's pages in incognito mode.
+- [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was also used to evaluate performance, best practices and SEO on all of the website's pages in incognito mode.
 **The report generated a Performance rate an average of 96 out of 100 for this website.**
 **The report generated a Best Practices rate of 100 out of 100 for this website.**
 **The report generated a SEO rate of 100 out of 100 for this website.**
