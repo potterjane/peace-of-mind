@@ -999,6 +999,13 @@ input[type=range] {
     width: 100%;
 }
 
+.label-text {
+    text-align: left;
+    color: #f2feff;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
 #message {
     margin-top: 0;
 }
