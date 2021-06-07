@@ -995,15 +995,15 @@ input[type=range] {
     background-color: transparent;
     color: #f2feff;
     border: 2px solid #f2feff;
-    margin: 15px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
-.label-text {
-    text-align: left;
+.name-label,
+.email-label,
+.upload-label,
+.message-label {
     color: #f2feff;
-    margin-left: 15px;
-    margin-bottom: 0;
 }
 
 #message {

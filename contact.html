@@ -106,16 +106,18 @@
         <form onsubmit="return feedbackForm(this);"> <!--Got this code from Code Institute's Sending Emails Using EmailJS module-->
           <div class="row">
             <div class="col">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+              <label for="name" class="name-label">Name</label>
+              <input type="text" name="name" id="name" class="form-control" required>
             </div>  
             <div class="col">
-              <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+              <label for="email" class="email-label">E-mail</label>
+              <input type="email" name="email" id="email" class="form-control" required>
             </div>    
           </div>
           <!--Got this code from W3Schools on how to add file-select field in a form. While user can upload files, the developer cannot receive the files because they have reached the subscription limit in EmailJS-->
           <div class="row">
             <div class="col">
-              <label class="label-text">
+              <label class="upload-label">
                 Want to send us something?
                 <input type="file" id="uploadfile" name="uploadfile">
               </label>
@@ -124,7 +126,8 @@
           <br>
           <div class="row">
             <div class="col">
-              <textarea name="message" id="message" cols="90" rows="10" placeholder="Message" required></textarea>
+              <label for="message" class="message-label">Message</label>
+              <textarea name="message" id="message" cols="90" rows="10" required></textarea>
             </div>
           </div>
           <input class="btn contact-btn" type="submit" value="Send">
