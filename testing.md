@@ -33,17 +33,57 @@ View the website [here](https://potterjane.github.io/peace-of-mind/)
 - [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was used to evaluate the accessibilty on all of the website's page in incognito mode, as recommended (see screenshot below).
 In order to run a Lighthouse report, open Google Chrome, go to the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then open Chrome DevTools. 
 Change from the Elements tab to the Lighthouse tab (You might need to click on 'right arrows' icon to access this tab). Choose at least one category and a device and then click on 'Generate report'.
-**The report generated an Accessibility rate of 100 out of 100 for this website.**
+**The report generated an Accessibility rate of 100 out of 100 for the following pages: 404 error page, How To Use page, and About page.**
+**The Home page generated an Accessibility rate of 91 out of 100 and the Contact page generated an Accessibility rate of 90 out of 100. Both pages got this rating for the same reason**
+
+<div align="center"><h4>Accessibility rating for Home page</h4>
+<img src="assets/screenshots/for-testing/accessibility-home.png" alt="Screenshot: Accessibility rating for Home page" >
+</div>
+<div align="center"><h4>Accessibility rating for Contact page</h4>
+<img src="assets/screenshots/for-testing/accessibility-contact.png" alt="Screenshot: Accessibility rating for Contact page" >
+</div>
+
+As you can see here, the form elements do actually have associated labels but the label element has been set to ```label{display: none;}``` in CSS. Since the accessibility rating has a valid reason but cannot be 'fixed' without changing the design of the pages, this developer chose to leave it on this Accessibility rating.
+
+**Snippet of the HTML for Home page**
+```html
+<div class="row">
+  <!--Travel sounds-->
+  <div class="travel col">
+    <i class="fas fa-volume-down"></i>
+    <label for="volume-travel-small">Volume</label>
+    <input type="range" id="volume-travel-small"> <!--Code taken from StackOverflow on how to add volume slider in HTML-->
+    <i class="fas fa-volume-up"></i>
+    <br>
+    <i class="fas fa-step-backward" onclick="randomTravelSmall()"></i><i id="travel-icon-small" class="fas fa-fw fa-subway main-icon"></i><i class="fas fa-step-forward" onclick="randomTravelSmall()"></i>
+    <audio loop id="travel-sound-small">
+      <source src="#" type="audio/mp3" id="sourceTravelSmall">
+      Your browser does not support embedded audio.
+    </audio>
+    <p>Travel</p>
+  </div>
+</div>
+```
+**Snippet of the HTML for Contact page**
+```html
+<div class="row">
+  <div class="col">
+    <label for="uploadfile" class="upload-label">Want to send us something?</label>
+    <input type="file" id="uploadfile" name="uploadfile">
+  </div>
+</div>
+```
+
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to evaluate the accessibilty on all of the website's pages in incognito mode. You simply need to write the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then press 'Enter' to get the results.
 **The results were no errors were detected for this website.**
 
 <div align="center"><h4>Lighthouse error outside incognito mode</h4>
-<img src="screenshots/incognito-lighthouse.png" alt="Screenshot: Lighthouse error outside incognito mode" >
+<img src="assets/screenshots/for-testing/incognito-lighthouse.png" alt="Screenshot: Lighthouse error outside incognito mode" >
 </div>
 
 ### Other Evaluation services via Lighthouse
 - [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was also used to evaluate performance, best practices and SEO on all of the website's pages in incognito mode.
-**The report generated a Performance rate an average of 96 out of 100 for this website.**
+**The report generated a Performance rate an average of 94.7 out of 100 for this website.**
 **The report generated a Best Practices rate of 100 out of 100 for this website.**
 **The report generated a SEO rate of 100 out of 100 for this website.**
 
