@@ -80,7 +80,6 @@ New and returning user's goals are:
 Potential new employee's goals are:
 - Easy-to-use website with sound effect clips, quotes and background videos in order to know what the company's forte is and where there is room for improvement
 - A page where they can read more about who is behind the company and what they aim to achieve with the website
-- Get a sense of what users think of their website and if it lives up to the company's goals, for example via the company's social media
 - A contact page for job seekers to send in their questions and/or attach their resume/CV/portfolio/personal letter
 
 #### User Stories
@@ -95,6 +94,8 @@ As a new or returning user, I want:
 7. To have an easy way to navigate back to the Home page, so that if I ever get lost, I can get back to the where I need to be with as few clicks as possible.
 
 As a music/video artist or web developer looking for a job, I want:
+<br>
+
 8. To be able to use the website's sound effect clips, quotes and background videos in an easy way in order to know what the company's forte is and where there is room for improvement, so that I know how I can potentially collaborate and be a part of the company.
 9. To be able to know the background of the company, so that I can come to a decision on whether or not to apply for a job with the company.
 10. To be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
