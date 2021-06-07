@@ -22,18 +22,26 @@ View the website [here](https://potterjane.github.io/peace-of-mind/)
 
 ### Validation services
 - [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages. Copied all the code from an html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
+
 **For this website, no errors or warnings to show on any of the HTML pages.**
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS. Copied all the code from the css page, pasted it in the field under 'By direct input' and then clicked on the 'Check' button.
+
 **For this website, no errors or warnings to show on the CSS page.**
 - [JSHint](https://jshint.com/) was used to validate all the JS pages. Copied all the code from a JS page, pasted it in the left-side of the tool.
+
 **For this website, no errors or warnings to show on any of the JS pages.**
 
 ### Accessibility services
 - [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was used to evaluate the accessibilty on all of the website's page in incognito mode, as recommended (see screenshot below).
+<div align="center"><h4>Lighthouse error outside incognito mode</h4>
+<img src="assets/screenshots/for-testing/incognito-lighthouse.png" alt="Screenshot: Lighthouse error outside incognito mode" >
+</div>
 In order to run a Lighthouse report, open Google Chrome, go to the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then open Chrome DevTools. 
 Change from the Elements tab to the Lighthouse tab (You might need to click on 'right arrows' icon to access this tab). Choose at least one category and a device and then click on 'Generate report'.
+
 **The report generated an Accessibility rate of 100 out of 100 for the following pages: 404 error page, How To Use page, and About page.**
-**The Home page generated an Accessibility rate of 91 out of 100 and the Contact page generated an Accessibility rate of 90 out of 100. Both pages got this rating for the same reason**
+
+**The Home page generated an Accessibility rate of 91 out of 100 and the Contact page generated an Accessibility rate of 90 out of 100. Both pages got this rating for the same reason:**
 
 <div align="center"><h4>Accessibility rating for Home page</h4>
 <img src="assets/screenshots/for-testing/accessibility-home.png" alt="Screenshot: Accessibility rating for Home page" >
@@ -74,14 +82,12 @@ As you can see here, the form elements do actually have associated labels but th
 ```
 
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to evaluate the accessibilty on all of the website's pages in incognito mode. You simply need to write the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then press 'Enter' to get the results.
-**The results were no errors were detected for this website.**
 
-<div align="center"><h4>Lighthouse error outside incognito mode</h4>
-<img src="assets/screenshots/for-testing/incognito-lighthouse.png" alt="Screenshot: Lighthouse error outside incognito mode" >
-</div>
+**The results were no errors were detected for this website.**
 
 ### Other Evaluation services via Lighthouse
 - [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was also used to evaluate performance, best practices and SEO on all of the website's pages in incognito mode.
+
 **The report generated a Performance rate an average of 94.7 out of 100 for this website.**
 **The report generated a Best Practices rate of 100 out of 100 for this website.**
 **The report generated a SEO rate of 100 out of 100 for this website.**
@@ -173,7 +179,7 @@ Several tests were done on a Poco mobile screen, iPhone 6 mobile screen, iPhone 
 
 You can compare the desktop, tablet and mobile screenshots with the [third and final version](https://github.com/potterjane/peace-of-mind/blob/master/wireframes/pom-wireframes-version-3.pdf) of the wireframes.
 
-**For testing, this developer followed these steps**
+**For testing, this developer followed these steps:**
 
 1. The Welcome page is shown when user first visits the website. In front of a dark blue-green background, the letters are being displayed at the center of the page, one letter at a time. The Welcome page transitions to the Home page in a fade-out effect.
 2. The page links in the navigation bar sends user to the correct page when clicked. No broken links on the static navigation bar or on the collapsed sidebar.
@@ -194,11 +200,11 @@ You can compare the desktop, tablet and mobile screenshots with the [third and f
 
 All devices were able to pass all tests, except the older iPhone model, the iPhone 6: that did not pass test number 7. This developer was not able to find a solution to this.
 
-Brave Browser: Website and user stories work as expected.
-Microsoft Edge: Website and user stories work as expected.
-Google Chrome: Website and user stories work as expected.
-Opera: Website and user stories work as expected.
-Safari: Website and user stories work as expected.
+Brave Browser: Website and user stories work as expected. <br>
+Microsoft Edge: Website and user stories work as expected. <br>
+Google Chrome: Website and user stories work as expected. <br>
+Opera: Website and user stories work as expected. <br>
+Safari: Website and user stories work as expected. <br>
 Firefox: Website and user stories work as expected.
 
 ## Bugs discovered
@@ -217,25 +223,14 @@ Firefox: Website and user stories work as expected.
     </div>
 
     **How this developer fixed it:**
-    Removed the 'Change background' button from the smaller mobile screen sizes in index.html.
+    Removed the 'Change background' button and function from the smaller mobile screen sizes in index.html.
 
 2. **Background videos not visibly playing due to main background image**
 
-    Background videos have z-index: -5. When user clicks the 'Change background' button, no videos are visibly showing because it is played behind the background image. 
+    Background videos have z-index: -5. When user clicks the 'Change background' button, no videos are visibly showing because it is playing behind the background image. 
 
     **How this developer fixed it:**
     Added the removeClass to remove the background image in when the changeBackground() function is called. See this developer's code on assets/js/videos.js with comments.
-
-3. **Entire Welcome text not showing**
-
-    The Welcome text, 'How are you feeling?' was not entirely visible on mobile or smaller screen sizes.
-
-    <div align="center"><h4>Incomplete Welcome text on mobile</h4>
-    <img src="assets/screenshots/for-testing/how-are.jpg" alt="Screenshot: Incomplete Welcome text on mobile" >
-    </div>
-
-    **How this developer fixed it:**
-    Tried at first to break the text to two rows but that did not work. Instead, decreased the font size for mobile and smaller screens sizes.
 
 3. **Entire Welcome text not showing**
 
@@ -276,7 +271,7 @@ Firefox: Website and user stories work as expected.
 
     This error does not affect the feature's function. However, this developer was not able to fix console error, tried to follow the instructions in the post on [StackOverflow](https://stackoverflow.com/questions/36803176/how-to-prevent-the-play-request-was-interrupted-by-a-call-to-pause-error) but the error remained.
 
-2. **Volume adjuster not working on iPhone6**
+2. **Volume adjuster not working on iPhone 6**
 
     Volume slider is visible and user can move the slider left to right (and vice versa) but it does not decrease/increase the volume when moved.
 

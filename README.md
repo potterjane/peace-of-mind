@@ -176,7 +176,7 @@ For comparison, screenshots of the website on different screen sizes were collec
 - Screenshots from a mobile screen (iPhone 6/7/8 Plus) can be found [here](https://github.com/potterjane/peace-of-mind/blob/master/assets/screenshots/mobile/pom-mobile.pdf).
 
 ### Existing Features
-This website has 5 pages (including 404 error page) and 10 features:
+This website has 5 pages (including 404 error page) and 9 features:
 
 Feature 1: Audio clips (of different sound effects such as thunder, rain, fire, crowd walla, keyboard typing, birds chirping, car driving, and so on) with basic music buttons (such as play/stop, volume, previous/next)
 
@@ -452,7 +452,7 @@ The videos were sourced from the following creator's [Pexels](https://www.pexels
 ### Acknowledgements
 
 Special thanks to: 
-- Code Institute Mentor Mo for all of his time and for offering his support and suggestions on what this developer needs to focus on in order to get distinction grade on this project.
+- Code Institute's mentor Mo Shami for all of his time and for offering his support and suggestions on what this developer needs to focus on in order to get distinction grade on this project.
 - Code Institute's tutors Tim, John and Jo for their helpful guidance, resources, advice and endless support.
 - Boyfriend Fredrik, friends Alex and Emelie, sisters Marie and Erin and dad for testing the website and giving this developer both positive and constructive feedback.
 
