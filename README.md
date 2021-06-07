@@ -406,39 +406,40 @@ The videos were sourced from the following creator's [Pexels](https://www.pexels
 
 
 ### Code
-- How to keep footer where it belongs: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ 
-- How to clear form after it has been submitted: https://www.tutorialspoint.com/How-to-reset-or-clear-a-form-using-JavaScript 
-- How to use JS to cycle through background videos with a button: https://stackoverflow.com/questions/41643895/use-javascript-to-cycle-through-video-backgrounds-and-change-css 
-- How to press play/pause: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp 
-- Informed which audio and video formats supports which browser: https://www.w3schools.com/html/html_media.asp MP3 is supported by all browsers
-- How to create intro/welcome screen (splash screen): https://www.youtube.com/watch?v=MOlaldp1Fv4&ab_channel=ConorBailey 
-- How to use JS to type out one letter at a time: https://www.youtube.com/watch?v=HjVVD8E84Kk&ab_channel=MaximusMcCullough 
-- How to create fullscreen background video: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp 
-- How to add multiple video sources in Javascript: http://burnignorance.com/html-tips/how-to-play-multiple-videos-in-a-loop-using-html5-and-javascript/ 
-- How to make sure that the Welcome section appears once per visit and not every time user reloads or clicks on Home on nabber: https://www.sitepoint.com/community/t/display-splash-preloader-screen-once-per-visit/266148 
-- Random videos from array: https://www.kirupa.com/html5/picking_random_item_from_array.htm 
-- Object keys: https://javascript.info/keys-values-entries 
-- Set attributes: https://www.w3schools.com/jsref/met_element_setattribute.asp 
-- How to add volume slider in HTML and control volume via JS: https://stackoverflow.com/questions/62160275/js-audio-volume-slider 
-- Customise the volume slider in CSS: https://www.cssportal.com/style-input-range/ 
-- How to clear form after every submit: https://www.w3schools.com/jsref/met_form_reset.asp
-- How to reload page using JS: https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#:~:text=To%20reload%20the%20page%20keeping,reload()%3B
-- How to toggle audio play and pause with one button in JS: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
-- How to add 404 page in HTML: https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing 
-- How to add side collapse navbar: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp 
-- More instructions on how to implement quote API: https://www.sololearn.com/Discuss/2419539/here-the-following-api-includes-quotes-how-to-generate-random-quote-here-i-m-just-able-to-generate
-- Placeholder text color: https://www.w3schools.com/howto/howto_css_placeholder.asp 
-- Free quotes: https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 & https://type.fit/api/quotes 
-- Root path etc: https://stackoverflow.com/questions/4810927/how-to-go-up-a-level-in-the-src-path-of-a-url-in-html 
-- How to remove class: https://www.w3schools.com/jquery/html_removeclass.asp 
-- How to shorten horizontal sides: https://stackoverflow.com/questions/38502050/how-to-adjust-the-width-of-a-horizontal-rule-element 
-- How to add two on submit functions: https://stackoverflow.com/questions/11806253/onsubmit-multiple-javascript-functions 
-- Form Validation: https://www.w3schools.com/js/js_validation.asp 
+- Bootstrap's [grid system](https://getbootstrap.com/docs/5.0/layout/grid/), [containers](https://getbootstrap.com/docs/5.0/layout/containers/), 
+[custom button styles](https://getbootstrap.com/docs/5.0/components/buttons/), [navbar](https://getbootstrap.com/docs/5.0/components/navbar/) were used.
+- Code on how to add collapsed sidebar was taken from [W3Schools](https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp)' post.
+- Code on how to add volume slider in HTML and control the volume via JS was taken from [StackOverflow](https://stackoverflow.com/questions/62160275/js-audio-volume-slider)'s post.
+- Code on how to create HTML tables taken from [W3Schools](https://www.w3schools.com/html/html_tables.asp)' post.
+- Code on how to use EmailJS was taken from [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/)'s module about EmailJS
+- Code on how to add input type 'file' was taken from [W3Schools](https://www.w3schools.com/tags/att_input_type_file.asp)' post.
+- Code on how to place welcome text in front of the website was taken from [Conor Bailey](https://www.youtube.com/watch?v=MOlaldp1Fv4&ab_channel=ConorBailey)'s instructional Youtube video.
+- Code on how to keep footer at the bottom of the page was taken from [freeCodeCamp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)'s post.
+- Code on how to shorten horizontal sides of an element was taken from [StackOverflow](https://stackoverflow.com/questions/38502050/how-to-adjust-the-width-of-a-horizontal-rule-element)'s post.
+- Code on how to customize input type range is taken from [CSS Portal](https://www.cssportal.com/style-input-range/).
+- Code on how to create soft and round edged borders was taken from [W3Schools](https://www.w3schools.com/css/css_border.asp)' post.
+- Code on how to create fullscreen background video was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)' post.
+- Code on how to add any chosen colour to the placeholder was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_placeholder.asp)' post.
+- Code on how to change the autofill styles for the input fields in forms was taken from this [CSS-Tricks](https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/) post.
+- Code on how to clear form after it has been submitted was taken from [W3Schools](https://www.w3schools.com/jsref/met_form_reset.asp)' post.
+- Code on how to implement quote API was taken from [SoloLearn](https://www.sololearn.com/Discuss/2419539/here-the-following-api-includes-quotes-how-to-generate-random-quote-here-i-m-just-able-to-generate)'s post.
+- Code on how to reload a page using JS was taken from [StackOverflow](https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#:~:text=To%20reload%20the%20page%20keeping,reload()%3B)'s post.
+- Code on how to get random videos from array was taken from [Kirupa](https://www.kirupa.com/html5/picking_random_item_from_array.htm)'s post.
+- Code on what method to use to return the videos-array values was taken from [JavaScript.info](https://javascript.info/keys-values-entries).
+- Code on how to add value to a set attribute was taken from [W3Schools](https://www.w3schools.com/jsref/met_element_setattribute.asp)' post.
+- Code on how to remove class via JS was taken from [W3Schools](https://www.w3schools.com/jquery/html_removeclass.asp)' post.
+- Code on how to get play/pause function in JS was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)' post.
+- Code on how to use JS to type out one letter at a time was taken from [Maximus McCullough](https://www.youtube.com/watch?v=HjVVD8E84Kk&ab_channel=MaximusMcCullough)'s Youtube instructional video.
+- Code on how to make sure that the splash preloader screen (developer's Welcome page) appears once per visit and not every time user reloads or clicks on navbar was taken from [SitePoint](https://www.sitepoint.com/community/t/display-splash-preloader-screen-once-per-visit/266148)'s post.
+- Code on how to add 404 page in HTML was taken from [Dani Krossing](https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing)'s Youtube instructional video.
+
+- Quotes API was provided by user SergeyWebPro via [freeCodeCamp](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373).
 
 ### Acknowledgements
 
 Special thanks to: 
 - Code Institute Mentor Mo for all of his time and for offering his support and suggestions on what this developer needs to focus on in order to get distinction grade on this project.
+- Code Institute's tutors Tim, John and Jo for their helpful guidance, resources, advice and endless support.
 - Boyfriend Fredrik, friends Alex and Emelie, sisters Marie and Erin and dad for testing the website and giving this developer both positive and constructive feedback.
 
 #### Disclaimer
