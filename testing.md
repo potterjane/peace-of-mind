@@ -204,19 +204,101 @@ Firefox: Website and user stories work as expected.
 ## Bugs discovered
 
 ### Solved bugs
-1. **f**
+1. **Playback button visible in the background**
 
-    When collapsing and uncollapsing the navbar for mobile and tablet screens, the entire ul presented a 'jump' behaviour.
+    Playback button was visible in the background on mobile devices when no video was playing 
+    
+    <div align="center"><h4>Playback visible on iPhone</h4>
+    <img src="assets/screenshots/for-testing/iphone-playback.jpg" alt="Screenshot: Playback visible on iPhone" >
+    </div>
+
+    <div align="center"><h4>Playback visible on Poco phone</h4>
+    <img src="assets/screenshots/for-testing/poco-playback.jpg" alt="Screenshot: Playback visible on Poco phone" >
+    </div>
 
     **How this developer fixed it:**
+    Removed the 'Change background' button from the smaller mobile screen sizes in index.html.
 
-    With the help of the [SimplySmartMedia](https://simplysmartmedia.com/2016/06/heres-why-your-bootstrap-collapsed-alert-jumps-when-expanded/)'s post, 
-    the ```class="nav-container-collapse"``` was moved from the ```<ul>``` element to the grandparent ```<div>``` element.
+2. **Background videos not visibly playing due to main background image**
+
+    Background videos have z-index: -5. When user clicks the 'Change background' button, no videos are visibly showing because it is played behind the background image. 
+
+    **How this developer fixed it:**
+    Added the removeClass to remove the background image in when the changeBackground() function is called. See this developer's code on assets/js/videos.js with comments.
+
+3. **Entire Welcome text not showing**
+
+    The Welcome text, 'How are you feeling?' was not entirely visible on mobile or smaller screen sizes.
+
+    <div align="center"><h4>Incomplete Welcome text on mobile</h4>
+    <img src="assets/screenshots/for-testing/how-are.jpg" alt="Screenshot: Incomplete Welcome text on mobile" >
+    </div>
+
+    **How this developer fixed it:**
+    Tried at first to break the text to two rows but that did not work. Instead, decreased the font size for mobile and smaller screens sizes.
+
+3. **Entire Welcome text not showing**
+
+    The Welcome text, 'How are you feeling?' was not entirely visible on mobile or smaller screen sizes.
+
+    <div align="center"><h4>Incomplete Welcome text on mobile</h4>
+    <img src="assets/screenshots/for-testing/how-are.jpg" alt="Screenshot: Incomplete Welcome text on mobile" >
+    </div>
+
+    **How this developer fixed it:**
+    Tried at first to break the text to two rows but that did not work. Instead, decreased the font size for mobile and smaller screens sizes.
+
+4. **Sound effect clips does not resume to where it was paused**
+
+    When user clicks on a sound effect icon, the audio is playing and displays the pause icon. When user clicks the pause icon, audio stops, it does not pause. So when user clicks the audio again, they might think that it will resume the audio because of the pause icon but it instead plays a new random sound effect clip from the start.
+
+    **How this developer fixed it:**
+    Replaced the pause icon with the stop icon. With the current function that does play/stop of the audio, this icon replacement makes more sense. 
+
+5. **Cannot recieve file uploads when user submits form**
+
+    When user submit their form successfully on the Contact page, this developer recieves all the required input data to their inbox but not the uploaded file. 
+
+    **How this developer fixed it:**
+    This developer did not fix it, but it did found the source of the 'bug'. EmailJS requires that the developer upgrades their subscription in order to unlock this feature.
+
+    This developer felt that this step was unnecessary for the project.
+
+    <div align="center"><h4>EmailJS subscription limit</h4>
+    <img src="assets/screenshots/for-testing/emailjs-limit.png" alt="Screenshot: EmailJS subscription limit" >
+    </div>
 
 ### Unsolved bugs
 
-1. ****
+1. **Console error**
 
+    The console error, “The play() request was interrupted by a call to pause()” is seen when user clicks on sound effect icon or previous/next icon and then clicks on the previous/next icon to play next random sound effect clip before the sound effect clip reaches the end.
+
+    This error does not affect the feature's function. However, this developer was not able to fix console error, tried to follow the instructions in the post on [StackOverflow](https://stackoverflow.com/questions/36803176/how-to-prevent-the-play-request-was-interrupted-by-a-call-to-pause-error) but the error remained.
+
+2. **Volume adjuster not working on iPhone6**
+
+    Volume slider is visible and user can move the slider left to right (and vice versa) but it does not decrease/increase the volume when moved.
+
+    This developer has not been able to find a solution to this at present date.
+
+3. **Background video does not fully cover on larger screens**
+
+    For screens larger than 1920px in width, some (not all) of the background videos does not fully cover the background.
+
+    <div align="center"><h4>Video not fully covered in background of larger screen</h4>
+    <img src="assets/screenshots/for-testing/video-not-covered.png" alt="Screenshot: Video not fully covered in background of larger screen">
+    </div>
+
+    Tried to add the following code to the ```id="bg-video"``` in CSS but it did not solve the bug and have tried to search for the solution online, but have not found anything at present date.
+
+    ```CSS
+    #bg-video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    ```
 
 ## Further testing
 
