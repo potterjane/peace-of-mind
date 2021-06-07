@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Reenie Beanie
+- Font Author: Copyright (c) 2010 Typeco (james@typeco.com). All rights reserved.
+- Font Source: http://fonts.gstatic.com/s/reeniebeanie/v11/z7NSdR76eDkaJKZJFkkjuvWxbP2_qoOgf_w.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

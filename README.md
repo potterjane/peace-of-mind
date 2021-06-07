@@ -332,6 +332,17 @@ git clone https://github.com/potterjane/peace-of-mind.git
 ```
 7. Press 'Enter'.
 
+### EmailJS
+1. Create an EmailJS account
+2. On the left-hand column, click on 'Integration' to get your user ID
+3. On the left-hand column, click to create an email service and copy the service ID
+4. On the left-hand column, click to create an email template and copy the template ID
+5. Go to Docs to find tutorial and user guide on how to add EmailJS to your website with the help of the user ID, service ID and template ID 
+
+### Quotes API
+- Quotes API was provided by user SergeyWebPro via [freeCodeCamp](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373).
+- Code on how to implement quote API to the website was taken from [SoloLearn](https://www.sololearn.com/Discuss/2419539/here-the-following-api-includes-quotes-how-to-generate-random-quote-here-i-m-just-able-to-generate)'s post.
+
 ## Credits
 
 ### Content
@@ -422,7 +433,6 @@ The videos were sourced from the following creator's [Pexels](https://www.pexels
 - Code on how to add any chosen colour to the placeholder was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_placeholder.asp)' post.
 - Code on how to change the autofill styles for the input fields in forms was taken from this [CSS-Tricks](https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/) post.
 - Code on how to clear form after it has been submitted was taken from [W3Schools](https://www.w3schools.com/jsref/met_form_reset.asp)' post.
-- Code on how to implement quote API was taken from [SoloLearn](https://www.sololearn.com/Discuss/2419539/here-the-following-api-includes-quotes-how-to-generate-random-quote-here-i-m-just-able-to-generate)'s post.
 - Code on how to reload a page using JS was taken from [StackOverflow](https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript#:~:text=To%20reload%20the%20page%20keeping,reload()%3B)'s post.
 - Code on how to get random videos from array was taken from [Kirupa](https://www.kirupa.com/html5/picking_random_item_from_array.htm)'s post.
 - Code on what method to use to return the videos-array values was taken from [JavaScript.info](https://javascript.info/keys-values-entries).
@@ -432,8 +442,6 @@ The videos were sourced from the following creator's [Pexels](https://www.pexels
 - Code on how to use JS to type out one letter at a time was taken from [Maximus McCullough](https://www.youtube.com/watch?v=HjVVD8E84Kk&ab_channel=MaximusMcCullough)'s Youtube instructional video.
 - Code on how to make sure that the splash preloader screen (developer's Welcome page) appears once per visit and not every time user reloads or clicks on navbar was taken from [SitePoint](https://www.sitepoint.com/community/t/display-splash-preloader-screen-once-per-visit/266148)'s post.
 - Code on how to add 404 page in HTML was taken from [Dani Krossing](https://www.youtube.com/watch?v=kPtS4vO42II&ab_channel=DaniKrossing)'s Youtube instructional video.
-
-- Quotes API was provided by user SergeyWebPro via [freeCodeCamp](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373).
 
 ### Acknowledgements
 
