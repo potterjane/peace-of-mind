@@ -144,7 +144,7 @@ The overall feel of the website should be one that attracts people who are in ne
 <br>
 
 - The white colour (#f2feff) was chosen for the company name, icons, hyperlinks, form and button borders, heading and paragraph elements because the white colour contrast well with the website's main background beach image.
-- All the buttons are in a dark blue-green (#016d73) to match with one of the website's main tropical ocean colours. It is also the main background colour for the Welcome section.
+- All the buttons are in a dark blue-green colour (#016d73) to match with one of the website's main tropical ocean colours. It is also the main background colour for the Welcome section.
 - When the 'Change background' button is hovered, its background colour changes from the dark blue-green (#016d73) to the light-blue colour (#299cab), which is also a shade that belongs in a tropical ocean and therefore complements the blue-green shade of cyan colour well.
 - When the 'Reset all' button is hovered, its background colour changes from the dark blue-green (#016d73) to an orange-red colour (#fc7844). This colour is typically associated with an action such as 'reset' or 'cancel' and therefore this colour was chosen by the developer.
 - The standard red colour was used for the heart icon in the How to Use page, which is considered not a permanent element of the website but it makes the heart icon stand out and emphasize the positive feeling of using the website for the users.
@@ -157,7 +157,7 @@ The overall feel of the website should be one that attracts people who are in ne
 
 All of the icons were chosen because they are universally understood and because their obvious meaning and purpose removes the need for a more descriptive text.
 
-**Music**
+**Audio**
 
 - The sound effect clips found on the Home page are the star of the website, it is part of the tool that is used as a distraction for the users from the everyday noises. The sound clips are played on a loop once the user presses play on the icon and stops playing when user presses stop or 'Reset all'.
 - The sound clips are placed in five different categories: Nature, Travel, Public, Home, and Weather. Each category have 6 different sound effect clips, for example, Public has sound clips of crowd walla in an office space, restaurant and traffic noises. 
@@ -223,6 +223,7 @@ The screenshot below shows user clicking on the 'Reset all' button and showing t
 <img src="assets/screenshots/for-readme/reset-all.png" alt="Screenshot: Reset all button and website after reload" width="900" >
 
 User stories covered by this feature:
+
 2. As a new or returning user, I want to be able to reset all features with one click.
 
 Feature 5: Easy-to-follow instructions on how to use the website
@@ -232,6 +233,7 @@ This is found on the How To Use page. The left-hand column contains an ordered l
 <img src="assets/screenshots/for-readme/how-to-use.png" alt="Screenshot: The How to Use page" width="900" >
 
 User stories covered by this feature:
+
 3. As a new or returning user, I want to be able to find and follow instructions in an easy way, so that I know how to best use the website.
 
 Feature 6: Brief background information about the company and its purpose with hyperlinks to other pages on the website
@@ -241,8 +243,9 @@ This is found on the About page. Simple and straight-forward information about w
 <img src="assets/screenshots/for-readme/about.png" alt="Screenshot: The About page" width="900" >
 
 User stories covered by this feature:
+
 4. As a new or returning user, I want to be able to know the background of the company, so that I understand what they want us to achieve when using the website.
-9. As a music/video artist or web developer looking for a job, I want to be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
+9. To be able to know the background of the company, so that I can come to a decision on whether or not to apply for a job with the company.
 
 Feature 7: Social links to provide an alternative way to learn more about the website and to get more 'peer reviews'
 
@@ -251,8 +254,8 @@ Social links are found in the Footer section on all of the pages except the 404 
 <img src="assets/screenshots/for-readme/social-links.png" alt="Screenshot: Social links, establishment date, quotes API source and disclaimer in the footer section" width="1300" >
 
 User stories covered by this feature:
+
 5. As a new or returning user, I want to be able to know what other users think of their website, so that I can see what kind of users use the website and why.
-9. As a music/video artist or web developer looking for a job, I want to be able to know the background of the company, what other users think of their services via social links, so that I can come to a decision on whether or not to apply for a job with the company.
 
 Feature 8: Contact form to give users an opportunity to send feedback or ask questions to the company behind the website
 
@@ -261,6 +264,7 @@ This is found on the Contact page. All fields are required except the file uploa
 <img src="assets/screenshots/for-readme/contact-form.png" alt="Screenshot: The Contact page" width="900" >
 
 User stories covered by this feature:
+
 6. As a new or returning user, I want to be able to contact the company in an easy way, so that I can send any questions or feedback I might have with as few clicks as possible.
 10. As a music/video artist or web developer looking for a job, I want to be able to contact the company in an easy way, so that I can send questions and/or send my resume/CV/portfolio/personal letter.
 
@@ -271,6 +275,7 @@ This appears when user navigates themselves to a non-existent webpage. The 404 e
 <img src="assets/screenshots/for-readme/404-error.png" alt="Screenshot: The 404 error page" width="900" >
 
 User stories covered by this feature:
+
 7. To have an easy way to navigate back to the Home page, so that if I ever get lost, I can get back to the where I need to be with as few clicks as possible.
 
 ### Future Features
