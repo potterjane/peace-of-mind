@@ -104,6 +104,7 @@ As a music/video artist or web developer looking for a job, I want:
 - A well-thought-out and professional design of the website that attracts new and returning users and also potential new employees.
 - To create a website where the audio, videos and quotes are the 'stars'.
 - A fun, creative and stylish project that reflects the developer's use of HTML, CSS and Javascript.
+- The theme of the website should be providing value to users to address a specific real need, a need that every user would want to acheive. In other words, the need to increase focus, motivation and productivity, decrease anxiety and stress, and improve mood. 
 
 ### Design Choices
 
@@ -341,13 +342,68 @@ git clone https://github.com/potterjane/peace-of-mind.git
 
 #### Music
 
-The sound clips were sourced from the following channels and creators:
+The sound clips were sourced (royalty-free/copyright-free/under the Creative Commons (CC0) license) from the following channels or websites:
+<br>
+
+**Home sounds**
+- Fireplace = [Daniel Simion on SoundBible](https://soundbible.com/) 
+- Washing dishes = [Sound Effect on Youtube](https://www.youtube.com/channel/UCWfTQ7o2S9zGRQHXVBgYLpg)
+- Barbecuing food on grill = [Sound Effect on Youtube](https://www.youtube.com/channel/UCWfTQ7o2S9zGRQHXVBgYLpg)
+- Showering = [Free Sound Stock on Youtube](https://www.youtube.com/channel/UCyz8yLrBghJ24M40TvOYSZw)
+- Laundry room = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+- Chopping food = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+
+**Nature sounds**
+- Birds chirping = [Videoplasty on Youtube](https://www.youtube.com/channel/UCU8zin1RnIdrbS9qEVCCmfQ)
+- Leaves blowing in wind = [Sound Effect Database on Youtube](https://www.youtube.com/channel/UCok6P4rwxBMun9ghaIV4ufQ)
+- Beach waves =  [All Things Media on Youtube](https://www.youtube.com/user/allthingsmedia)
+- Rainforest = [Sound Effects on Youtube](https://www.youtube.com/channel/UCuDqDy9Oriu_guhyO_s5NjA)
+- Beach and seagulls = [Xotica Goddess on Youtube](https://www.youtube.com/channel/UCt_YnNF7l7PFBXoHiHoNG1w)
+- River flowing = [BurghRecords on Youtube](https://www.youtube.com/user/BurghRecords)
+
+**Public sounds**
+- Office sounds = [Videoplasty on Youtube](https://www.youtube.com/channel/UCU8zin1RnIdrbS9qEVCCmfQ)
+- City traffic ambience = [Videoplasty on Youtube](https://www.youtube.com/channel/UCU8zin1RnIdrbS9qEVCCmfQ)
+- Restaurant sound = [Free Audio Zone on Youtube](https://www.youtube.com/channel/UCDSOpbNARqefZKVcJ4UnAMw)
+- City park ambience = [Sound Effects Free on Youtube](https://www.youtube.com/channel/UCXLr2sJpgJMv1onD0zsusNg)
+- People shopping mall = [Sound Effect on Youtube](https://www.youtube.com/channel/UCWfTQ7o2S9zGRQHXVBgYLpg)
+- Open air swimming pool = [Audio Library - No copyright soundeffects on Youtube](https://www.youtube.com/channel/UCNqkbzMvO5LPzJR_GLXoWuA)
+
+**Travel sounds**
+- Inside train ride = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+- Car ride = [Abhignan Karmakar on Youtube](https://www.youtube.com/channel/UC_W-TLl41ExJcLu-YXXtQqw)
+- Bicycle ride in summer = [Audio Library on Youtube](https://www.youtube.com/channel/UCkq5JZ2yOF7b0rkMQMgdAIA)
+- Landing airplane = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+- Airport terminal = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+- Train arriving = [BurghRecords on Youtube](https://www.youtube.com/user/BurghRecords)
+
+**Weather sounds**
+- Rain and thunder = [Videoplasty on Youtube](https://www.youtube.com/channel/UCU8zin1RnIdrbS9qEVCCmfQ)
+- Rain = [Sound Effects on Youtube](https://www.youtube.com/channel/UCuDqDy9Oriu_guhyO_s5NjA)
+- Heavy rain = [Sound and Image FX on Youtube](https://www.youtube.com/channel/UCQvVl9c7RKpyO5aKwxtb_lw)
+- Rain on umbrella = [Home Sound Effects on Youtube](https://www.youtube.com/channel/UCa1_45PWO3CBX7fDZh4Qu2w)
+- Thunder = [Free Sounds Library on Youtube](https://www.youtube.com/channel/UCiIJK9wQDAvc2MByAltv2jA)
+- Rain on window = [TopLine FX on Youtube](https://www.youtube.com/channel/UCrqBxQRhDd_WfqqIkUyWOaw)
 
 #### Videos
-The videos were sourced from Pexels from the following creators:
+The videos were sourced from the following creator's [Pexels](https://www.pexels.com/) free library:
+- Aurora borealis = [@distill](https://www.pexels.com/@distill)
+- Beach waves move = [@taryn-elliott](https://www.pexels.com/@taryn-elliott)
+- Car drive = [@dimi](https://www.pexels.com/@dimi)
+- Fireplace = [@emrvszr](https://www.pexels.com/@emrvszr)
+- Forest = [@matthiasgroeneveld](https://www.pexels.com/@matthiasgroeneveld)
+- Night sky = [@adi-kavazovic-182036](https://www.pexels.com/@adi-kavazovic-182036)
+- Office = [@free-videos](https://www.pexels.com/@free-videos)
+- Pink sky and beach = [@ahmed-abd-allah-4393137](https://www.pexels.com/@ahmed-abd-allah-4393137)
+- Rain on banana leaves = [@deeanacreates](https://www.pexels.com/@deeanacreates)
+- Raindrops = [@cheneymediaproductions](https://www.pexels.com/@cheneymediaproductions)
+- Reading = [@joel-dunn-98388](https://www.pexels.com/@joel-dunn-98388)
+- Sunset by beach = [@nata-lea-1615750](https://www.pexels.com/@nata-lea-1615750)
 
 ### Images
-The images were sourced from Pexels from the following creators:
+- The beach image used for the all of the pages (except for the 404 error page) were sourced from creator [@damodigital](https://www.pexels.com/@damodigital)'s [Pexels](https://www.pexels.com/) free library.
+- The forest image used for the 404 error page were sourced from creator [@joshuaworoniecki](https://www.pexels.com/@joshuaworoniecki)'s [Pexels](https://www.pexels.com/) free library.
+
 
 ### Code
 - How to keep footer where it belongs: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ 
