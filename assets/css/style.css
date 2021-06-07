@@ -1089,9 +1089,14 @@ select:-webkit-autofill:focus {
     font-size: 200px;
 }
 
-.error-text {
+.error-text-big {
+    display: block;
     font-size: 100px;
     padding-bottom: 30px;
+}
+
+.error-text-small {
+    display: none;
 }
 
 .error-btn {
@@ -1106,6 +1111,19 @@ select:-webkit-autofill:focus {
 .error-home {
     text-decoration: none;
     font-size: 18px;
+}
+
+@media screen and (max-width: 740px) {
+
+    .error-text-small {
+        display: block;
+        font-size: 100px;
+        padding-bottom: 30px;
+    }
+
+    .error-text-big {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 390px) {
