@@ -22,18 +22,15 @@ View the website [here](https://potterjane.github.io/peace-of-mind/)
 ## Automated Testing
 
 ### Validation services
-- [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages.
-Copied all the code from an html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
+- [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages. Copied all the code from an html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
 **For this website, no errors or warnings to show on any of the HTML pages.**
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS. Copied all the code from the css page, pasted it in the field under 'By direct input' and then clicked on the 'Check' button.
 **For this website, no errors or warnings to show on the CSS page.**
-- [JSHint](https://jshint.com/) was used to validate all the JS pages.
-Copied all the code from a JS page, pasted it in the left-side of the tool.
+- [JSHint](https://jshint.com/) was used to validate all the JS pages. Copied all the code from a JS page, pasted it in the left-side of the tool.
 **For this website, no errors or warnings to show on any of the JS pages.**
 
 ### Accessibility services
-- [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was used to
-evaluate the accessibilty on all of the website's page in incognito mode, as recommended (see screenshot below).
+- [Lighthouse in ChromeDev Tools](https://developers.google.com/web/tools/lighthouse#devtools) was used to evaluate the accessibilty on all of the website's page in incognito mode, as recommended (see screenshot below).
 In order to run a Lighthouse report, open Google Chrome, go to the URL for [Peace of Mind](https://potterjane.github.io/peace-of-mind/) and then open Chrome DevTools. 
 Change from the Elements tab to the Lighthouse tab (You might need to click on 'right arrows' icon to access this tab). Choose at least one category and a device and then click on 'Generate report'.
 **The report generated an Accessibility rate of 100 out of 100 for this website.**
