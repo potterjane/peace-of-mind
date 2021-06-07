@@ -351,7 +351,7 @@ git clone https://github.com/potterjane/peace-of-mind.git
 
 ### Media
 
-#### Music
+#### Audio
 
 The sound clips were sourced (royalty-free/copyright-free/under the Creative Commons (CC0) license) from the following channels or websites:
 <br>

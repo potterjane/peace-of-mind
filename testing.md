@@ -22,11 +22,10 @@ View the website [here](https://potterjane.github.io/peace-of-mind/)
 ## Automated Testing
 
 ### Validation services
-- [W3C Markup Validation]( https://validator.w3.org/) was used to validate all the HTML pages (home, about, services, contact, booking).
+- [W3C Markup Validation](https://validator.w3.org/) was used to validate all the HTML pages (home, how-to-use, about, contact, and 404 error page).
 Copied all the code from the html page, pasted it in the field under 'Validate by direct input' and then clicked on the 'Check' button.
 **For this website, no errors or warnings to show on any of the HTML pages.**
-- [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS. Copied all the code from the css page, pasted 
-it in the field under 'By direct input' and then clicked on the 'Check' button.
+- [W3C CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate CSS. Copied all the code from the css page, pasted it in the field under 'By direct input' and then clicked on the 'Check' button.
 **For this website, no errors were found, however there were some warnings:** 
 
 This [StackOverflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error)
